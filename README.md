@@ -1,7 +1,7 @@
-#Lucas Kostecki Indie Project
+# Lucas Kostecki Indie Project
 This repository is for the Motorcycle Meetup web application for Enterprise Java
 
-##Problem Statement
+## Problem Statement
 During the riding months it's nice to sometimes share an afternoon riding with other company. The problem that I often
 encounter is I don't have anyone else to ride with. From time to time, I'd like to ride my motorcycle with another person
 or a small group but because of the limited number of people that I know that also ride, I often find myself riding by alone.
@@ -11,7 +11,7 @@ to plan routes using Google Maps, invite users to join them on their route using
 public meetup which could be useful for businesses that want to host weekly shows, and offer logging services for keeping
 track of your rides by logging them after you return.
 
-##Technologies
+## Technologies
 * Security/Authentication
     * 
 * Database
