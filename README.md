@@ -12,8 +12,9 @@ public meetup which could be useful for businesses that want to host weekly show
 track of your rides by logging them after you return.
 
 ## Technologies
-* Security/Authentication
-    * 
+* Frameworks
+    * Java Spring Boot
+    * Vue.js
 * Database
     * MySQL
     * Storing users and user data
@@ -32,3 +33,9 @@ track of your rides by logging them after you return.
 * Unit Testing
     * JUnit tests for testing
 * IDE: IntelliJ IDEA
+
+## Design
+* [User Stories](https://github.com/lucaskostecki/MotorcycleMeetup/DesignDocuments/UserStories.md)
+* Screen Design
+* Application Flow
+* Database Design
