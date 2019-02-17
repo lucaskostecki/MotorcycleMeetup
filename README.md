@@ -35,7 +35,7 @@ track of your rides by logging them after you return.
 * IDE: IntelliJ IDEA
 
 ## Design
-* [User Stories](https://github.com/lucaskostecki/MotorcycleMeetup/DesignDocuments/UserStories.md)
-* Screen Design
-* Application Flow
-* Database Design
+* [User Stories](https://github.com/lucaskostecki/MotorcycleMeetup/blob/master/DesignDocuments/UserStories.md)
+* [Screen Design]()
+* [Application Flow](https://github.com/lucaskostecki/MotorcycleMeetup/blob/master/DesignDocuments/ApplicationFlow.md)
+* [Database Design](https://github.com/lucaskostecki/MotorcycleMeetup/blob/master/DesignDocuments/DatabaseDiagram.md)
