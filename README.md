@@ -39,3 +39,5 @@ track of your rides by logging them after you return.
 * [Screen Design]()
 * [Application Flow](https://github.com/lucaskostecki/MotorcycleMeetup/blob/master/DesignDocuments/ApplicationFlow.md)
 * [Database Design](https://github.com/lucaskostecki/MotorcycleMeetup/blob/master/DesignDocuments/DatabaseDiagram.md)
+
+## [Project Plan](https://github.com/lucaskostecki/MotorcycleMeetup/blob/master/ProjectPlan.md)
