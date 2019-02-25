@@ -12,8 +12,17 @@ public class User {
     @GenericGenerator(name="native",strategy="native")
     private int userID;
 
+    @Column(name="Type")
+    private int type;
+
     @Column(name="Username")
     private String username;
+
+    @Column(name="Email")
+    private String email;
+
+    @Column(name="Phone")
+    private String phone;
 
     @Column(name="FirstName")
     private String firstName;
@@ -21,21 +30,15 @@ public class User {
     @Column(name="LastName")
     private String lastName;
 
-    @Column(name="Email")
-    private String email;
-
-    @Column(name="Type")
-    private int type;
-
     public User () {}
 
-    public User (int userID, String username, String firstName, String lastName, String email, int type) {
-        this.userID = userID;
+    public User (int type, String username, String email, String phone, String firstName, String lastName) {
+        this.type = type;
         this.username = username;
+        this.email = email;
+        this.phone = phone;
         this.firstName = firstName;
         this.lastName = lastName;
-        this.email = email;
-        this.type = type;
     }
 
     public int getUserID() {

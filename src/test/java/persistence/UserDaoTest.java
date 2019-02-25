@@ -3,6 +3,7 @@ package persistence;
 import entity.User;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import utility.Database;
 
 import java.util.List;
 
@@ -18,6 +19,8 @@ class UserDaoTest {
     @BeforeEach
     void setUp() {
         dao = new UserDao();
+        Database db = Database.getInstance();
+        db.runSQL("cleandb.sql");
     }
 
     /**
@@ -31,24 +34,37 @@ class UserDaoTest {
     }
 
     /**
-     * Verifies the getUsersByUsername returns a specified amount
+     * Verifies the getUsersByUsername returns a specified username
      */
     @Test
     void getUsersByUsername() {
         List<User> users = dao.getUsersByUsername("testing");
 
-        assertEquals(1, users.size());
+        assertEquals("testing", users.get(0).getUsername());
     }
 
     @Test
     void saveOrUpdate() {
+        String newUsername = "testing2.5";
+        User updateUser = dao.getUserByID(3);
+        updateUser.setUsername(newUsername);
+        dao.saveOrUpdate(updateUser);
+        User returnedUser = dao.getUserByID(3);
+        assertEquals(newUsername, returnedUser.getUsername());
     }
 
     @Test
     void insert() {
+        User user = new User(9, "testing2", "lucas.kostecki@gmail.com", "6085167408", "Lucas", "Kostecki");
+        int id = dao.insert(user);
+        assertNotEquals(0, id);
+        List<User> insertedUser = dao.getUsersByUsername("testing2");
+        assertEquals("testing2", insertedUser.get(0).getUsername());
     }
 
     @Test
     void delete() {
+        dao.delete(dao.getUserByID(1));
+        assertNull(dao.getUserByID(1));
     }
 }

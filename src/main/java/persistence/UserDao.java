@@ -57,6 +57,14 @@ public class UserDao {
         return users;
     }
 
+    public User getUserByID(int id) {
+        Session session = sessionFactory.openSession();
+        User user = session.get(User.class, id);
+        session.close();
+
+        return user;
+    }
+
     /**
      * Save or update a user
      *
