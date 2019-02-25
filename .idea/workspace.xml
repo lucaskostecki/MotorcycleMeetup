@@ -2,21 +2,20 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="motorcycle-meetup:war" />
+      <artifact name="mm" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a363bf17-ce96-4b1b-b113-1512fb20075c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/motorcycle-meetup.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/SearchUsers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/persistence/SessionFactoryProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/persistence/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/database.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/mm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/motorcycle-meetup.iml" beforeDir="false" afterPath="$PROJECT_DIR$/motorcycle-meetup.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/motorcyclemeetup.iml" beforeDir="false" afterPath="$PROJECT_DIR$/motorcyclemeetup.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Users.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/persistence/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/persistence/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -26,8 +25,13 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/motorcyclemeetup$UserDaoTest_getUsersByUsernameSuccess.ic" NAME="UserDaoTest.getUsersByUsernameSuccess Coverage Results" MODIFIED="1551064011757" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>persistence.*</FILTER>
+    </SUITE>
+  </component>
   <component name="DarkyenusTimeTracker">
-    <option name="totalTimeSeconds" value="10030" />
+    <option name="totalTimeSeconds" value="15143" />
     <option name="gitIntegration" value="true" />
   </component>
   <component name="DatabaseView">
@@ -54,34 +58,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/entity/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="30" column="19" lean-forward="true" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
+            <state relative-caret-position="150">
+              <caret line="11" column="54" selection-start-line="11" selection-start-column="54" selection-end-line="11" selection-end-column="54" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#227#228#0" expanded="true" />
-                <element signature="e#256#257#0" expanded="true" />
-                <element signature="e#297#298#0" expanded="true" />
-                <element signature="e#333#334#0" expanded="true" />
-                <element signature="e#368#369#0" expanded="true" />
-                <element signature="e#399#400#0" expanded="true" />
-                <element signature="e#447#448#0" expanded="true" />
-                <element signature="e#487#488#0" expanded="true" />
-                <element signature="e#523#524#0" expanded="true" />
-                <element signature="e#555#556#0" expanded="true" />
-                <element signature="e#605#606#0" expanded="true" />
-                <element signature="e#647#648#0" expanded="true" />
-                <element signature="e#682#683#0" expanded="true" />
-                <element signature="e#713#714#0" expanded="true" />
-                <element signature="e#761#762#0" expanded="true" />
-                <element signature="e#801#802#0" expanded="true" />
-                <element signature="e#833#834#0" expanded="true" />
-                <element signature="e#861#862#0" expanded="true" />
-                <element signature="e#903#904#0" expanded="true" />
-                <element signature="e#937#938#0" expanded="true" />
-                <element signature="e#965#966#0" expanded="true" />
-                <element signature="e#992#993#0" expanded="true" />
-                <element signature="e#1029#1030#0" expanded="true" />
-                <element signature="e#1061#1062#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -90,8 +70,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/persistence/SessionFactoryProvider.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
-              <caret line="23" column="38" lean-forward="true" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
+            <state relative-caret-position="285">
+              <caret line="23" column="38" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -100,10 +80,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/persistence/UserDao.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/controller/SearchUsers.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
-              <caret line="35" column="70" lean-forward="true" selection-start-line="35" selection-start-column="70" selection-end-line="35" selection-end-column="70" />
+            <state relative-caret-position="345">
+              <caret line="31" column="1" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -112,10 +92,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/controller/SearchUsers.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/persistence/UserDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="9" column="46" lean-forward="true" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
+            <state relative-caret-position="619">
+              <caret line="89" column="58" selection-start-line="89" selection-start-column="58" selection-end-line="89" selection-end-column="58" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/persistence/UserDaoTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="480">
+              <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -123,17 +115,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="56" lean-forward="true" selection-start-line="10" selection-start-column="56" selection-end-line="10" selection-end-column="56" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
-              <caret line="103" column="31" lean-forward="true" selection-start-line="103" selection-start-column="31" selection-end-line="103" selection-end-column="31" />
+            <state relative-caret-position="90">
+              <caret line="6" column="84" selection-start-line="6" selection-start-column="84" selection-end-line="6" selection-end-column="84" />
             </state>
           </provider>
         </entry>
@@ -144,6 +127,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -166,14 +150,15 @@
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/b56e1300-e615-40cf-a02a-85b7f3840670/console.sql" />
         <option value="$PROJECT_DIR$/src/main/java/Users.java" />
         <option value="$PROJECT_DIR$/src/main/java/entity/Users.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/database.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/entity/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/persistance/UserDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/persistance/SessionFactoryProvider.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/persistence/UserDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/SearchUsers.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/entity/User.java" />
+        <option value="$PROJECT_DIR$/src/test/java/persistence/UserDaoTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/persistence/UserDao.java" />
       </list>
     </option>
   </component>
@@ -194,7 +179,7 @@
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="77" />
     <option name="y" value="27" />
-    <option name="width" value="1843" />
+    <option name="width" value="1833" />
     <option name="height" value="789" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -203,6 +188,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -255,25 +241,36 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551044827635" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551065740393" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="database.console.LAST_STATE" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.applicationServers" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="persistence" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
@@ -290,14 +287,46 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.UserDaoTest.getUsersByUsernameSuccess">
+    <configuration name="UserDaoTest.getAllUsersSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="motorcyclemeetup" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="persistence.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="persistence" />
+      <option name="MAIN_CLASS_NAME" value="persistence.UserDaoTest" />
+      <option name="METHOD_NAME" value="getAllUsersSuccess" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserDaoTest.getUsersByUsernameSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="motorcyclemeetup" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="persistence.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="persistence" />
+      <option name="MAIN_CLASS_NAME" value="persistence.UserDaoTest" />
+      <option name="METHOD_NAME" value="getUsersByUsernameSuccess" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MM" type="TomeeConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="TomEE 8.5.6" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/motorcyclemeetup" />
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/motorcyclemeetup/" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="motorcycle-meetup:war">
+        <artifact name="indieproject:war">
           <settings>
-            <option name="CONTEXT_PATH" value="/motorcycle_meetup_war" />
+            <option name="CONTEXT_PATH" value="/mm" />
           </settings>
         </artifact>
       </deployment>
@@ -360,8 +389,94 @@
       <method v="2">
         <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/pom.xml" goal="clean" />
         <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/pom.xml" goal="install" />
+        <option name="BuildArtifacts" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MM2" type="TomeeConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="TomEE 8.5.6" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="mm">
+          <settings>
+            <option name="CONTEXT_PATH" value="/mm" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_motorcyclemeetup_2" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="39855" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/pom.xml" goal="clean" />
+        <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/pom.xml" goal="install" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="mm" />
+        </option>
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.UserDaoTest.getAllUsersSuccess" />
+      <item itemvalue="JUnit.UserDaoTest.getUsersByUsernameSuccess" />
+      <item itemvalue="TomEE Server.MM" />
+      <item itemvalue="TomEE Server.MM2" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.UserDaoTest.getUsersByUsernameSuccess" />
+        <item itemvalue="JUnit.UserDaoTest.getAllUsersSuccess" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -377,7 +492,9 @@
       <workItem from="1549822278205" duration="5042000" />
       <workItem from="1550443592202" duration="951000" />
       <workItem from="1550534750685" duration="1062000" />
-      <workItem from="1551027679037" duration="8297000" />
+      <workItem from="1551027679037" duration="10910000" />
+      <workItem from="1551054495913" duration="3826000" />
+      <workItem from="1551064938645" duration="799000" />
     </task>
     <task id="LOCAL-00001" summary="Updated project files to compile. Added a TomEE deploy config.">
       <created>1549826212420</created>
@@ -396,8 +513,37 @@
     <option name="localTasksCounter" value="3" />
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="UserDaoTest_getAllUsersSuccess - 2019.02.24 at 20h 58m 47s.xml">
+      <configuration name="UserDaoTest.getAllUsersSuccess" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserDaoTest_getAllUsersSuccess - 2019.02.24 at 21h 02m 58s.xml">
+      <configuration name="UserDaoTest.getAllUsersSuccess" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserDaoTest_getAllUsersSuccess - 2019.02.24 at 21h 04m 46s.xml">
+      <configuration name="UserDaoTest.getAllUsersSuccess" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserDaoTest_getAllUsersSuccess - 2019.02.24 at 21h 05m 06s.xml">
+      <configuration name="UserDaoTest.getAllUsersSuccess" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserDaoTest_getAllUsersSuccess - 2019.02.24 at 21h 05m 19s.xml">
+      <configuration name="UserDaoTest.getAllUsersSuccess" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserDaoTest_getUsersByUsernameSuccess - 2019.02.24 at 21h 06m 16s.xml">
+      <configuration name="UserDaoTest.getUsersByUsernameSuccess" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserDaoTest_getUsersByUsernameSuccess - 2019.02.24 at 21h 06m 29s.xml">
+      <configuration name="UserDaoTest.getUsersByUsernameSuccess" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserDaoTest_getUsersByUsernameSuccess - 2019.02.24 at 21h 06m 45s.xml">
+      <configuration name="UserDaoTest.getUsersByUsernameSuccess" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserDaoTest_getUsersByUsernameSuccess - 2019.02.24 at 21h 06m 57s.xml">
+      <configuration name="UserDaoTest.getUsersByUsernameSuccess" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18796000" />
+    <option name="totallyTimeSpent" value="26034000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -412,8 +558,7 @@
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Persistence" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16712783" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17044826" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -421,14 +566,15 @@
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Web" order="7" side_tool="true" />
+      <window_info id="Persistence" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32937366" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3286638" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32937366" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.33045357" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.33045357" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32937366" />
@@ -449,6 +595,7 @@
       <window_info anchor="right" id="Theme Preview" order="9" />
       <window_info anchor="right" id="CDI" order="10" />
       <window_info anchor="right" id="Bean Validation" order="11" />
+      <window_info active="true" anchor="right" id="Coverage" order="12" side_tool="true" visible="true" weight="0.29607084" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -459,13 +606,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="Updated project files to compile. Added a TomEE deploy config." />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="565">
@@ -535,68 +675,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="56" lean-forward="true" selection-start-line="10" selection-start-column="56" selection-end-line="10" selection-end-column="56" />
+        <state relative-caret-position="75">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/714910e9-6a99-4fa9-806b-e2f62d877ac0/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/8e7f6dd6-82b5-46a1-884b-ee313b249bd7/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom-2.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/c8652ba9-2556-4692-8995-6976e63bdc40/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="501">
+          <caret line="95" column="31" selection-start-line="95" selection-start-column="31" selection-end-line="95" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/entity/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="19" lean-forward="true" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
+        <state relative-caret-position="150">
+          <caret line="11" column="54" selection-start-line="11" selection-start-column="54" selection-end-line="11" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#227#228#0" expanded="true" />
-            <element signature="e#256#257#0" expanded="true" />
-            <element signature="e#297#298#0" expanded="true" />
-            <element signature="e#333#334#0" expanded="true" />
-            <element signature="e#368#369#0" expanded="true" />
-            <element signature="e#399#400#0" expanded="true" />
-            <element signature="e#447#448#0" expanded="true" />
-            <element signature="e#487#488#0" expanded="true" />
-            <element signature="e#523#524#0" expanded="true" />
-            <element signature="e#555#556#0" expanded="true" />
-            <element signature="e#605#606#0" expanded="true" />
-            <element signature="e#647#648#0" expanded="true" />
-            <element signature="e#682#683#0" expanded="true" />
-            <element signature="e#713#714#0" expanded="true" />
-            <element signature="e#761#762#0" expanded="true" />
-            <element signature="e#801#802#0" expanded="true" />
-            <element signature="e#833#834#0" expanded="true" />
-            <element signature="e#861#862#0" expanded="true" />
-            <element signature="e#903#904#0" expanded="true" />
-            <element signature="e#937#938#0" expanded="true" />
-            <element signature="e#965#966#0" expanded="true" />
-            <element signature="e#992#993#0" expanded="true" />
-            <element signature="e#1029#1030#0" expanded="true" />
-            <element signature="e#1061#1062#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/persistence/SessionFactoryProvider.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="23" column="38" lean-forward="true" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="103" column="31" lean-forward="true" selection-start-line="103" selection-start-column="31" selection-end-line="103" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/persistence/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="35" column="70" lean-forward="true" selection-start-line="35" selection-start-column="70" selection-end-line="35" selection-end-column="70" />
+        <state relative-caret-position="285">
+          <caret line="23" column="38" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -605,14 +730,67 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controller/SearchUsers.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="9" column="46" lean-forward="true" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
+        <state relative-caret-position="345">
+          <caret line="31" column="1" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="84" selection-start-line="6" selection-start-column="84" selection-end-line="6" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/persistence/UserDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/persistence/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="619">
+          <caret line="89" column="58" selection-start-line="89" selection-start-column="58" selection-end-line="89" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>mm</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Hibernate</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
           <splitter-proportions>
@@ -636,8 +814,22 @@
           </splitter-proportions>
         </settings>
       </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>motorcycle-meetup</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

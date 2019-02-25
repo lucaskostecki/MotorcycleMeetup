@@ -7,7 +7,9 @@ import javax.persistence.*;
 @Table(name="Users")
 public class User {
 
-    @Column(name="UserID")
+    @Id
+    @GeneratedValue(strategy=GenerationType.AUTO, generator="native")
+    @GenericGenerator(name="native",strategy="native")
     private int userID;
 
     @Column(name="Username")
@@ -24,11 +26,6 @@ public class User {
 
     @Column(name="Type")
     private int type;
-
-    @Id
-    @GeneratedValue(strategy=GenerationType.AUTO, generator="native")
-    @GenericGenerator(name="native",strategy="native")
-    private int id;
 
     public User () {}
 

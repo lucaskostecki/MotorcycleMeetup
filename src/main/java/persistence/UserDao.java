@@ -8,13 +8,25 @@ import javax.persistence.criteria.*;
 import java.util.List;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.hibernate.Transaction;
 
+/**
+ * The type User dao.
+ */
 public class UserDao {
 
     private final Logger logger = LogManager.getLogger(this.getClass());
 
+    /**
+     * The Session factory.
+     */
     SessionFactory sessionFactory = SessionFactoryProvider.getSessionFactory();
 
+    /**
+     * Gets all users.
+     *
+     * @return the all users
+     */
     public List<User> getAllUsers() {
         Session session = sessionFactory.openSession();
         CriteriaBuilder builder = session.getCriteriaBuilder();
@@ -26,6 +38,12 @@ public class UserDao {
         return users;
     }
 
+    /**
+     * Gets users by username.
+     *
+     * @param searchTerm the search term
+     * @return the users by username
+     */
     public List<User> getUsersByUsername(String searchTerm) {
         Session session = sessionFactory.openSession();
         CriteriaBuilder builder = session.getCriteriaBuilder();
@@ -37,6 +55,46 @@ public class UserDao {
         session.close();
 
         return users;
+    }
+
+    /**
+     * Save or update a user
+     *
+     * @param user      User to be inserted or updated
+     */
+    public void saveOrUpdate(User user) {
+        Session session = sessionFactory.openSession();
+        session.saveOrUpdate(user);
+        session.close();
+    }
+
+    /**
+     * Insert or update a user
+     *
+     * @param user      User to be inserted or updated
+     * @return          The id of the user inserted or updated
+     */
+    public int insert(User user) {
+        int id = 0;
+        Session session = sessionFactory.openSession();
+        Transaction transaction = session.beginTransaction();
+        id = (int)session.save(user);
+        transaction.commit();
+        session.close();
+        return id;
+    }
+
+    /**
+     * Delete a user from the DB
+     *
+     * @param user      The user to be deleted from the DB
+     */
+    public void delete(User user) {
+        Session session = sessionFactory.openSession();
+        Transaction transaction = session.beginTransaction();
+        session.delete(user);
+        transaction.commit();
+        session.close();
     }
 
 }

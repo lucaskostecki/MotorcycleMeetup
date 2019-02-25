@@ -5,11 +5,11 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.lucaskstudios.motorcycle-meetup</groupId>
-  <artifactId>motorcyclemeetup</artifactId>
+  <artifactId>motorcycle-meetup</artifactId>
   <version>1.0-ALPHA</version>
   <packaging>war</packaging>
 
-  <name>motorcyclemeetup Maven Webapp</name>
+  <name>motorcycle-meetup Maven Webapp</name>
   <!-- FIXME change it to the project's website -->
   <url>lucaskstudios.com</url>
 
@@ -20,7 +20,7 @@
   </properties>
 
   <build>
-    <finalName>motorcyclemeetup</finalName>
+    <finalName>motorcycle-meetup</finalName>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
         <plugin>
@@ -82,6 +82,7 @@
       <version>4.12.0</version>
       <scope>test</scope>
     </dependency>
+
 
     <dependency>
       <groupId>javax</groupId>
