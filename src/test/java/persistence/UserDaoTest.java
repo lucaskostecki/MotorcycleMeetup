@@ -3,6 +3,7 @@ package persistence;
 import entity.User;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import utility.CleanTestDB;
 import utility.Database;
 
 import java.util.List;
@@ -19,8 +20,8 @@ class UserDaoTest {
     @BeforeEach
     void setUp() {
         dao = new UserDao();
-        Database db = Database.getInstance();
-        db.runSQL("cleandb.sql");
+        CleanTestDB cleandb = new CleanTestDB();
+        cleandb.cleanDB();
     }
 
     /**
@@ -40,16 +41,16 @@ class UserDaoTest {
     void getUsersByUsername() {
         List<User> users = dao.getUsersByUsername("testing");
 
-        assertEquals("testing", users.get(0).getUsername());
+        assertEquals(1, users.size());
     }
 
     @Test
     void saveOrUpdate() {
         String newUsername = "testing2.5";
-        User updateUser = dao.getUserByID(3);
+        User updateUser = dao.getUserByID(1);
         updateUser.setUsername(newUsername);
         dao.saveOrUpdate(updateUser);
-        User returnedUser = dao.getUserByID(3);
+        User returnedUser = dao.getUserByID(1);
         assertEquals(newUsername, returnedUser.getUsername());
     }
 

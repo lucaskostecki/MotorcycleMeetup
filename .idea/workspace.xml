@@ -7,15 +7,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a363bf17-ce96-4b1b-b113-1512fb20075c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/utility/Database.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/cleandb.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/cleandb2.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/database.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/utility/CleanTestDB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/hibernate.cfg.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/persistence/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/persistence/UserDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/persistence/UserDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/persistence/UserDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/cleandb2.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/cleandb2.sql" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -31,7 +28,7 @@
     </SUITE>
   </component>
   <component name="DarkyenusTimeTracker">
-    <option name="totalTimeSeconds" value="19032" />
+    <option name="totalTimeSeconds" value="23934" />
     <option name="gitIntegration" value="true" />
   </component>
   <component name="DatabaseView">
@@ -80,7 +77,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/entity/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
+            <state relative-caret-position="210">
               <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -104,8 +101,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/controller/SearchUsers.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="31" column="1" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
+            <state relative-caret-position="270">
+              <caret line="18" column="24" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -116,8 +113,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/persistence/UserDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="75" column="24" lean-forward="true" selection-start-line="75" selection-start-column="24" selection-end-line="75" selection-end-column="24" />
+            <state relative-caret-position="345">
+              <caret line="74" column="8" selection-start-line="74" selection-start-column="8" selection-end-line="74" selection-end-column="61" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -128,17 +125,23 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/persistence/UserDaoTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="529">
-              <caret line="51" column="47" lean-forward="true" selection-start-line="51" selection-start-column="47" selection-end-line="51" selection-end-column="47" />
+            <state relative-caret-position="330">
+              <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/cleandb2.sql">
+        <entry file="file://$PROJECT_DIR$/src/test/java/utility/CleanTestDB.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="115" lean-forward="true" selection-start-line="1" selection-start-column="115" selection-end-line="1" selection-end-column="115" />
+            <state relative-caret-position="225">
+              <caret line="15" column="55" lean-forward="true" selection-start-line="15" selection-start-column="55" selection-end-line="15" selection-end-column="55" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -178,12 +181,14 @@
         <option value="$PROJECT_DIR$/src/main/java/controller/SearchUsers.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/utility/Database.java" />
         <option value="$PROJECT_DIR$/src/test/resources/cleandb.sql" />
         <option value="$PROJECT_DIR$/src/test/resources/database.properties" />
         <option value="$PROJECT_DIR$/src/main/java/entity/User.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/cleandb2.sql" />
         <option value="$PROJECT_DIR$/src/main/java/persistence/UserDao.java" />
+        <option value="$PROJECT_DIR$/src/test/java/utility/Database.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/cleandb2.sql" />
+        <option value="$PROJECT_DIR$/src/test/java/utility/CleanTestDB.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/hibernate.cfg.xml" />
         <option value="$PROJECT_DIR$/src/test/java/persistence/UserDaoTest.java" />
       </list>
     </option>
@@ -202,7 +207,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="77" />
     <option name="y" value="27" />
     <option name="width" value="1833" />
@@ -214,7 +219,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -281,6 +285,14 @@
               <item name="motorcyclemeetup" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="utility" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="motorcyclemeetup" type="b2602c69:ProjectViewProjectNode" />
+              <item name="motorcyclemeetup" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -288,6 +300,7 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -298,7 +311,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551071585933" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551147869696" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="database.console.LAST_STATE" value="true" />
@@ -335,8 +348,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.UserDaoTest.saveOrUpdate">
-    <configuration name="UserDaoTest.delete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.UserDaoTest">
+    <configuration name="UserDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="motorcyclemeetup" />
       <extension name="coverage">
         <pattern>
@@ -346,8 +359,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="persistence" />
       <option name="MAIN_CLASS_NAME" value="persistence.UserDaoTest" />
-      <option name="METHOD_NAME" value="delete" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -562,21 +574,21 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.UserDaoTest.getUsersByUsername" />
+      <item itemvalue="JUnit.UserDaoTest.saveOrUpdate" />
       <item itemvalue="TomEE Server.MM" />
       <item itemvalue="TomEE Server.MM2" />
+      <item itemvalue="JUnit.UserDaoTest" />
       <item itemvalue="JUnit.UserDaoTest.getAllUsers" />
-      <item itemvalue="JUnit.UserDaoTest.getUsersByUsername" />
       <item itemvalue="JUnit.UserDaoTest.insert" />
-      <item itemvalue="JUnit.UserDaoTest.delete" />
-      <item itemvalue="JUnit.UserDaoTest.saveOrUpdate" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UserDaoTest.saveOrUpdate" />
-        <item itemvalue="JUnit.UserDaoTest.delete" />
+        <item itemvalue="JUnit.UserDaoTest" />
         <item itemvalue="JUnit.UserDaoTest.insert" />
-        <item itemvalue="JUnit.UserDaoTest.getUsersByUsername" />
         <item itemvalue="JUnit.UserDaoTest.getAllUsers" />
+        <item itemvalue="JUnit.UserDaoTest.getUsersByUsername" />
+        <item itemvalue="JUnit.UserDaoTest.saveOrUpdate" />
       </list>
     </recent_temporary>
   </component>
@@ -596,7 +608,8 @@
       <workItem from="1550534750685" duration="1062000" />
       <workItem from="1551027679037" duration="10910000" />
       <workItem from="1551054495913" duration="3826000" />
-      <workItem from="1551064938645" duration="5016000" />
+      <workItem from="1551064938645" duration="5097000" />
+      <workItem from="1551136361107" duration="7292000" />
     </task>
     <task id="LOCAL-00001" summary="Updated project files to compile. Added a TomEE deploy config.">
       <created>1549826212420</created>
@@ -616,39 +629,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="UserDaoTest_getUsersByUsername - 2019.02.24 at 22h 51m 59s.xml">
-      <configuration name="UserDaoTest.getUsersByUsername" configurationId="JUnit" />
+    <history-entry file="UserDaoTest_getAllUsers - 2019.02.25 at 19h 55m 10s.xml">
+      <configuration name="UserDaoTest.getAllUsers" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserDaoTest_getUsersByUsername - 2019.02.24 at 22h 52m 08s.xml">
-      <configuration name="UserDaoTest.getUsersByUsername" configurationId="JUnit" />
+    <history-entry file="UserDaoTest_getAllUsers - 2019.02.25 at 19h 55m 47s.xml">
+      <configuration name="UserDaoTest.getAllUsers" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserDaoTest_getUsersByUsername - 2019.02.24 at 22h 58m 59s.xml">
-      <configuration name="UserDaoTest.getUsersByUsername" configurationId="JUnit" />
+    <history-entry file="UserDaoTest_getAllUsers - 2019.02.25 at 19h 55m 56s.xml">
+      <configuration name="UserDaoTest.getAllUsers" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserDaoTest_insert - 2019.02.24 at 22h 59m 06s.xml">
+    <history-entry file="UserDaoTest - 2019.02.25 at 19h 56m 24s.xml">
+      <configuration name="UserDaoTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserDaoTest_getAllUsers - 2019.02.25 at 19h 56m 52s.xml">
+      <configuration name="UserDaoTest.getAllUsers" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserDaoTest_insert - 2019.02.25 at 19h 57m 32s.xml">
       <configuration name="UserDaoTest.insert" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserDaoTest_delete - 2019.02.24 at 22h 59m 16s.xml">
-      <configuration name="UserDaoTest.delete" configurationId="JUnit" />
+    <history-entry file="UserDaoTest - 2019.02.25 at 20h 18m 51s.xml">
+      <configuration name="UserDaoTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserDaoTest_saveOrUpdate - 2019.02.24 at 23h 02m 32s.xml">
-      <configuration name="UserDaoTest.saveOrUpdate" configurationId="JUnit" />
+    <history-entry file="UserDaoTest_insert - 2019.02.25 at 20h 19m 28s.xml">
+      <configuration name="UserDaoTest.insert" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserDaoTest_saveOrUpdate - 2019.02.24 at 23h 05m 38s.xml">
-      <configuration name="UserDaoTest.saveOrUpdate" configurationId="JUnit" />
+    <history-entry file="UserDaoTest - 2019.02.25 at 20h 22m 12s.xml">
+      <configuration name="UserDaoTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserDaoTest_saveOrUpdate - 2019.02.24 at 23h 07m 10s.xml">
-      <configuration name="UserDaoTest.saveOrUpdate" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserDaoTest_saveOrUpdate - 2019.02.24 at 23h 08m 10s.xml">
-      <configuration name="UserDaoTest.saveOrUpdate" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserDaoTest_saveOrUpdate - 2019.02.24 at 23h 09m 04s.xml">
-      <configuration name="UserDaoTest.saveOrUpdate" configurationId="JUnit" />
+    <history-entry file="UserDaoTest - 2019.02.25 at 20h 22m 46s.xml">
+      <configuration name="UserDaoTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30251000" />
+    <option name="totallyTimeSpent" value="37624000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -661,8 +674,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17044826" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17210847" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -673,17 +687,17 @@
       <window_info id="Persistence" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32829374" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32829374" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39956802" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32937366" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.33045357" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32937366" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32937366" />
-      <window_info anchor="bottom" id="Java Enterprise" order="11" />
-      <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.32937366" />
+      <window_info anchor="bottom" id="Database Changes" order="12" weight="0.32937366" />
       <window_info anchor="bottom" id="Version Control" order="13" weight="0.32937366" />
       <window_info anchor="bottom" id="Application Servers" order="14" weight="0.32937366" />
       <window_info active="true" anchor="bottom" id="Database Console" order="15" visible="true" weight="0.32937366" />
@@ -694,7 +708,7 @@
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="JSF" order="6" />
-      <window_info active="true" anchor="right" id="Database" order="7" visible="true" weight="0.32982844" />
+      <window_info anchor="right" id="Database" order="7" weight="0.32982844" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Theme Preview" order="9" />
       <window_info anchor="right" id="CDI" order="10" />
@@ -779,13 +793,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/714910e9-6a99-4fa9-806b-e2f62d877ac0/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -797,23 +804,6 @@
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/c8652ba9-2556-4692-8995-6976e63bdc40/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="501">
-          <caret line="95" column="31" selection-start-line="95" selection-start-column="31" selection-end-line="95" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/persistence/SessionFactoryProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="23" column="38" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/cleandb.sql">
       <provider selected="true" editor-type-id="text-editor">
@@ -829,13 +819,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/database.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="9" lean-forward="true" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -843,24 +826,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/utility/Database.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/entity/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="91" column="40" lean-forward="true" selection-start-line="91" selection-start-column="40" selection-end-line="91" selection-end-column="40" />
+        <state relative-caret-position="210">
+          <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1474#1475#0" expanded="true" />
-            <element signature="e#1505#1506#0" expanded="true" />
-            <element signature="e#1546#1547#0" expanded="true" />
-            <element signature="e#1579#1580#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/entity/User.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/persistence/SessionFactoryProvider.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+        <state relative-caret-position="285">
+          <caret line="23" column="38" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/database.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="9" lean-forward="true" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/SearchUsers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="24" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -869,15 +872,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/cleandb2.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="115" lean-forward="true" selection-start-line="1" selection-start-column="115" selection-end-line="1" selection-end-column="115" />
+        <state relative-caret-position="45">
+          <caret line="3" column="119" lean-forward="true" selection-start-line="3" selection-start-column="119" selection-end-line="3" selection-end-column="119" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/SearchUsers.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/utility/Database.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="1" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
+        <state relative-caret-position="705">
+          <caret line="47" column="9" lean-forward="true" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -891,27 +894,54 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-commons/1.0.0/junit-platform-commons-1.0.0.jar!/org/junit/platform/commons/util/ReflectionUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="599" selection-start-line="599" selection-end-line="599" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-106">
+          <caret line="84" lean-forward="true" selection-start-line="84" selection-end-line="84" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/persistence/UserDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="75" column="24" lean-forward="true" selection-start-line="75" selection-start-column="24" selection-end-line="75" selection-end-column="24" />
+        <state relative-caret-position="345">
+          <caret line="74" column="8" selection-start-line="74" selection-start-column="8" selection-end-line="74" selection-end-column="61" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-commons/1.0.0/junit-platform-commons-1.0.0.jar!/org/junit/platform/commons/util/ReflectionUtils.class">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/hibernate.cfg.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="175" selection-start-line="175" selection-end-line="175" />
+        <state relative-caret-position="240">
+          <caret line="16" column="72" selection-start-line="16" selection-start-column="72" selection-end-line="16" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/utility/CleanTestDB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="55" lean-forward="true" selection-start-line="15" selection-start-column="55" selection-end-line="15" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/persistence/UserDaoTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="51" column="47" lean-forward="true" selection-start-line="51" selection-start-column="47" selection-end-line="51" selection-end-column="47" />
+        <state relative-caret-position="330">
+          <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
