@@ -18,7 +18,9 @@
 * Learn more about VUE.js
 
 ## Week 6
+* MUST implement DB
 * Start implementing Jax-RS for API (prep for Vue)
+* Continue to work on CSS for remaining pages etc
 
 ## Week 7
 
