@@ -9,14 +9,19 @@
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Reem+Kufi|Roboto" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/normalize.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/styles.css">
+
+
+    <script src="/js/core.js"></script>
 </head>
 <body>
     
-    <div id="nav">
+    <nav id="nav">
         <div id="leftNav">
-            <h1>MM</h1>
+            <a href="/">
+                <h1>MM</h1>
+            </a>
         </div>
         <div id="rightNav">
             <ul>
@@ -24,17 +29,24 @@
                     <input id="navSearchBar" type="text" name="search" placeholder="Search" />
                 </li>
                 <li>
-                    <a href="/myrides" class="transitionMedium">My Rides</a>
+                    <a href="/myrides" class="navLink transitionMedium">My Rides</a>
                 </li>
                 <li>
                     <div id="accountImageMini"></div>
                 </li>
                 <li>
-                    <i class="fas fa-angle-down" id="profileOptionsArrow" class="transitionMedium"></i>
+                    <i class="fas fa-angle-down transitionMedium" id="optionsArrow"></i>
+                    <div id="optionsMenu" class="transitionFast">
+                        <ul>
+                            <li><a href="">Test</a></li>
+                            <li><a href="">Test</a></li>
+                            <li><a href="">Test</a></li>
+                        </ul>
+                    </div>
                 </li>
             </ul>
         </div>
-    </div>
+    </nav>
 
     <div class="container">
         <div class="row">

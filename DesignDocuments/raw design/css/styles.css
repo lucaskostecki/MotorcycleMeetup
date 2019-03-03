@@ -65,6 +65,10 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Reem Kufi', sans-serif;
 }
 
+.transitionFast {
+    transition: .2s;
+}
+
 .transitionMedium {
     transition: .35s;
 }
@@ -86,7 +90,7 @@ h1, h2, h3, h4, h5, h6 {
     background: #fff;
 }
 
-#nav ul li a {
+.navLink {
     color: #070707;
     text-decoration: none;
     font-weight: bold;
@@ -94,7 +98,7 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 5px;
 }
 
-#nav ul li a:hover {
+.navLink:hover {
     background: #404040;
     color: #fff;
     font-weight: 100;
@@ -156,10 +160,54 @@ h1, h2, h3, h4, h5, h6 {
     border-bottom-color: #070707;
 }
 
-#profileOptionsArrow {
-    cursor: pointer;
-    font-size: 1.6em;
-}
+    /************NAV MINI MENU************/
+    #optionsArrow {
+        cursor: pointer;
+        font-size: 1.6em;
+    }
+
+    .menuArrowRotate {
+        transform: rotate(180deg);
+    }
+
+    #optionsMenu {
+        width: 150px;
+        border-radius: 5px;
+        background: #070707;
+        position: absolute;
+        right: 10px;
+        margin-top: 25px;
+        transform: scale(.8);
+        opacity: 0;
+        padding: 5px 0;
+    }
+
+    #optionsMenu ul {
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+
+    #optionsMenu ul li {
+        color: #fff;
+        display: block;
+    }
+
+    #optionsMenu ul li:hover {
+        background: #404040;
+    }
+
+    #optionsMenu ul li a {
+        color: #fff;
+        text-decoration: none;
+        display: block;
+    }
+
+    .optionsMenuShow {
+        opacity: 1 !important;
+        transform: scale(1) !important;
+    }
+    /************END NAV MINI MENU************/
 /************END NAV************/
 
 /************ANIMATIONS************/
