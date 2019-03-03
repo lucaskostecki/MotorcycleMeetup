@@ -51,7 +51,7 @@
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: #555;
+    background: #070707;
 }
 /************END SCROLLBAR************/
 
@@ -65,6 +65,17 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Reem Kufi', sans-serif;
 }
 
+.transitionMedium {
+    transition: .35s;
+}
+
+.buttonRipple {
+    background: #922d50;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    border-radius: 100%;
+}
 /************END GLOBAL************/
 
 /************NAV************/
@@ -75,14 +86,18 @@ h1, h2, h3, h4, h5, h6 {
     background: #fff;
 }
 
-#nav a {
-    color: #000;
+#nav ul li a {
+    color: #070707;
     text-decoration: none;
     font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 5px;
 }
 
-#nav a:hover {
-
+#nav ul li a:hover {
+    background: #404040;
+    color: #fff;
+    font-weight: 100;
 }
 
 #leftNav {
@@ -133,8 +148,12 @@ h1, h2, h3, h4, h5, h6 {
     border-bottom: 1px solid #7d8288;
 }
 
+#navSearchBar:hover {
+    border-bottom: 2px solid #070707;
+}
+
 #navSearchBar:focus {
-    border-bottom-color: #000;
+    border-bottom-color: #070707;
 }
 
 #profileOptionsArrow {
@@ -142,3 +161,22 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.6em;
 }
 /************END NAV************/
+
+/************ANIMATIONS************/
+@keyframes buttonRipple {
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    10%{
+        opacity: .8;
+    }
+    80%{
+        transform: scale(1);
+        opacity: .8;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+/************END ANIMATIONS************/
