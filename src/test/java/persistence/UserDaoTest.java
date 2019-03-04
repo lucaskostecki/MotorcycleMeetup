@@ -59,7 +59,7 @@ class UserDaoTest {
     @Test
     void insert() {
         User user = new User(9, "testing1", "lucas.kostecki@gmail.com", "6085167408", "Lucas", "Kostecki");
-        int id = udao.insert(user);
+        int id = gdao.insert(user);
         assertNotEquals(0, id);
         List<User> insertedUser = udao.getUsersByUsername("testing1");
         assertEquals("testing1", insertedUser.get(0).getUsername());
@@ -73,7 +73,7 @@ class UserDaoTest {
 
         newUser.addRoute(route);
 
-        int id = udao.insert(newUser);
+        int id = gdao.insert(newUser);
         assertNotEquals(0, id);
         List<User> insertedUser = udao.getUsersByUsername("testing2");
         assertEquals("testing2", insertedUser.get(0).getUsername());

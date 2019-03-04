@@ -1,5 +1,7 @@
 package controller;
 
+import entity.User;
+import persistence.GenericDao;
 import persistence.UserDao;
 
 import javax.servlet.RequestDispatcher;
@@ -17,12 +19,13 @@ import java.io.IOException;
 public class SearchUsers extends HttpServlet {
 
     protected void doGet (HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
-        UserDao userDao = new UserDao();
+        GenericDao dao = new GenericDao(User.class);
+        UserDao udao = new UserDao();
 
         if (req.getParameter("submit").equals("search")) {
-            req.setAttribute("users", userDao.getUsersByUsername(req.getParameter("search")));
+            req.setAttribute("users", udao.getUsersByUsername(req.getParameter("search")));
         } else {
-            req.setAttribute("users", userDao.getAllUsers());
+            req.setAttribute("users", dao.getAll());
         }
 
         RequestDispatcher dispatcher = req.getRequestDispatcher("/results.jsp");
