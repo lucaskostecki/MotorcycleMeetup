@@ -7,21 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a363bf17-ce96-4b1b-b113-1512fb20075c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/entity/Route.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/persistence/RouteDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/log4j2.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c8652ba9-2556-4692-8995-6976e63bdc40.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c8652ba9-2556-4692-8995-6976e63bdc40.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/persistence/GenericDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j2.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j2.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/persistence/RouteDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/persistence/RouteDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/persistence/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/persistence/UserDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/persistence/UserDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/persistence/UserDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utility/CleanTestDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utility/CleanTestDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utility/Database.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/cleandb.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/cleandb2.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/database.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/database.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/hibernate.cfg.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -40,7 +30,7 @@
     </SUITE>
   </component>
   <component name="DarkyenusTimeTracker">
-    <option name="totalTimeSeconds" value="32386" />
+    <option name="totalTimeSeconds" value="34415" />
     <option name="gitIntegration" value="true" />
   </component>
   <component name="DatabaseView">
@@ -109,8 +99,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/persistence/UserDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="960">
-              <caret line="64" column="20" lean-forward="true" selection-start-line="64" selection-start-column="20" selection-end-line="64" selection-end-column="20" />
+            <state relative-caret-position="210">
+              <caret line="20" column="27" lean-forward="true" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -121,8 +111,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/entity/Route.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
+            <state relative-caret-position="315">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#902#903#0" expanded="true" />
@@ -138,7 +128,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/persistence/RouteDao.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
-              <caret line="82" column="55" selection-start-line="82" selection-start-column="55" selection-end-line="82" selection-end-column="55" />
+              <caret line="25" column="79" selection-start-line="25" selection-start-column="79" selection-end-line="25" selection-end-column="79" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -147,10 +137,26 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/persistence/GenericDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="68" column="64" lean-forward="true" selection-start-line="68" selection-start-column="64" selection-end-line="68" selection-end-column="64" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#288#289#0" expanded="true" />
+                <element signature="e#311#312#0" expanded="true" />
+                <element signature="e#583#584#0" expanded="true" />
+                <element signature="e#662#663#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/persistence/UserDaoTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
-              <caret line="61" column="66" selection-start-line="61" selection-start-column="66" selection-end-line="61" selection-end-column="66" />
+            <state relative-caret-position="136">
+              <caret line="32" column="24" lean-forward="true" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -173,9 +179,11 @@
       <find>junit</find>
       <find>log</find>
       <find>Order</find>
+      <find>gudao</find>
     </findStrings>
     <replaceStrings>
       <replace>Route</replace>
+      <replace>gdao</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -196,14 +204,12 @@
         <option value="$PROJECT_DIR$/src/main/java/controller/SearchUsers.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/resources/cleandb.sql" />
-        <option value="$PROJECT_DIR$/src/main/java/persistence/UserDao.java" />
         <option value="$PROJECT_DIR$/src/test/java/utility/Database.java" />
         <option value="$PROJECT_DIR$/src/test/resources/cleandb2.sql" />
         <option value="$PROJECT_DIR$/src/test/resources/database.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
         <option value="$PROJECT_DIR$/src/test/resources/hibernate.cfg.xml" />
         <option value="$PROJECT_DIR$/src/main/java/persistence/OrderDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/persistence/RouteDao.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/d428e2a3-ce91-4c52-ab27-82e64fbf774f/console.sql" />
         <option value="$PROJECT_DIR$/src/test/resources/log4j2.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/log4j2.properties" />
@@ -211,6 +217,9 @@
         <option value="$PROJECT_DIR$/src/main/java/entity/Route.java" />
         <option value="$PROJECT_DIR$/src/test/java/utility/CleanTestDB.java" />
         <option value="$PROJECT_DIR$/src/test/java/persistence/UserDaoTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/persistence/GenericDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/persistence/UserDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/persistence/RouteDao.java" />
       </list>
     </option>
   </component>
@@ -340,7 +349,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551657635784" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551659912468" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="database.console.LAST_STATE" value="false" />
@@ -381,7 +390,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.UserDaoTest">
+  <component name="RunManager" selected="JUnit.UserDaoTest.saveOrUpdate">
     <configuration name="UserDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="motorcyclemeetup" />
       <extension name="coverage">
@@ -429,22 +438,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserDaoTest.insert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="motorcyclemeetup" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="persistence.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="persistence" />
-      <option name="MAIN_CLASS_NAME" value="persistence.UserDaoTest" />
-      <option name="METHOD_NAME" value="insert" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="UserDaoTest.insertWithOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="motorcyclemeetup" />
       <extension name="coverage">
@@ -456,6 +449,22 @@
       <option name="PACKAGE_NAME" value="persistence" />
       <option name="MAIN_CLASS_NAME" value="persistence.UserDaoTest" />
       <option name="METHOD_NAME" value="insertWithOrder" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserDaoTest.saveOrUpdate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="motorcyclemeetup" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="persistence.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="persistence" />
+      <option name="MAIN_CLASS_NAME" value="persistence.UserDaoTest" />
+      <option name="METHOD_NAME" value="saveOrUpdate" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -609,19 +618,19 @@
     <list>
       <item itemvalue="JUnit.UserDaoTest" />
       <item itemvalue="JUnit.UserDaoTest.getAllUsers" />
-      <item itemvalue="JUnit.UserDaoTest.insert" />
       <item itemvalue="TomEE Server.MM" />
       <item itemvalue="TomEE Server.MM2" />
       <item itemvalue="JUnit.UserDaoTest.insertWithOrder" />
       <item itemvalue="JUnit.UserDaoTest.delete" />
+      <item itemvalue="JUnit.UserDaoTest.saveOrUpdate" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UserDaoTest" />
+        <item itemvalue="JUnit.UserDaoTest.saveOrUpdate" />
         <item itemvalue="JUnit.UserDaoTest.getAllUsers" />
+        <item itemvalue="JUnit.UserDaoTest" />
         <item itemvalue="JUnit.UserDaoTest.delete" />
         <item itemvalue="JUnit.UserDaoTest.insertWithOrder" />
-        <item itemvalue="JUnit.UserDaoTest.insert" />
       </list>
     </recent_temporary>
   </component>
@@ -645,7 +654,7 @@
       <workItem from="1551136361107" duration="7499000" />
       <workItem from="1551148125728" duration="90000" />
       <workItem from="1551148372603" duration="868000" />
-      <workItem from="1551648640001" duration="8227000" />
+      <workItem from="1551648640001" duration="10498000" />
     </task>
     <task id="LOCAL-00001" summary="Updated project files to compile. Added a TomEE deploy config.">
       <created>1549826212420</created>
@@ -665,24 +674,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="UserDaoTest - 2019.03.03 at 17h 44m 55s.xml">
-      <configuration name="UserDaoTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserDaoTest - 2019.03.03 at 17h 45m 33s.xml">
-      <configuration name="UserDaoTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserDaoTest - 2019.03.03 at 17h 46m 49s.xml">
-      <configuration name="UserDaoTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserDaoTest_getAllUsers - 2019.03.03 at 17h 52m 35s.xml">
-      <configuration name="UserDaoTest.getAllUsers" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserDaoTest_getAllUsers - 2019.03.03 at 17h 53m 02s.xml">
-      <configuration name="UserDaoTest.getAllUsers" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserDaoTest_getAllUsers - 2019.03.03 at 17h 53m 27s.xml">
-      <configuration name="UserDaoTest.getAllUsers" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="UserDaoTest_getAllUsers - 2019.03.03 at 17h 54m 16s.xml">
       <configuration name="UserDaoTest.getAllUsers" configurationId="JUnit" />
     </history-entry>
@@ -695,9 +686,27 @@
     <history-entry file="UserDaoTest - 2019.03.03 at 17h 58m 58s.xml">
       <configuration name="UserDaoTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="UserDaoTest - 2019.03.03 at 18h 00m 46s.xml">
+      <configuration name="UserDaoTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserDaoTest_getAllUsers - 2019.03.03 at 18h 28m 09s.xml">
+      <configuration name="UserDaoTest.getAllUsers" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserDaoTest_getAllUsers - 2019.03.03 at 18h 31m 10s.xml">
+      <configuration name="UserDaoTest.getAllUsers" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserDaoTest_getAllUsers - 2019.03.03 at 18h 31m 41s.xml">
+      <configuration name="UserDaoTest.getAllUsers" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserDaoTest_getAllUsers - 2019.03.03 at 18h 32m 10s.xml">
+      <configuration name="UserDaoTest.getAllUsers" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserDaoTest_saveOrUpdate - 2019.03.03 at 18h 34m 41s.xml">
+      <configuration name="UserDaoTest.saveOrUpdate" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47016000" />
+    <option name="totallyTimeSpent" value="49287000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -970,16 +979,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/persistence/RouteDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="82" column="55" selection-start-line="82" selection-start-column="55" selection-end-line="82" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-commons/1.0.0/junit-platform-commons-1.0.0.jar!/org/junit/platform/commons/util/ReflectionUtils.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
@@ -1005,16 +1004,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="25" column="36" lean-forward="true" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/persistence/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="960">
-          <caret line="64" column="20" lean-forward="true" selection-start-line="64" selection-start-column="20" selection-end-line="64" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1055,20 +1044,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/entity/Route.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#902#903#0" expanded="true" />
-            <element signature="e#932#933#0" expanded="true" />
-            <element signature="e#975#976#0" expanded="true" />
-            <element signature="e#1013#1014#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/utility/CleanTestDB.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
@@ -1081,10 +1056,58 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/persistence/UserDaoTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="61" column="66" selection-start-line="61" selection-start-column="66" selection-end-line="61" selection-end-column="66" />
+        <state relative-caret-position="136">
+          <caret line="32" column="24" lean-forward="true" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/persistence/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="20" column="27" lean-forward="true" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/entity/Route.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#902#903#0" expanded="true" />
+            <element signature="e#932#933#0" expanded="true" />
+            <element signature="e#975#976#0" expanded="true" />
+            <element signature="e#1013#1014#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/persistence/RouteDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="25" column="79" selection-start-line="25" selection-start-column="79" selection-end-line="25" selection-end-column="79" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/persistence/GenericDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="68" column="64" lean-forward="true" selection-start-line="68" selection-start-column="64" selection-end-line="68" selection-end-column="64" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#288#289#0" expanded="true" />
+            <element signature="e#311#312#0" expanded="true" />
+            <element signature="e#583#584#0" expanded="true" />
+            <element signature="e#662#663#0" expanded="true" />
           </folding>
         </state>
       </provider>

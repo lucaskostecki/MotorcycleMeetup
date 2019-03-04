@@ -12,14 +12,16 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class UserDaoTest {
 
-    UserDao dao;
+    UserDao udao;
+    GenericDao gdao;
 
     /**
-     * Create the Dao
+     * Create the Udao
      */
     @BeforeEach
     void setUp() {
-        dao = new UserDao();
+        udao = new UserDao();
+        gdao = new GenericDao(User.class);
         CleanTestDB cleandb = new CleanTestDB();
         cleandb.cleanDB();
     }
@@ -29,7 +31,7 @@ class UserDaoTest {
      */
     @Test
     void getAllUsers() {
-        List<User> users = dao.getAllUsers();
+        List<User> users = gdao.getAll();
 
         assertEquals(1, users.size());
     }
@@ -39,7 +41,7 @@ class UserDaoTest {
      */
     @Test
     void getUsersByUsername() {
-        List<User> users = dao.getUsersByUsername("testing");
+        List<User> users = udao.getUsersByUsername("testing");
 
         assertEquals(1, users.size());
     }
@@ -47,19 +49,19 @@ class UserDaoTest {
     @Test
     void saveOrUpdate() {
         String newUsername = "new username";
-        User updateUser = dao.getUserByID(1);
+        User updateUser = (User)gdao.getById(1);
         updateUser.setUsername(newUsername);
-        dao.saveOrUpdate(updateUser);
-        User returnedUser = dao.getUserByID(1);
+        gdao.saveOrUpdate(updateUser);
+        User returnedUser = (User)gdao.getById(1);
         assertEquals(newUsername, returnedUser.getUsername());
     }
 
     @Test
     void insert() {
         User user = new User(9, "testing1", "lucas.kostecki@gmail.com", "6085167408", "Lucas", "Kostecki");
-        int id = dao.insert(user);
+        int id = udao.insert(user);
         assertNotEquals(0, id);
-        List<User> insertedUser = dao.getUsersByUsername("testing1");
+        List<User> insertedUser = udao.getUsersByUsername("testing1");
         assertEquals("testing1", insertedUser.get(0).getUsername());
     }
 
@@ -71,16 +73,16 @@ class UserDaoTest {
 
         newUser.addRoute(route);
 
-        int id = dao.insert(newUser);
+        int id = udao.insert(newUser);
         assertNotEquals(0, id);
-        List<User> insertedUser = dao.getUsersByUsername("testing2");
+        List<User> insertedUser = udao.getUsersByUsername("testing2");
         assertEquals("testing2", insertedUser.get(0).getUsername());
         assertEquals(1, insertedUser.get(0).getRoutes().size());
     }
 
     @Test
     void delete() {
-        dao.delete(dao.getUserByID(1));
-        assertNull(dao.getUserByID(1));
+        gdao.delete(gdao.getById(1));
+        assertNull(gdao.getById(1));
     }
 }
