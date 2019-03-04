@@ -25,9 +25,16 @@ public class CleanTestDB {
 
         // Create an SQL query to truncate the table. This way the ID's start at one while
         // removing all of the data in the table.
+        session.createNativeQuery("SET FOREIGN_KEY_CHECKS  = 0").executeUpdate();
         session.createNativeQuery("TRUNCATE MotorcycleMeetupTest.Users").executeUpdate();
+        session.createNativeQuery("TRUNCATE MotorcycleMeetupTest.Routes").executeUpdate();
+
         // Insert some default data to work with for each JUnit test
-        session.createNativeQuery("INSERT INTO MotorcycleMeetupTest.Users VALUES(null, 9, 'testing', null,'lucas.kostecki@gmail.com','6085167407','Lucas','Kostecki')").executeUpdate();
+        session.createNativeQuery("INSERT INTO MotorcycleMeetupTest.Users VALUES(null, 9, 'testingye', null,'lucas.kostecki@gmail.com','6085167407','Lucas','Kostecki')").executeUpdate();
+        session.createNativeQuery("INSERT INTO MotorcycleMeetupTest.Routes VALUES(null, 1, 'Some description')").executeUpdate();
+
+        session.createNativeQuery("SET FOREIGN_KEY_CHECKS  = 1").executeUpdate();
+
         transaction.commit();
         session.close();
     }
