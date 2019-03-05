@@ -66,7 +66,7 @@ class UserDaoTest {
     }
 
     @Test
-    void insertWithOrder() {
+    void insertWithRoute() {
         User newUser = new User(9, "testing2", "lekostecki@madisoncollege.edu", "5511553322", "Not", "Kostecki");
         String routeDescription = "Route 1";
         Route route = new Route(routeDescription, newUser);
