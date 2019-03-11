@@ -87,6 +87,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     height: 75px;
     position: fixed;
+    top: 0;
     background: #fff;
 }
 
@@ -213,6 +214,20 @@ h1, h2, h3, h4, h5, h6 {
     }
     /************END NAV MINI MENU************/
 /************END NAV************/
+
+/************HOME************/
+#hero {
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    background-image: url(/resources/images/homepage/hero1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 60%;
+}
+/************END HOME************/
 
 /************ANIMATIONS************/
 @keyframes buttonRipple {
