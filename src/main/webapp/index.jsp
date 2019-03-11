@@ -9,11 +9,11 @@
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Reem+Kufi|Roboto" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" media="screen" href="/mm/css/normalize.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="/mm/css/styles.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="/motorcyclemeetup/css/normalize.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="/motorcyclemeetup/css/styles.css">
 
 
-    <script src="/mm/js/core.js"></script>
+    <script src="/motorcyclemeetup/js/core.js"></script>
 </head>
 <body>
 
