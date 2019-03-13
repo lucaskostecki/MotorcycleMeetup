@@ -7,17 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a363bf17-ce96-4b1b-b113-1512fb20075c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/searchresults.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/mm.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c8652ba9-2556-4692-8995-6976e63bdc40.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c8652ba9-2556-4692-8995-6976e63bdc40.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/Search.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/SearchController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/SearchUsers.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Route.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Route.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/persistence/GenericDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/persistence/GenericDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/core.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/core.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/persistence/UserDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/persistence/UserDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/SearchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/SearchController.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -36,7 +26,7 @@
     </SUITE>
   </component>
   <component name="DarkyenusTimeTracker">
-    <option name="totalTimeSeconds" value="47534" />
+    <option name="totalTimeSeconds" value="47942" />
     <option name="gitIntegration" value="true" />
   </component>
   <component name="DatabaseView">
@@ -97,8 +87,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/controller/SearchController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="30" column="81" lean-forward="true" selection-start-line="30" selection-start-column="81" selection-end-line="30" selection-end-column="81" />
+            <state relative-caret-position="435">
+              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -326,7 +316,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552447656550" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552448467106" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="database.console.LAST_STATE" value="false" />
@@ -638,7 +628,7 @@
       <workItem from="1552256717732" duration="2361000" />
       <workItem from="1552270223045" duration="1682000" />
       <workItem from="1552271914534" duration="1968000" />
-      <workItem from="1552430188479" duration="10703000" />
+      <workItem from="1552430188479" duration="11413000" />
     </task>
     <task id="LOCAL-00001" summary="Updated project files to compile. Added a TomEE deploy config.">
       <created>1549826212420</created>
@@ -690,7 +680,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71659000" />
+    <option name="totallyTimeSpent" value="72369000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -716,12 +706,12 @@
       <window_info id="Persistence" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32937366" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32829374" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32829374" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39956802" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32937366" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3261339" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3261339" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32937366" />
@@ -1127,8 +1117,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controller/SearchController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="30" column="81" lean-forward="true" selection-start-line="30" selection-start-column="81" selection-end-line="30" selection-end-column="81" />
+        <state relative-caret-position="435">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

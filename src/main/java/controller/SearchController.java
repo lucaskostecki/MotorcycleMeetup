@@ -27,8 +27,6 @@ public class SearchController extends HttpServlet {
         if (search != null) {
             dao = new GenericDao(User.class);
             req.setAttribute("users", dao.getByPropertyLike("username", search));
-            req.setAttribute("users", dao.getByPropertyLike("firstName", search));
-            req.setAttribute("users", dao.getByPropertyLike("lastName", search));
 
             dao = new GenericDao(Route.class);
             req.setAttribute("routes", dao.getByPropertyLike("title", search));
