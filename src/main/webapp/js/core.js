@@ -1,10 +1,19 @@
 const init = () => {
     let optionsArrow = document.querySelector("#optionsArrow");
     let optionsMenu = document.querySelector("#optionsMenu");
+    let navSearch = document.querySelector("#navSearchBar");
 
     optionsArrow.addEventListener("click", function() {
         optionsArrow.classList.toggle("menuArrowRotate");
         optionsMenu.classList.toggle("optionsMenuShow");
+    });
+
+    navSearch.addEventListener("keyup", function(e) {
+        if (e.keyCode == 13) {
+            e.preventDefault();
+            window.location.href = `/motorcyclemeetup/search?q=${navSearch.value}`;
+        }
+
     });
 }
 

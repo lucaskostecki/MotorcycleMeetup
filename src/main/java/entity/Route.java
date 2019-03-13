@@ -17,6 +17,9 @@ public class Route {
     @GenericGenerator(name="native",strategy="native")
     private int routeID;
 
+    @Column(name="Title")
+    private String title;
+
     @Column(name="Description")
     private String description;
 
@@ -33,12 +36,32 @@ public class Route {
     /**
      * Instantiates a new Route.
      *
+     * @param title       the title
      * @param description the description of the route
      * @param user        the user to be tied with the route
      */
-    public Route(String description, User user) {
+    public Route(String title, String description, User user) {
+        this.title = title;
         this.description = description;
         this.user = user;
+    }
+
+    /**
+     * Gets title.
+     *
+     * @return the title
+     */
+    public String getTitle() {
+        return title;
+    }
+
+    /**
+     * Sets title.
+     *
+     * @param title the title
+     */
+    public void setTitle(String title) {
+        this.title = title;
     }
 
     /**

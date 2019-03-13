@@ -8,6 +8,7 @@ import org.hibernate.Transaction;
 
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
+import javax.persistence.criteria.Expression;
 import javax.persistence.criteria.Root;
 import java.util.List;
 
@@ -40,6 +41,7 @@ public class GenericDao<Type> {
     public <Type>Type getById(int id) {
         Session session = getSession();
         Type entity = (Type)session.get(type, id);
+
         session.close();
         return entity;
     }
@@ -107,6 +109,22 @@ public class GenericDao<Type> {
 
         transaction.commit();
         session.close();
+    }
+
+    public List<Type> getByPropertyLike(String property, String search) {
+        Session session = getSession();
+
+        CriteriaBuilder builder = session.getCriteriaBuilder();
+        CriteriaQuery<Type> query = builder.createQuery(type);
+        Root<Type> root = query.from(type);
+        Expression<String> propertyPath = root.get(property);
+
+        query.where(builder.like(propertyPath, "%" + search + "%"));
+
+        List<Type> list = session.createQuery(query).getResultList();
+        session.close();
+
+        return list;
     }
 
     /**

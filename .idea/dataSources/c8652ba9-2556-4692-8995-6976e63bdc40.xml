@@ -933,22 +933,28 @@
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="235" parent="231" name="Description">
+    <column id="235" parent="231" name="Title">
       <Position>3</Position>
+      <DataType>varchar(80)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="236" parent="231" name="Description">
+      <Position>4</Position>
       <DataType>text|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="236" parent="231" name="Routes_Users_UserID_fk">
+    <index id="237" parent="231" name="Routes_Users_UserID_fk">
       <ColNames>UserID</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="237" parent="231" name="PRIMARY">
+    <key id="238" parent="231" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>RouteID</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="238" parent="231" name="Routes_Users_UserID_fk">
+    <foreign-key id="239" parent="231" name="Routes_Users_UserID_fk">
       <ColNames>UserID</ColNames>
       <RefSchemaName>MotorcycleMeetup</RefSchemaName>
       <RefTableName>Users</RefTableName>
@@ -956,49 +962,49 @@
       <OnUpdate>cascade</OnUpdate>
       <OnDelete>cascade</OnDelete>
     </foreign-key>
-    <column id="239" parent="232" name="UserID">
+    <column id="240" parent="232" name="UserID">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="240" parent="232" name="Type">
+    <column id="241" parent="232" name="Type">
       <Position>2</Position>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="241" parent="232" name="Username">
+    <column id="242" parent="232" name="Username">
       <Position>3</Position>
       <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="242" parent="232" name="Password">
+    <column id="243" parent="232" name="Password">
       <Position>4</Position>
       <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="243" parent="232" name="Email">
+    <column id="244" parent="232" name="Email">
       <Position>5</Position>
       <DataType>varchar(100)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="244" parent="232" name="Phone">
+    <column id="245" parent="232" name="Phone">
       <Position>6</Position>
       <DataType>varchar(15)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="245" parent="232" name="FirstName">
+    <column id="246" parent="232" name="FirstName">
       <Position>7</Position>
       <DataType>varchar(45)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="246" parent="232" name="LastName">
+    <column id="247" parent="232" name="LastName">
       <Position>8</Position>
       <DataType>varchar(60)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="247" parent="232" name="PRIMARY">
+    <key id="248" parent="232" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>UserID</ColNames>
       <Primary>1</Primary>
