@@ -11,6 +11,6 @@
     <title>Admin</title>
 </head>
 <body>
-    You are here
+    You are at admin
 </body>
 </html>

@@ -14,7 +14,7 @@
 
     <form action="j_security_check" method="post">
         <input type="text" placeholder="Username" name="j_username" />
-        <input type="text" placeholder="Password" name="j_password" />
+        <input type="password" placeholder="Password" name="j_password" />
 
         <input type="submit" value="Log in" />
     </form>
