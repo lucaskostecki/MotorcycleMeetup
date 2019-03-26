@@ -1,5 +1,7 @@
 package entity;
 
+import lombok.Getter;
+import lombok.Setter;
 import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.annotations.ManyToAny;
 
@@ -12,17 +14,25 @@ import javax.persistence.*;
 @Table(name="Routes")
 public class Route {
 
+    @Getter
+    @Setter
     @Id
     @GeneratedValue(strategy=GenerationType.AUTO, generator="native")
     @GenericGenerator(name="native",strategy="native")
     private int routeID;
 
+    @Getter
+    @Setter
     @Column(name="Title")
     private String title;
 
+    @Getter
+    @Setter
     @Column(name="Description")
     private String description;
 
+    @Getter
+    @Setter
     @ManyToOne
     @JoinColumn(name = "UserID")
     private User user;
@@ -43,78 +53,6 @@ public class Route {
     public Route(String title, String description, User user) {
         this.title = title;
         this.description = description;
-        this.user = user;
-    }
-
-    /**
-     * Gets title.
-     *
-     * @return the title
-     */
-    public String getTitle() {
-        return title;
-    }
-
-    /**
-     * Sets title.
-     *
-     * @param title the title
-     */
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-    /**
-     * Gets route id.
-     *
-     * @return the route id
-     */
-    public int getRouteID() {
-        return routeID;
-    }
-
-    /**
-     * Sets route id.
-     *
-     * @param routeID the route id
-     */
-    public void setRouteID(int routeID) {
-        this.routeID = routeID;
-    }
-
-    /**
-     * Gets description.
-     *
-     * @return the description
-     */
-    public String getDescription() {
-        return description;
-    }
-
-    /**
-     * Sets description.
-     *
-     * @param description the description
-     */
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
-    /**
-     * Gets user.
-     *
-     * @return the user
-     */
-    public User getUser() {
-        return user;
-    }
-
-    /**
-     * Sets user.
-     *
-     * @param user the user
-     */
-    public void setUser(User user) {
         this.user = user;
     }
 }

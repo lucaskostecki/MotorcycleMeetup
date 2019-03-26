@@ -1,5 +1,7 @@
 package entity;
 
+import lombok.Getter;
+import lombok.Setter;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
@@ -11,14 +13,20 @@ import javax.persistence.*;
 @Table(name="Roles")
 public class Role {
 
+    @Getter
+    @Setter
     @Id
     @GeneratedValue(strategy=GenerationType.AUTO, generator="native")
     @GenericGenerator(name="native",strategy="native")
     private int roleID;
 
+    @Getter
+    @Setter
     @Column(name="RoleID")
     private String roleName;
 
+    @Getter
+    @Setter
     @ManyToOne
     @JoinColumn(name = "UserID")
     private User user;
@@ -36,60 +44,6 @@ public class Role {
      */
     public Role(String roleName, User user) {
         this.roleName = roleName;
-        this.user = user;
-    }
-
-    /**
-     * Gets role id.
-     *
-     * @return the role id
-     */
-    public int getRoleID() {
-        return roleID;
-    }
-
-    /**
-     * Sets role id.
-     *
-     * @param roleID the role id
-     */
-    public void setRoleID(int roleID) {
-        this.roleID = roleID;
-    }
-
-    /**
-     * Gets role name.
-     *
-     * @return the role name
-     */
-    public String getRoleName() {
-        return roleName;
-    }
-
-    /**
-     * Sets role name.
-     *
-     * @param roleName the role name
-     */
-    public void setRoleName(String roleName) {
-        this.roleName = roleName;
-    }
-
-    /**
-     * Gets user.
-     *
-     * @return the user
-     */
-    public User getUser() {
-        return user;
-    }
-
-    /**
-     * Sets user.
-     *
-     * @param user the user
-     */
-    public void setUser(User user) {
         this.user = user;
     }
 }
