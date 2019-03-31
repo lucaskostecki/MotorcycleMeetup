@@ -13,8 +13,7 @@ track of your rides by logging them after you return.
 
 ## Technologies
 * Frameworks
-    * Java Spring Boot
-    * Vue.js
+    * Vue.js (maybe)
 * Database
     * MySQL
     * Storing users and user data
@@ -23,9 +22,10 @@ track of your rides by logging them after you return.
     * Maven
 * Web Services API
     * Google Maps API
+    * ZIP code near me API
     * Maybe a weather API for showing weather for planned dates
 * CSS
-    * All handmade
+    * Custom
 * Hosting
     * AWS
 * Logging
