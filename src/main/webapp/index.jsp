@@ -1,60 +1,22 @@
 <!-- Index -->
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <c:import url="/include/head.jsp"></c:import>
+
     <title>Motorcycle Meetup</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Reem+Kufi|Roboto" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" media="screen" href="/motorcyclemeetup/css/normalize.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="/motorcyclemeetup/css/styles.css">
-
-
-    <script src="/motorcyclemeetup/js/core.js"></script>
 </head>
 <body>
 
-<nav id="nav">
-    <div id="leftNav">
-        <a href="/mm/">
-            <h1>MM</h1>
-        </a>
-    </div>
-    <div id="rightNav">
-        <ul>
-            <li>
-                <input id="navSearchBar" type="text" name="search" placeholder="Search" />
-            </li>
-            <li>
-                <a href="/myrides" class="navLink transitionMedium">My Rides</a>
-            </li>
-            <li>
-                <div id="accountImageMini"></div>
-            </li>
-            <li>
-                <button type="button" id="optionsArrowButton" class="transitionMedium">
-                    <i class="fas fa-angle-down transitionMedium" id="optionsArrow"></i>
-                </button>
-                <div id="optionsMenu" class="transitionFast">
-                    <ul>
-                        <li><a href="">Test</a></li>
-                        <li><a href="">Test</a></li>
-                        <li><a href="">Test</a></li>
-                    </ul>
-                </div>
-            </li>
-        </ul>
-    </div>
-</nav>
+    <c:import url="/include/nav.jsp"></c:import>
 
-<div class="container">
-    <div class="row">
+    <div class="container">
+        <div class="row">
 
+        </div>
     </div>
-</div>
 
 </body>
 </html>
