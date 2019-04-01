@@ -11,7 +11,7 @@ const init = () => {
     navSearch.addEventListener("keyup", function(e) {
         if (e.keyCode == 13) {
             e.preventDefault();
-            window.location.href = `/motorcyclemeetup/search?q=${navSearch.value}`;
+            window.location.href = `/search?q=${navSearch.value}`;
         }
 
     });
