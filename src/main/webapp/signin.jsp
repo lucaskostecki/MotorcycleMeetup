@@ -18,8 +18,12 @@
     <div class="container">
         <h1>Sign in to continue</h1>
 
+        <% if (request.getParameter("e") == "true") { %>
+            <p>There was a problem signing you in</p>
+        <% } %>
+
         <form action="j_security_check" method="post">
-            <input type="text" placeholder="Username" name="j_username" />
+            <input type="text" placeholder="Username" name="j_username" autofocus />
             <input type="password" placeholder="Password" name="j_password" />
 
             <input type="submit" value="Log in" />

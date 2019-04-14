@@ -12,6 +12,7 @@
     <auth-method>FORM</auth-method>
     <form-login-config>
       <form-login-page>/signin.jsp</form-login-page>
+<!--      <form-error-page>/signin.jsp?e=true</form-error-page>-->
       <form-error-page>/signinerror.jsp</form-error-page>
     </form-login-config>
   </login-config>

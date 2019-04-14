@@ -14,21 +14,34 @@
             <li>
                 <a href="/account/myrides.jsp" class="navLink transitionMedium">My Rides</a>
             </li>
-            <li>
-                <div id="accountImageMini"></div>
-            </li>
-            <li>
-                <button type="button" id="optionsArrowButton" class="transitionMedium">
-                    <i class="fas fa-angle-down transitionMedium" id="optionsArrow"></i>
-                </button>
-                <div id="optionsMenu" class="transitionFast">
-                    <ul>
-                        <li><a href="">Test</a></li>
-                        <li><a href="">Test</a></li>
-                        <li><a href="">Test</a></li>
-                    </ul>
-                </div>
-            </li>
+            <% if(request.getRemoteUser() != null) { %>
+                <li>
+                    <a href="/account/">
+                        <div id="accountImageMini"></div>
+                    </a>
+                </li>
+                <li>
+                    <%= request.getRemoteUser() %>
+                </li>
+                <li>
+                    <button type="button" id="optionsArrowButton" class="transitionMedium">
+                        <a href="/account/">
+                            <i class="fas fa-angle-down transitionMedium" id="optionsArrow"></i>
+                        </a>
+                    </button>
+                    <div id="optionsMenu" class="transitionFast">
+                        <ul>
+                            <li><a href="">Add Ride</a></li>
+                            <li><a href="">Requests</a></li>
+                            <li><a href="">History</a></li>
+                        </ul>
+                    </div>
+                </li>
+            <% } else { %>
+                <li>
+                    <a href="/account/" class="navLink transitionMedium">Sign In</a>
+                </li>
+            <% }%>
         </ul>
     </div>
 </nav>

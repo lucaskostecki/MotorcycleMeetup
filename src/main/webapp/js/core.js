@@ -1,5 +1,5 @@
 const init = () => {
-    let optionsArrow = document.querySelector("#optionsArrow");
+    let optionsArrow = document.querySelector("#optionsArrowButton");
     let optionsMenu = document.querySelector("#optionsMenu");
     let navSearch = document.querySelector("#navSearchBar");
 
