@@ -21,19 +21,19 @@
                     </a>
                 </li>
                 <li>
-                    <%= request.getRemoteUser() %>
+                    <a href="/account/" class="link-no-style navLink transitionMedium">
+                        <%= request.getRemoteUser() %>
+                    </a>
                 </li>
                 <li>
                     <button type="button" id="optionsArrowButton" class="transitionMedium">
-                        <a href="/account/">
-                            <i class="fas fa-angle-down transitionMedium" id="optionsArrow"></i>
-                        </a>
+                        <i class="fas fa-angle-down transitionMedium" id="optionsArrow"></i>
                     </button>
                     <div id="optionsMenu" class="transitionFast">
                         <ul>
                             <li><a href="">Add Ride</a></li>
                             <li><a href="">Requests</a></li>
-                            <li><a href="">History</a></li>
+                            <li><a href="/signout">Sign Out</a></li>
                         </ul>
                     </div>
                 </li>

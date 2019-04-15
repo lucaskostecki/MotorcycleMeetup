@@ -24,9 +24,10 @@
 
         <form action="j_security_check" method="post">
             <input type="text" placeholder="Username" name="j_username" autofocus />
+            <br>
             <input type="password" placeholder="Password" name="j_password" />
-
-            <input type="submit" value="Log in" />
+            <br><br>
+            <input class="btn-sm btn-dark" type="submit" value="Log in" />
         </form>
 
         <a href="/signup.jsp">Don't have an account?</a>

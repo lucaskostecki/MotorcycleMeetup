@@ -11,7 +11,7 @@
 <head>
     <c:import url="/include/head.jsp"></c:import>
 
-    <title>Title</title>
+    <title>Sign Up</title>
 </head>
 <body>
     <c:import url="/include/nav.jsp"></c:import>
@@ -20,10 +20,13 @@
 
         <form action="/signup" method="post">
             <input type="text" placeholder="Username" name="username" autofocus />
+            <br>
             <input type="password" placeholder="Password" name="password" />
-            <input type="password" placeholder="Password" name="password2" />
+            <br>
+            <input type="password" placeholder="Retype Password" name="password2" />
 
-            <input type="submit" value="Sign Up" />
+            <br><br>
+            <input class="btn-sm btn-dark" type="submit" value="Sign Up" />
         </form>
     </div>
 

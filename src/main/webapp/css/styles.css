@@ -73,12 +73,8 @@ h1, h2, h3, h4, h5, h6 {
     transition: .35s;
 }
 
-.buttonRipple {
-    background: #922d50;
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    border-radius: 100%;
+.link-no-style {
+    text-decoration: none;
 }
 /************END GLOBAL************/
 
@@ -143,6 +139,9 @@ h1, h2, h3, h4, h5, h6 {
     height: 30px;
     display: inline-block;
     background: #ccc;
+    background-image: url(/media/account/profilepictures/defaultuser.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     border-radius: 100%;
 }
 
@@ -234,3 +233,41 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 /************END ANIMATIONS************/
+
+/* BUTTONS */
+.btn-sm, .btn-md, .btn-lg {
+    padding: 5px 10px;
+    display: inline-block;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-md {
+    padding: 10px;
+    font-size: 1.1em;
+}
+
+.btn-lg {
+    padding: 15px;
+    font-size: 1.2em;
+}
+
+.btn-dark {
+    color: #fff;
+    background: #404040;
+}
+
+.btn-dark:hover {
+    color: #fff;
+    background: #808080;
+}
+/* END BUTTONS */
+
+/* FORM */
+form input {
+    margin: 10px 0;
+}
+/* END FORM */
