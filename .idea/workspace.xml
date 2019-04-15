@@ -7,14 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a363bf17-ce96-4b1b-b113-1512fb20075c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/SignOut.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/media/account/profilepictures/defaultuser.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/signout.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/include/nav.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/include/nav.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/signin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/signin.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/signup.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/signup.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -33,7 +28,7 @@
     </SUITE>
   </component>
   <component name="DarkyenusTimeTracker">
-    <option name="totalTimeSeconds" value="68634" />
+    <option name="totalTimeSeconds" value="69293" />
     <option name="gitIntegration" value="true" />
   </component>
   <component name="DatabaseView">
@@ -100,7 +95,26 @@
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/include/nav.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="495">
+              <caret line="45" column="70" lean-forward="true" selection-start-line="45" selection-start-column="70" selection-end-line="45" selection-end-column="70" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/css/styles.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="163" column="25" selection-start-line="163" selection-start-column="25" selection-end-line="163" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -178,9 +192,9 @@
         <option value="$PROJECT_DIR$/src/main/java/controller/signout.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/signup.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/signout.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/include/nav.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/css/styles.css" />
         <option value="$PROJECT_DIR$/src/main/java/controller/SignOut.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/css/styles.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/include/nav.jsp" />
       </list>
     </option>
   </component>
@@ -734,7 +748,7 @@
       <workItem from="1554689477951" duration="3634000" />
       <workItem from="1554762003578" duration="1990000" />
       <workItem from="1555275810416" duration="2387000" />
-      <workItem from="1555290885726" duration="3758000" />
+      <workItem from="1555290885726" duration="4416000" />
     </task>
     <task id="LOCAL-00001" summary="Updated project files to compile. Added a TomEE deploy config.">
       <created>1549826212420</created>
@@ -786,7 +800,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="105225000" />
+    <option name="totallyTimeSpent" value="105883000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -799,6 +813,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18815717" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -816,7 +831,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32937366" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32327586" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32289416" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32937366" />
@@ -1253,17 +1268,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/include/nav.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="34" column="60" selection-start-line="34" selection-start-column="60" selection-end-line="34" selection-end-column="60" />
+        <state relative-caret-position="330">
+          <caret line="163" column="25" selection-start-line="163" selection-start-column="25" selection-end-line="163" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/styles.css">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/include/nav.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="244" column="25" selection-start-line="244" selection-start-column="25" selection-end-line="244" selection-end-column="25" />
+        <state relative-caret-position="495">
+          <caret line="45" column="70" lean-forward="true" selection-start-line="45" selection-start-column="70" selection-end-line="45" selection-end-column="70" />
         </state>
       </provider>
     </entry>
