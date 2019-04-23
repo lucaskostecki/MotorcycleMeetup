@@ -1,6 +1,5 @@
 package persistence;
 
-import entity.User;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.hibernate.Session;
@@ -67,8 +66,8 @@ public class GenericDao<Type> {
     /**
      * Insert or update a user
      *
-     * @param entity    Entity to be inserted or updated
-     * @return          The id of the entity inserted or updated
+     * @param entity Entity to be inserted or updated
+     * @return The id of the entity inserted or updated
      */
     public int insert(Type entity) {
         int id = 0;
@@ -111,6 +110,13 @@ public class GenericDao<Type> {
         session.close();
     }
 
+    /**
+     * Gets by property like.
+     *
+     * @param property the property
+     * @param search   the search
+     * @return the by property like
+     */
     public List<Type> getByPropertyLike(String property, String search) {
         Session session = getSession();
 

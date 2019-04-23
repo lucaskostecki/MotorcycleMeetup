@@ -57,7 +57,7 @@
 
 /************GLOBAL************/
 body {
-    background: #f3f3f3;
+    background: #fff;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -85,6 +85,7 @@ h1, h2, h3, h4, h5, h6 {
     position: fixed;
     background: #fff;
     top: 0;
+    z-index: 1999;
 }
 
 .navLink {
@@ -184,6 +185,7 @@ h1, h2, h3, h4, h5, h6 {
         opacity: 0;
         padding: 5px 0;
         visibility: hidden;
+        z-index: 2000;
     }
 
     #optionsMenu ul {
@@ -243,6 +245,7 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 5px;
     cursor: pointer;
     text-decoration: none;
+    outline: none;
 }
 
 .btn-md {
@@ -270,4 +273,27 @@ h1, h2, h3, h4, h5, h6 {
 form input {
     margin: 10px 0;
 }
+
+form label {
+    margin: 0;
+    padding: 0;
+}
+
+form label:hover {
+    color: #404040;
+}
+
+form input {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #000;
+    padding: 2px;
+}
 /* END FORM */
+
+/* MAP */
+#map {
+    height: 700px;
+    z-index: 1000;
+}
+/* END MAP */
