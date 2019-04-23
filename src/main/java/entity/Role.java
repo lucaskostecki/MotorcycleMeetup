@@ -13,20 +13,14 @@ import javax.persistence.*;
 @Table(name="Roles")
 public class Role {
 
-    @Getter
-    @Setter
     @Id
     @GeneratedValue(strategy=GenerationType.AUTO, generator="native")
     @GenericGenerator(name="native",strategy="native")
     private int roleID;
 
-    @Getter
-    @Setter
-    @Column(name="RoleID")
+    @Column(name="RoleName")
     private String roleName;
 
-    @Getter
-    @Setter
     @ManyToOne
     @JoinColumn(name = "UserID")
     private User user;
@@ -44,6 +38,31 @@ public class Role {
      */
     public Role(String roleName, User user) {
         this.roleName = roleName;
+        this.user = user;
+    }
+
+
+    public int getRoleID() {
+        return roleID;
+    }
+
+    public void setRoleID(int roleID) {
+        this.roleID = roleID;
+    }
+
+    public String getRoleName() {
+        return roleName;
+    }
+
+    public void setRoleName(String roleName) {
+        this.roleName = roleName;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
         this.user = user;
     }
 }

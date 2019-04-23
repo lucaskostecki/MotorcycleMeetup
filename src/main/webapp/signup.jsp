@@ -18,8 +18,14 @@
     <div class="container">
         <h1>Sign up</h1>
 
-        <form action="/signup" method="post">
+        <form action="/signup/submit" method="post">
             <input type="text" placeholder="Username" name="username" autofocus />
+            <br>
+            <input type="email" placeholder="Email" name="email" />
+            <br>
+            <input type="text" placeholder="First name" name="firstname" />
+            <br>
+            <input type="text" placeholder="Last name" name="lastname" />
             <br>
             <input type="password" placeholder="Password" name="password" />
             <br>

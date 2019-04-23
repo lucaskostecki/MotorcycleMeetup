@@ -19,21 +19,21 @@ import java.io.IOException;
 public class SearchController extends HttpServlet {
 
     @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         GenericDao dao;
 
-        String search = req.getParameter("q");
+        String search = request.getParameter("q");
 
         if (search != null) {
             dao = new GenericDao(User.class);
-            req.setAttribute("users", dao.getByPropertyLike("username", search));
+            request.setAttribute("users", dao.getByPropertyLike("username", search));
 
             dao = new GenericDao(Route.class);
-            req.setAttribute("routes", dao.getByPropertyLike("title", search));
+            request.setAttribute("routes", dao.getByPropertyLike("title", search));
         }
 
-        RequestDispatcher dispatcher = req.getRequestDispatcher("/searchresults.jsp");
-        dispatcher.forward(req, resp);
+        RequestDispatcher dispatcher = request.getRequestDispatcher("/searchresults.jsp");
+        dispatcher.forward(request, response);
     }
 
 }
