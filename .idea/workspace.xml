@@ -6,20 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a363bf17-ce96-4b1b-b113-1512fb20075c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/AddRoute.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/apikeys/keys.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/account/addride.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/addride.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/persistence/GenericDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/persistence/GenericDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/persistence/RouteDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/persistence/UserDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/account/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/account/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/account/myrides.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/account/myrides.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/styles.css" afterDir="false" />
-    </list>
+    <list default="true" id="a363bf17-ce96-4b1b-b113-1512fb20075c" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,7 +24,7 @@
     </SUITE>
   </component>
   <component name="DarkyenusTimeTracker">
-    <option name="totalTimeSeconds" value="79684" />
+    <option name="totalTimeSeconds" value="79864" />
     <option name="gitIntegration" value="true" />
   </component>
   <component name="DatabaseView">
@@ -811,7 +798,7 @@
       <workItem from="1555290885726" duration="4487000" />
       <workItem from="1555295520034" duration="445000" />
       <workItem from="1555368618169" duration="21000" />
-      <workItem from="1556032749323" duration="12105000" />
+      <workItem from="1556032749323" duration="12684000" />
     </task>
     <task id="LOCAL-00001" summary="Updated project files to compile. Added a TomEE deploy config.">
       <created>1549826212420</created>
@@ -863,7 +850,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="118525000" />
+    <option name="totallyTimeSpent" value="119104000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -876,7 +863,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19479801" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -889,12 +875,12 @@
       <window_info id="Persistence" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32937366" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32829374" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32829374" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39956802" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32937366" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32181427" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32181427" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32937366" />
