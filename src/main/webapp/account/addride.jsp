@@ -14,22 +14,38 @@
         <h1>Add Ride</h1>
 
         <form action="/account/addride/submit" method="post">
-            <label for="routename">Ride Name</label>
-            <br>
-            <input type="text" id="routename" name="routename" />
-            <br>
-            <div id="map"></div>
-            <br>
-            <label for="start">Start</label>
-            <br>
-            <input type="text" id="start" name="start" />
-            <br>
-            <label for="end">End</label>
-            <br>
-            <input type="text" id="end" name="end" />
-            <br>
-            <br>
-            <button type="submit" class="btn-lg btn-dark">Save</button>
+            <div class="col-8">
+                <div id="map"></div>
+            </div>
+            <div class="col-4">
+                <label for="routename">Ride Name</label>
+                <br>
+                <input type="text" id="routename" name="routename" />
+
+                <br>
+                <br>
+                <label for="start">Start</label>
+                <br>
+                <input type="text" id="start" name="start" />
+
+                <br>
+                <br>
+                <label>Waypoints</label>
+                <br>
+                <div id="waypoint-container"></div>
+                <br>
+                <button id="add-waypoint" class="btn-sm btn-dark" type="button">+ Add Waypoint</button>
+
+                <br>
+                <br>
+                <label for="end">End</label>
+                <br>
+                <input type="text" id="end" name="end" />
+
+                <br>
+                <br>
+                <button type="submit" class="btn-lg btn-dark">Save</button>
+            </div>
         </form>
     </div>
 
@@ -81,7 +97,7 @@
         }
     </script>
 
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWUxE6zovakvJ_mOUWxWFJG1I6vvQi0gQ&callback=initMap"
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCI2U2ju-sI9j7TT7yqrrQLruGTwtpi5P8&callback=initMap"
             async defer></script>
 </body>
 </html>
