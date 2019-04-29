@@ -22,28 +22,30 @@
                 <br>
                 <input type="text" id="routename" name="routename" />
 
-                <br>
-                <br>
+                <br><br>
                 <label for="start">Start</label>
                 <br>
                 <input type="text" id="start" name="start" />
 
-                <br>
-                <br>
+                <br><br>
                 <label>Waypoints</label>
                 <br>
                 <div id="waypoint-container"></div>
                 <br>
                 <button id="add-waypoint" class="btn-sm btn-dark" type="button">+ Add Waypoint</button>
 
-                <br>
-                <br>
+                <br><br>
                 <label for="end">End</label>
                 <br>
                 <input type="text" id="end" name="end" />
 
+                <br><br>
+                <input type="checkbox" id="avoid-highways">
+                <label for="avoid-highways">Avoid Highways</label>
+
                 <br>
                 <br>
+                <button type="button" id="update-map" class="btn-lg btn-dark">Update Map</button>
                 <button type="submit" class="btn-lg btn-dark">Save</button>
             </div>
         </form>
@@ -58,7 +60,15 @@
                 zoom: 12
             });
 
-            infoWindow = new google.maps.InfoWindow;
+            let directionsService = new google.maps.DirectionsService;
+            let directionsDisplay = new google.maps.DirectionsRenderer({
+                // draggable: true,
+                map: map
+            });
+
+            document.querySelector('#update-map').addEventListener('click', function() {
+                updateMap(directionsService, directionsDisplay);
+            });
 
             if (navigator.geolocation) {
                 navigator.geolocation.getCurrentPosition(function(position) {
@@ -66,10 +76,6 @@
                         lat: position.coords.latitude,
                         lng: position.coords.longitude
                     };
-
-                    // infoWindow.setPosition(pos);
-                    // infoWindow.setContent('Location found.');
-                    // infoWindow.open(map);
 
                     let initMarker = new google.maps.Marker({
                         position: pos,
