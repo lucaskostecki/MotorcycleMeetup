@@ -51,6 +51,7 @@ const addWaypoint = value => {
         let newNodeInput = document.createElement('input');
         newNodeInput.setAttribute('type', 'text');
         newNodeInput.setAttribute('id', `node${waypointNumber}`);
+        newNodeInput.setAttribute('name', `waypoint${waypointNumber}`);
         newNodeInput.setAttribute('data-node-number', `${waypointNumber}`);
         newNodeInput.setAttribute('placeholder', 'Waypoint address or name');
         newNodeInput.setAttribute('value', insertValue);

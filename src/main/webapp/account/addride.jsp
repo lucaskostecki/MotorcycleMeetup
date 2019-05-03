@@ -13,7 +13,7 @@
     <div class="container">
         <h1>Add Ride</h1>
 
-        <form action="/account/addride/submit" method="post">
+        <form action="/account/addroute/submit" method="post">
             <div class="col-8">
                 <div id="map"></div>
             </div>
@@ -103,7 +103,7 @@
         }
     </script>
 
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCI2U2ju-sI9j7TT7yqrrQLruGTwtpi5P8&callback=initMap"
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZP0zbpUvcDB3dhRQ6rwBGWtL7swgjp1M&callback=initMap"
             async defer></script>
 </body>
 </html>
