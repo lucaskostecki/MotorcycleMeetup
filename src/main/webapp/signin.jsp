@@ -27,7 +27,7 @@
             <br>
             <input type="password" placeholder="Password" name="j_password" />
             <br><br>
-            <input class="btn-sm btn-dark" type="submit" value="Log in" />
+            <input class="btn-sm btn-orange" type="submit" value="Log in" />
         </form>
 
         <a href="/signup.jsp">Don't have an account?</a>

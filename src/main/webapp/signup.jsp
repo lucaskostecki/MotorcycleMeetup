@@ -32,7 +32,7 @@
             <input type="password" placeholder="Retype Password" name="password2" />
 
             <br><br>
-            <input class="btn-sm btn-dark" type="submit" value="Sign Up" />
+            <input class="btn-sm btn-orange" type="submit" value="Sign Up" />
         </form>
     </div>
 

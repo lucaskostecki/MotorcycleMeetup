@@ -13,6 +13,12 @@
     <div class="container">
         <h1>Add Ride</h1>
 
+        <% if (request.getParameter("p") != null && request.getParameter("p").equals("missingdata")) { %>
+            <p class="form-error">You must have a route name, description, start, and end point</p>
+        <% } else if (request.getParameter("p") != null && request.getParameter("p").equals("generalerror")) { %>
+            <p class="form-error">An error has occurred while processing your request</p>
+        <% } %>
+
         <form action="/account/addroute/submit" method="post">
             <div class="col-8">
                 <div id="map"></div>
@@ -21,6 +27,11 @@
                 <label for="routename">Ride Name</label>
                 <br>
                 <input type="text" id="routename" name="routename" />
+
+                <br><br>
+                <label for="routedesc">Ride Description</label>
+                <br>
+                <input type="text" id="routedesc" name="routedesc" />
 
                 <br><br>
                 <label for="start">Start</label>
@@ -32,7 +43,7 @@
                 <br>
                 <div id="waypoint-container"></div>
                 <br>
-                <button id="add-waypoint" class="btn-sm btn-dark" type="button">+ Add Waypoint</button>
+                <button id="add-waypoint" class="btn-sm btn-orange" type="button">+ Add Waypoint</button>
 
                 <br><br>
                 <label for="end">End</label>
@@ -45,8 +56,8 @@
 
                 <br>
                 <br>
-                <button type="button" id="update-map" class="btn-lg btn-dark">Update Map</button>
-                <button type="submit" class="btn-lg btn-dark">Save</button>
+                <button type="button" id="update-map" class="btn-lg btn-orange">Update Map</button>
+                <button type="submit" class="btn-lg btn-orange">Save</button>
             </div>
         </form>
     </div>

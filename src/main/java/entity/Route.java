@@ -6,6 +6,8 @@ import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.annotations.ManyToAny;
 
 import javax.persistence.*;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * The POJO for routes
@@ -36,6 +38,9 @@ public class Route {
     @ManyToOne
     @JoinColumn(name = "UserID")
     private User user;
+
+    @OneToMany(mappedBy = "route", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
+    private Set<Waypoint> waypoints = new HashSet<>();
 
 
     /**

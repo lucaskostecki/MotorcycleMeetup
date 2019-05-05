@@ -2,7 +2,7 @@
 
 <nav id="nav">
     <div id="leftNav">
-        <a href="/">
+        <a href="/" id="mm-main-logo">
             <h1>MM</h1>
         </a>
     </div>
@@ -17,11 +17,9 @@
                     <a href="/account/myrides.jsp" class="navLink transitionMedium">My Rides</a>
                 </li>
                 <li>
-                    <a href="/account/">
-                        <div id="accountImageMini"></div>
-                    </a>
-                </li>
-                <li>
+<%--                    <a href="/account/" class="link-no-style">--%>
+<%--                        <div id="accountImageMini"></div>--%>
+<%--                    </a>--%>
                     <a href="/account/" class="link-no-style navLink transitionMedium">
                         <%= request.getRemoteUser() %>
                     </a>
@@ -39,8 +37,8 @@
                 <div id="optionsMenu" class="transitionFast">
                     <ul>
                         <% if(request.getRemoteUser() != null) { %>
-                            <li><a href="/account/addride.jsp">Add Ride</a></li>
-                            <li><a href="/account/requests">Requests</a></li>
+                            <li><a href="/account/addride.jsp">+ New Ride</a></li>
+                            <li><a href="/account/requests">Ride Requests</a></li>
                             <li><a href="/signout">Sign Out</a></li>
                         <% } else { %>
                             <li><a href="/signup.jsp">Sign Up</a></li>

@@ -63,6 +63,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Reem Kufi', sans-serif;
+    color: #ff6600;
 }
 
 .transitionFast {
@@ -75,6 +76,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .link-no-style {
     text-decoration: none;
+}
+
+.form-error {
+    color: #ff0000;
+    font-weight: bold;
 }
 /************END GLOBAL************/
 
@@ -89,7 +95,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navLink {
-    color: #070707;
+    /*color: #070707;*/
+    color: #ff6600;
     text-decoration: none;
     font-weight: bold;
     padding: 4px 8px;
@@ -97,9 +104,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navLink:hover {
-    background: #404040;
+    /*background: #404040;*/
+    background: #ff6600;
     color: #fff;
     font-weight: 100;
+}
+
+#mm-main-logo {
+    color: #ff6600;
+    text-decoration: none;
 }
 
 #leftNav {
@@ -150,15 +163,17 @@ h1, h2, h3, h4, h5, h6 {
     width: 200px;
     border: none;
     outline: none;
-    border-bottom: 1px solid #7d8288;
+    border-bottom: 1px solid #ff6600;
 }
 
 #navSearchBar:hover {
-    border-bottom: 2px solid #070707;
+    /*border-bottom: 2px solid #070707;*/
+    border-bottom: 2px solid #ff6600;
 }
 
 #navSearchBar:focus {
-    border-bottom-color: #070707;
+    /*border-bottom-color: #070707;*/
+    border-bottom-color: #ff6600;
 }
 
     /************NAV MINI MENU************/
@@ -168,6 +183,7 @@ h1, h2, h3, h4, h5, h6 {
         border: none;
         background: none;
         outline: none;
+        color: #ff6600;
     }
 
     .menuArrowRotate {
@@ -177,7 +193,8 @@ h1, h2, h3, h4, h5, h6 {
     #optionsMenu {
         width: 150px;
         border-radius: 5px;
-        background: #070707;
+        /*background: #070707;*/
+        background: #ff6600;
         position: absolute;
         right: 10px;
         transform: scale(.8);
@@ -200,7 +217,8 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     #optionsMenu ul li:hover {
-        background: #404040;
+        /*background: #404040;*/
+        background-color: #ff944d;
     }
 
     #optionsMenu ul li a {
@@ -267,7 +285,52 @@ h1, h2, h3, h4, h5, h6 {
     color: #fff;
     background: #808080;
 }
+
+.btn-orange {
+    color: #fff;
+    background: #ff6600;
+}
+
+.btn-orange:hover {
+    color: #fff;
+    background: #ff944d;
+}
 /* END BUTTONS */
+
+
+/* LANDING */
+
+#landing-hero {
+    width: 100%;
+    height: 100%;
+    background: #000;
+    overflow: hidden;
+}
+
+#landing-video {
+    min-width: 100%;
+    min-height: 100%;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+#landing-hero-text {
+    color: #fff !important;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* END LANDING */
+
 
 /* FORM */
 form input {

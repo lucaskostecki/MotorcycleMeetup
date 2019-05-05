@@ -20,6 +20,7 @@
         <mapping class="entity.User"/>
         <mapping class="entity.Route"/>
         <mapping class="entity.Role"/>
+        <mapping class="entity.Waypoint"/>
 
     </session-factory>
 

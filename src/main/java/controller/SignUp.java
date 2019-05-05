@@ -34,12 +34,12 @@ public class SignUp extends HttpServlet {
         String password = request.getParameter("password");
         String password2 = request.getParameter("password2");
 
-        if (username != null &&
-            email != null &&
-            firstname != null &&
-            lastname != null &&
-            password != null &&
-            password2 != null) {
+        if (username.length() != 0 &&
+            email.length() != 0 &&
+            firstname.length() != 0 &&
+            lastname.length() != 0 &&
+            password.length() != 0 &&
+            password2.length() != 0) {
 
             if (password.equals(password2)) {
 
