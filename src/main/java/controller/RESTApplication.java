@@ -11,6 +11,7 @@ public class RESTApplication extends Application {
     public Set<Class<?>> getClasses() {
         HashSet h = new HashSet<Class<?>>();
         h.add(GetUsersREST.class);
+        h.add(GetRidesAsList.class);
         return h;
     }
 }
