@@ -133,22 +133,6 @@ public class GenericDao<Type> {
         return list;
     }
 
-    public List<Type> getByLinkingIDLike(String property, int search) {
-        Session session = getSession();
-
-        CriteriaBuilder builder = session.getCriteriaBuilder();
-        CriteriaQuery<Type> query = builder.createQuery(type);
-        Root<Type> root = query.from(type);
-        Expression<String> propertyPath = root.get(property);
-
-        query.where(builder.like(propertyPath, "%" + search + "%"));
-
-        List<Type> list = session.createQuery(query).getResultList();
-        session.close();
-
-        return list;
-    }
-
     /**
      * Return an open session from SessionFactory
      * @return  session

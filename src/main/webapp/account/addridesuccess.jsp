@@ -12,7 +12,7 @@
     <div class="container">
         <h1>Ride was added successfully</h1>
 
-        <p><a href="/account/" class="btn-sm btn-orange">Return to profile</a> or <a href="/account/addride.jsp" class="btn-sm btn-orange">Add another ride</a></p>
+        <p><a href="/account" class="btn-sm btn-orange">Return to profile</a> or <a href="/account/addride.jsp" class="btn-sm btn-orange">Add another ride</a></p>
     </div>
 
 </body>

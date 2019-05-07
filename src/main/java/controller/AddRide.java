@@ -86,7 +86,7 @@ public class AddRide extends HttpServlet {
             List<User> targetUsers = dao.getByPropertyLike("username", request.getRemoteUser());
 
             dao = new GenericDao(Route.class);
-            Route newRoute = new Route(routeTitle, routeDescription, targetUsers.get(0));
+            Route newRoute = new Route(start, end, routeTitle, routeDescription, targetUsers.get(0));
             checksum = dao.insert(newRoute);
 
             if (checksum > 0) {

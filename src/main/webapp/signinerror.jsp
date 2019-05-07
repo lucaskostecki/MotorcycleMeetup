@@ -17,7 +17,7 @@
     <c:import url="/include/nav.jsp"></c:import>
     <div class="container">
         <p>There was a problem signing you in</p>
-        <p><a href="/account/" class="btn-sm btn-orange">Try Again</a></p>
+        <p><a href="/account" class="btn-sm btn-orange">Try Again</a></p>
     </div>
 
 </body>

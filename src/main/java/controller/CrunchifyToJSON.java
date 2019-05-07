@@ -10,14 +10,14 @@ public class CrunchifyToJSON {
 
     public String arrayListToJSON(ArrayList list) {
         GsonBuilder builder = new GsonBuilder();
-        Gson gson = builder.setPrettyPrinting().create();
+        Gson gson = builder.excludeFieldsWithoutExposeAnnotation().setPrettyPrinting().create();
 
         return gson.toJson(list);
     }
 
     public String listToJSON(List list) {
         GsonBuilder builder = new GsonBuilder();
-        Gson gson = builder.setPrettyPrinting().create();
+        Gson gson = builder.excludeFieldsWithoutExposeAnnotation().setPrettyPrinting().create();
 
         return gson.toJson(list);
     }

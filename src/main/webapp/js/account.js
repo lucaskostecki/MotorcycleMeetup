@@ -2,13 +2,13 @@ const initAccount = () => {
 
     let ridesListContainer = document.querySelector('#rides-list');
 
-    fetch('/account/getridesaslist')
+    fetch('')
         .then(resp => resp.json())
         .then(data => {
-            data.rides;
+            console.log(data.rides);
         });
 
-    ridesList.append(rideItem);
+    // ridesList.append(rideItem);
 
 }
 

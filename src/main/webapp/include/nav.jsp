@@ -20,14 +20,14 @@
 <%--                    <a href="/account/" class="link-no-style">--%>
 <%--                        <div id="accountImageMini"></div>--%>
 <%--                    </a>--%>
-                    <a href="/account/" class="link-no-style navLink transitionMedium">
+                    <a href="/account" class="link-no-style navLink transitionMedium">
                         <%= request.getRemoteUser() %>
                     </a>
                 </li>
 
             <% } else { %>
                 <li>
-                    <a href="/account/" class="navLink transitionMedium">Sign In</a>
+                    <a href="/account" class="navLink transitionMedium">Sign In</a>
                 </li>
             <% }%>
             <li>

@@ -1,3 +1,4 @@
+<%@ page import="entity.Route" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
@@ -15,8 +16,15 @@
 
         <div class="rides-list-container">
             <h2 style="color: #000;">Your rides</h2>
+
             <ul id="rides-list">
-                <li>Loading your rides...</li>
+                <c:forEach var="route" items="${routesList}">
+                    <li>
+                        <h2>${route.title}</h2>
+                        <p>${route.start}</p>
+                        <p>${route.end}</p>
+                    </li>
+                </c:forEach>
             </ul>
         </div>
     </div>

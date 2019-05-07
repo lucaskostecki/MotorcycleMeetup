@@ -60,7 +60,7 @@ public class SignUp extends HttpServlet {
 
                     if (checksum > 0) {
                         logger.info("Added new user to roles");
-                        response.sendRedirect("/signin.jsp?p=signupcomplete");
+                        response.sendRedirect("/account");
                     } else {
                         logger.error("Could not add user to roles");
                         response.sendRedirect("/signup.jsp?p=error+roles");
