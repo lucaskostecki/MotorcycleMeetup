@@ -11,7 +11,7 @@
     <c:import url="/include/nav.jsp"></c:import>
 
     <div class="container">
-        <h1>Add Ride</h1>
+        <h1 class="orange">Add Ride</h1>
 
         <% if (request.getParameter("p") != null && request.getParameter("p").equals("missingdata")) { %>
             <p class="form-error">You must have a route name, description, start, and end point</p>

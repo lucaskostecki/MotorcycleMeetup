@@ -16,7 +16,7 @@
 <body>
 <c:import url="/include/nav.jsp"></c:import>
 <div class="container">
-    <h1>You have been signed out</h1>
+    <h1 class="orange">You have been signed out</h1>
 
     <p><a href="/" class="btn-md btn-orange">Return home</a></p>
 </div>

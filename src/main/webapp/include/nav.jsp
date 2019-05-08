@@ -3,7 +3,7 @@
 <nav id="nav">
     <div id="leftNav">
         <a href="/" id="mm-main-logo">
-            <h1>MM</h1>
+            <h1 class="orange">MM</h1>
         </a>
     </div>
     <div id="rightNav">
@@ -14,20 +14,20 @@
 
             <% if(request.getRemoteUser() != null) { %>
                 <li>
-                    <a href="/account/myrides.jsp" class="navLink transitionMedium">My Rides</a>
+                    <a href="/account/addride.jsp" class="nav-link">+ New Ride</a>
                 </li>
                 <li>
 <%--                    <a href="/account/" class="link-no-style">--%>
 <%--                        <div id="accountImageMini"></div>--%>
 <%--                    </a>--%>
-                    <a href="/account" class="link-no-style navLink transitionMedium">
+                    <a href="/account" class="link-no-style nav-link transitionMedium">
                         <%= request.getRemoteUser() %>
                     </a>
                 </li>
 
             <% } else { %>
                 <li>
-                    <a href="/account" class="navLink transitionMedium">Sign In</a>
+                    <a href="/account" class="nav-link transitionMedium">Sign In</a>
                 </li>
             <% }%>
             <li>
@@ -37,7 +37,7 @@
                 <div id="optionsMenu" class="transitionFast">
                     <ul>
                         <% if(request.getRemoteUser() != null) { %>
-                            <li><a href="/account/addride.jsp">+ New Ride</a></li>
+                            <li><a href="/account/">My Rides</a></li>
                             <li><a href="/account/requests">Ride Requests</a></li>
                             <li><a href="/signout">Sign Out</a></li>
                         <% } else { %>

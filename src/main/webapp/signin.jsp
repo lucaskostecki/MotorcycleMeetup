@@ -16,7 +16,7 @@
 <body>
     <c:import url="/include/nav.jsp"></c:import>
     <div class="container">
-        <h1>Sign in to continue</h1>
+        <h1 class="orange">Sign in to continue</h1>
 
         <% if (request.getParameter("e") == "true") { %>
             <p>There was a problem signing you in</p>

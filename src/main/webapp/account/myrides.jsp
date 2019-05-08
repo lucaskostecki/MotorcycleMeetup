@@ -12,7 +12,7 @@
     <c:import url="/include/nav.jsp"></c:import>
 
     <div class="container">
-        <h1>Your rides</h1>
+        <h1 class="orange">Your rides</h1>
     </div>
 
 </body>

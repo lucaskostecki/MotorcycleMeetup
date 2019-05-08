@@ -63,6 +63,10 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Reem Kufi', sans-serif;
+    color: #000;
+}
+
+.orange {
     color: #ff6600;
 }
 
@@ -94,7 +98,7 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 1999;
 }
 
-.navLink {
+.nav-link {
     /*color: #070707;*/
     color: #ff6600;
     text-decoration: none;
@@ -329,6 +333,16 @@ h1, h2, h3, h4, h5, h6 {
     overflow: hidden;
 }
 
+#landing-main-text {
+    font-weight: bold;
+    color: #ff6600;
+    font-size: 4.5em;
+}
+
+#landing-sub-text {
+    font-size: 2.5em;
+}
+
 /* END LANDING */
 
 
@@ -363,14 +377,32 @@ form input {
 
 
 /* ACCOUNT */
-.rides-list-container {
+#ride-item-container {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.ride-item {
     border-radius: 10px;
     border: 1px solid #cccccc;
     background: #fff;
     padding: 10px;
+    box-sizing: border-box;
+    width: calc(33.33% - 20px);
+    float: left;
+    margin: 10px;
 }
 
-#rides-list {
+.rides-list-title {
+    text-transform: uppercase;
+}
 
+.rides-list-descriptive {
+    padding-left: 15px;
+    text-transform: uppercase;
+}
+
+.ride-list-icon {
+    margin-right: 10px;
 }
 /* END ACCOUNT */

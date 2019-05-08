@@ -16,7 +16,7 @@
 <body>
     <c:import url="/include/nav.jsp"></c:import>
     <div class="container">
-        <h1>Sign up</h1>
+        <h1 class="orange">Sign up</h1>
 
         <form action="/signup/submit" method="post">
             <input type="text" placeholder="Username" name="username" autofocus />
