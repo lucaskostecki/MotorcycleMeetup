@@ -1,5 +1,6 @@
 package controller;
 
+import entity.Route;
 import entity.User;
 import persistence.GenericDao;
 
@@ -14,18 +15,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 @WebServlet(
-    urlPatterns = {"/account", "/account/"}
+    urlPatterns = {"/account/editride"}
 )
-public class AccountHome extends HttpServlet {
+public class EditRideManager extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        GenericDao dao = new GenericDao(User.class);
-        User targetUser = (User)dao.getByPropertyLike("username", request.getRemoteUser()).get(0);
-        List routeList = new ArrayList(targetUser.getRoutes());
-        request.getSession().setAttribute("routesList", routeList);
+        GenericDao dao = new GenericDao(Route.class);
+        Route targetRoute = (Route) dao.getById(Integer.parseInt(request.getParameter("id")));
+        request.getSession().setAttribute("route", targetRoute);
+        request.getSession().setAttribute("waypoints", targetRoute.getWaypoints());
 
-        RequestDispatcher dispatcher = request.getRequestDispatcher("/account/index.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("/account/editroute.jsp");
         dispatcher.forward(request, response);
 
     }

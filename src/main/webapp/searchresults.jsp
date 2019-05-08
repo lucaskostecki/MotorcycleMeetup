@@ -18,7 +18,7 @@
     <c:import url="/include/nav.jsp"></c:import>
 
     <div class="container">
-        <h1 class="orange">Search results</h1>
+        <h1 class="orange uppercase">Search results</h1>
         <c:choose>
             <c:when test="${empty users}">
                 <p class="orange uppercase">No users found</p>
@@ -47,7 +47,7 @@
 
         <c:choose>
             <c:when test="${empty routes}">
-                <p class="orange uppercase">No routes found</p>
+                <p class="orange uppercase">No rides found</p>
             </c:when>
             <c:otherwise>
                 <table>

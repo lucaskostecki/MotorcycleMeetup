@@ -20,7 +20,7 @@ import java.util.List;
  * Add routes
  */
 @WebServlet(
-        urlPatterns = {"/account/addroute/submit"}
+        urlPatterns = {"/account/addride/submit"}
 )
 
 public class AddRide extends HttpServlet {

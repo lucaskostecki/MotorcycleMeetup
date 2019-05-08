@@ -11,8 +11,6 @@ const getWaypointsAsArray = () => {
     let values = [];
     let containerChildren = document.querySelectorAll('#waypoint-inputs input');
 
-    console.log(containerChildren);
-
     for (let i = 0; i < containerChildren.length; i++) {
         values.push({
             location: containerChildren[i].value,

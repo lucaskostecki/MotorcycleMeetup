@@ -19,8 +19,8 @@
 
         <div id="landing-hero-text">
             <div>
-                <h1 id="landing-main-text uppercase">MOTORCYCLE MEETUP</h1>
-                <p id="landing-sub-text uppercase">ROUTE. RIDE. SHARE.<p>
+                <h1 id="landing-main-text" class="uppercase">MOTORCYCLE MEETUP</h1>
+                <p id="landing-sub-text" class="uppercase">ROUTE. RIDE. SHARE.<p>
             </div>
         </div>
     </div>

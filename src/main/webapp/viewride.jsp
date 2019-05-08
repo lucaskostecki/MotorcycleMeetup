@@ -7,7 +7,7 @@
     <c:import url="/include/head.jsp"></c:import>
     <script src="/js/viewride.js"></script>
 
-    <title>Motorcycle Meetup</title>
+    <title>View Ride - ${route.title}</title>
 </head>
 <body>
 
@@ -42,15 +42,15 @@
                         <i class="fas fa-arrow-alt-circle-right ride-list-icon"></i>${route.start}
                     </p>
 
-                    <p class="uppercase">
-                        <i class="fas fa-flag-checkered ride-list-icon"></i>${route.end}
-                    </p>
-
                     <c:forEach var="waypoint" items="${waypoints}">
                         <p class="uppercase">
                             <i class="fas fa-map-marker-alt ride-list-icon"></i>${waypoint.waypointName}
                         </p>
                     </c:forEach>
+
+                    <p class="uppercase">
+                        <i class="fas fa-flag-checkered ride-list-icon"></i>${route.end}
+                    </p>
                 </div>
             </div>
         </div>

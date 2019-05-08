@@ -1,49 +1,45 @@
+<%@ page import="entity.Route" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
     <c:import url="/include/head.jsp"></c:import>
-    <script src="/js/addride.js"></script>
+    <script src="/js/editride.js"></script>
 
-    <title>Add Ride</title>
+    <title>Edit Ride - ${route.title}</title>
 </head>
 <body>
     <c:import url="/include/nav.jsp"></c:import>
 
     <div class="container">
-        <h1 class="orange uppercase">Add Ride</h1>
+        <h1 class="orange uppercase">Edit Ride</h1>
 
-        <% if (request.getParameter("p") != null && request.getParameter("p").equals("missingdata")) { %>
-            <p class="form-error">You must have a route name, description, start, and end point</p>
-        <% } else if (request.getParameter("p") != null && request.getParameter("p").equals("generalerror")) { %>
-            <p class="form-error">An error has occurred while processing your request</p>
-        <% } %>
+        <input type="hidden" id="avoid-highways-input" value="${route.avoidHighways}">
+        <span id="waypoint-inputs">
+            <c:forEach var="waypoint" items="${waypoints}">
+                <input type="hidden" value="${waypoint.waypointName}">
+            </c:forEach>
+        </span>
 
         <form action="/account/addride/submit" method="post">
             <div class="col-8">
                 <div id="map"></div>
             </div>
             <div class="col-4">
-                <label for="start-time">Start Date and Time</label>
-                <br>
-                <input type="date" id="start-date" name="start-date" required />
-                <br>
-                <input type="time" id="start-time" name="start-time" required />
-
-                <br><br>
                 <label for="routename">Ride Name</label>
                 <br>
-                <input type="text" id="routename" name="routename" required />
+                <input type="text" id="routename" name="routename" value="${route.title}" />
 
                 <br><br>
                 <label for="routedesc">Ride Description</label>
                 <br>
-                <input type="text" id="routedesc" name="routedesc" required />
+                <input type="text" id="routedesc" name="routedesc" value="${route.description}"/>
 
                 <br><br>
                 <label for="start">Start</label>
                 <br>
-                <input type="text" id="start" name="start" required />
+                <input type="text" id="start" name="start" value="${route.start}" />
 
                 <br><br>
                 <label>Waypoints</label>
@@ -55,10 +51,12 @@
                 <br><br>
                 <label for="end">End</label>
                 <br>
-                <input type="text" id="end" name="end" required />
+                <input type="text" id="end" name="end" value="${route.end}" />
 
                 <br><br>
-                <input type="checkbox" id="avoid-highways" name="avoid-highways">
+                <input type="checkbox" id="avoid-highways" name="avoid-highways"
+                       <c:if test="${route.avoidHighways}">checked</c:if>
+                >
                 <label for="avoid-highways">Avoid Highways</label>
 
                 <br>
@@ -78,8 +76,8 @@
                 zoom: 12
             });
 
-            let directionsService = new google.maps.DirectionsService;
-            let directionsDisplay = new google.maps.DirectionsRenderer({
+            directionsService = new google.maps.DirectionsService;
+            directionsDisplay = new google.maps.DirectionsRenderer({
                 // draggable: true,
                 map: map
             });
@@ -110,6 +108,8 @@
                 // Browser doesn't support Geolocation
                 handleLocationError(false, infoWindow, map.getCenter());
             }
+
+            initEditRide();
         }
 
         const handleLocationError = (browserHasGeolocation, infoWindow, pos) => {
@@ -123,5 +123,6 @@
 
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZP0zbpUvcDB3dhRQ6rwBGWtL7swgjp1M&callback=initMap"
             async defer></script>
+
 </body>
 </html>
