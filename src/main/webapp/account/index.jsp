@@ -15,7 +15,7 @@
         <h1 class="orange">Welcome <% if(request.getRemoteUser() != null) out.print(request.getRemoteUser()); %></h1>
 
         <div>
-            <h2>Your rides</h2>
+            <h2 class="uppercase">Your rides</h2>
 
             <div id="ride-item-container">
                 <c:forEach var="route" items="${routesList}">
@@ -26,18 +26,18 @@
                             <div class="rides-list-descriptive">
                                 <p><a href="/account/editroute?id=${route.routeID}"><i class="fas fa-edit ride-list-icon"></i>EDIT</a></p>
                                 <c:if test="${fn:length(route.description) > 0}">
-                                    <p>
-                                        <i class="fas fa-align-left ride-list-icon uppercase"></i>${route.description}
+                                    <p class="uppercase">
+                                        <i class="fas fa-align-left ride-list-icon"></i>${route.description}
                                     </p>
                                 </c:if>
                                 <c:if test="${fn:length(route.start) > 0}">
-                                    <p>
-                                        <i class="fas fa-arrow-alt-circle-right ride-list-icon uppercase"></i>${route.start}
+                                    <p class="uppercase">
+                                        <i class="fas fa-arrow-alt-circle-right ride-list-icon"></i>${route.start}
                                     </p>
                                 </c:if>
                                 <c:if test="${fn:length(route.end) > 0}">
-                                    <p>
-                                        <i class="fas fa-flag-checkered ride-list-icon uppercase"></i>${route.end}
+                                    <p class="uppercase">
+                                        <i class="fas fa-flag-checkered ride-list-icon"></i>${route.end}
                                     </p>
                                 </c:if>
                             </div>

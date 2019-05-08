@@ -7,6 +7,7 @@ import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.annotations.ManyToAny;
 
 import javax.persistence.*;
+import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -51,6 +52,18 @@ public class Route {
 
     @Getter
     @Setter
+    @Expose()
+    @Column(name = "DateAdded")
+    private Date dateAdded;
+
+    @Getter
+    @Setter
+    @Expose()
+    @Column(name = "AvoidHighways")
+    private boolean avoidHighways;
+
+    @Getter
+    @Setter
     @Expose(serialize = false, deserialize = false)
     @ManyToOne
     @JoinColumn(name = "UserID")
@@ -75,9 +88,10 @@ public class Route {
      * @param description the description
      * @param user        the user
      */
-    public Route(String title, String description, User user) {
+    public Route(String title, String description, boolean avoidHighways, User user) {
         this.title = title;
         this.description = description;
+        this.avoidHighways = avoidHighways;
         this.user = user;
     }
 
@@ -90,11 +104,12 @@ public class Route {
      * @param description the description
      * @param user        the user
      */
-    public Route(String start, String end, String title, String description, User user) {
+    public Route(String start, String end, String title, String description, boolean avoidHighways, User user) {
         this.start = start;
         this.end = end;
         this.title = title;
         this.description = description;
+        this.avoidHighways = avoidHighways;
         this.user = user;
     }
 

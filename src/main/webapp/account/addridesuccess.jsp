@@ -10,7 +10,7 @@
     <c:import url="/include/nav.jsp"></c:import>
 
     <div class="container">
-        <h1 class="orange">Ride was added successfully</h1>
+        <h1 class="orange uppercase">Ride was added successfully</h1>
 
         <p><a href="/account" class="btn-sm btn-orange">Return to profile</a> or <a href="/account/addride.jsp" class="btn-sm btn-orange">Add another ride</a></p>
     </div>

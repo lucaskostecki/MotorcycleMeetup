@@ -21,7 +21,7 @@
         <h1 class="orange">Search results</h1>
         <c:choose>
             <c:when test="${empty users}">
-                <p class="orange">No users found</p>
+                <p class="orange uppercase">No users found</p>
             </c:when>
             <c:otherwise>
                 <table>
@@ -47,7 +47,7 @@
 
         <c:choose>
             <c:when test="${empty routes}">
-                <p class="orange">No routes found</p>
+                <p class="orange uppercase">No routes found</p>
             </c:when>
             <c:otherwise>
                 <table>

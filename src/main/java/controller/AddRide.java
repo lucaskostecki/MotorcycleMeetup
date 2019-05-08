@@ -32,6 +32,7 @@ public class AddRide extends HttpServlet {
         String routeDescription = request.getParameter("routedesc");
         String start = request.getParameter("start");
         String end = request.getParameter("end");
+        boolean routeAvoidHighways = request.getParameter("avoid-highways").equals("on") ? true : false;
 
         ArrayList<String> waypoints = new ArrayList<>();
 
@@ -86,7 +87,7 @@ public class AddRide extends HttpServlet {
             List<User> targetUsers = dao.getByPropertyLike("username", request.getRemoteUser());
 
             dao = new GenericDao(Route.class);
-            Route newRoute = new Route(start, end, routeTitle, routeDescription, targetUsers.get(0));
+            Route newRoute = new Route(start, end, routeTitle, routeDescription, routeAvoidHighways, targetUsers.get(0));
             checksum = dao.insert(newRoute);
 
             if (checksum > 0) {

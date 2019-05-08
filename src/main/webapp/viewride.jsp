@@ -15,19 +15,43 @@
 
     <div class="container">
         <div class="row">
-            <h1 class="orange uppercase">${route.title}</h1>
+            <h1 class="orange uppercase">VIEW RIDE</h1>
 
             <div class="col-8">
                 <div id="map"></div>
             </div>
             <div class="col-4">
-                <ul>
+                <input type="hidden" id="avoid-highways" value="${route.avoidHighways}">
+                <input type="hidden" id="start" value="${route.start}">
+                <input type="hidden" id="end" value="${route.end}">
+
+                <span id="waypoint-inputs">
                     <c:forEach var="waypoint" items="${waypoints}">
-                        <li>
-                            ${waypoint.waypointName}
-                        </li>
+                        <input type="hidden" value="${waypoint.waypointName}">
                     </c:forEach>
-                </ul>
+                </span>
+
+                <div id="view-ride-container">
+                    <h2 class="uppercase">${route.title}</h2>
+
+                    <p class="uppercase">
+                        <i class="fas fa-align-left ride-list-icon"></i>${route.description}
+                    </p>
+
+                    <p class="uppercase">
+                        <i class="fas fa-arrow-alt-circle-right ride-list-icon"></i>${route.start}
+                    </p>
+
+                    <p class="uppercase">
+                        <i class="fas fa-flag-checkered ride-list-icon"></i>${route.end}
+                    </p>
+
+                    <c:forEach var="waypoint" items="${waypoints}">
+                        <p class="uppercase">
+                            <i class="fas fa-map-marker-alt ride-list-icon"></i>${waypoint.waypointName}
+                        </p>
+                    </c:forEach>
+                </div>
             </div>
         </div>
     </div>
@@ -41,14 +65,10 @@
                 zoom: 12
             });
 
-            let directionsService = new google.maps.DirectionsService;
-            let directionsDisplay = new google.maps.DirectionsRenderer({
+            directionsService = new google.maps.DirectionsService;
+            directionsDisplay = new google.maps.DirectionsRenderer({
                 // draggable: true,
                 map: map
-            });
-
-            document.querySelector('#update-map').addEventListener('click', function() {
-                updateMap(directionsService, directionsDisplay);
             });
 
             if (navigator.geolocation) {
@@ -73,6 +93,8 @@
                 // Browser doesn't support Geolocation
                 handleLocationError(false, infoWindow, map.getCenter());
             }
+
+            updateMap(directionsService, directionsDisplay);
         }
 
         const handleLocationError = (browserHasGeolocation, infoWindow, pos) => {
