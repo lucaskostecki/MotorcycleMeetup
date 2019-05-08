@@ -56,6 +56,8 @@ public class Route {
     @JoinColumn(name = "UserID")
     private User user;
 
+    @Getter
+    @Setter
     @Expose(serialize = false, deserialize = false)
     @OneToMany(mappedBy = "route", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     private Set<Waypoint> waypoints = new HashSet<>();
