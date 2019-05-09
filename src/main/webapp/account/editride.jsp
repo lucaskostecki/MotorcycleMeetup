@@ -22,11 +22,19 @@
             </c:forEach>
         </span>
 
-        <form action="/account/addride/submit" method="post">
+        <form action="/account/editride/submit" method="post">
             <div class="col-8">
                 <div id="map"></div>
             </div>
             <div class="col-4">
+                <label for="start-time">Start Date and Time</label>
+                <br>
+                <input type="date" id="start-date" name="start-date" required />
+                <br>
+                <input type="time" id="start-time" name="start-time" required />
+
+                <br><br>
+                <input type="hidden" name="current-routeID" value="${route.routeID}">
                 <label for="routename">Ride Name</label>
                 <br>
                 <input type="text" id="routename" name="routename" value="${route.title}" />
@@ -55,14 +63,14 @@
 
                 <br><br>
                 <input type="checkbox" id="avoid-highways" name="avoid-highways"
-                       <c:if test="${route.avoidHighways}">checked</c:if>
+                    <c:if test="${route.avoidHighways}">checked</c:if>
                 >
                 <label for="avoid-highways">Avoid Highways</label>
 
                 <br>
                 <br>
                 <button type="button" id="update-map" class="btn-lg btn-orange">Update Map</button>
-                <button type="submit" class="btn-lg btn-orange">Save</button>
+                <button type="submit" class="btn-lg btn-orange">Save Changes</button>
             </div>
         </form>
     </div>

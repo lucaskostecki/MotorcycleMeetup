@@ -20,14 +20,15 @@ import java.util.List;
  * Add routes
  */
 @WebServlet(
-        urlPatterns = {"/account/addride/submit"}
+        urlPatterns = {"/account/editride/submit"}
 )
 
-public class AddRide extends HttpServlet {
+public class EditRideSubmit extends HttpServlet {
     private final Logger logger = LogManager.getLogger(this.getClass());
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        int currentRouteID = Integer.parseInt(request.getParameter("current-routeID"));
         String routeTitle = request.getParameter("routename");
         String routeDescription = request.getParameter("routedesc");
         String start = request.getParameter("start");
@@ -36,34 +37,50 @@ public class AddRide extends HttpServlet {
         String startTime = request.getParameter("start-time");
         boolean routeAvoidHighways = request.getParameter("avoid-highways").equals("on") ? true : false;
 
+        Route targetRoute = null;
+
         ArrayList<String> waypoints = new ArrayList<>();
 
         if (request.getParameter("waypoint1") != null) {
             waypoints.add(request.getParameter("waypoint1"));
+        } else {
+            waypoints.add(null);
         }
 
         if (request.getParameter("waypoint2") != null) {
             waypoints.add(request.getParameter("waypoint2"));
+        } else {
+            waypoints.add(null);
         }
 
         if (request.getParameter("waypoint3") != null) {
             waypoints.add(request.getParameter("waypoint3"));
+        } else {
+            waypoints.add(null);
         }
 
         if (request.getParameter("waypoint4") != null) {
             waypoints.add(request.getParameter("waypoint4"));
+        } else {
+            waypoints.add(null);
         }
 
         if (request.getParameter("waypoint5") != null) {
             waypoints.add(request.getParameter("waypoint5"));
+        } else {
+            waypoints.add(null);
         }
 
         if (request.getParameter("waypoint6") != null) {
             waypoints.add(request.getParameter("waypoint6"));
+        } else {
+            waypoints.add(null);
         }
 
         if (request.getParameter("waypoint7") != null) {
             waypoints.add(request.getParameter("waypoint7"));
+        } else {
+            waypoints.add(null);
         }
 
         if (request.getParameter("waypoint8") != null) {
@@ -72,10 +89,14 @@ public class AddRide extends HttpServlet {
 
         if (request.getParameter("waypoint9") != null) {
             waypoints.add(request.getParameter("waypoint9"));
+        } else {
+            waypoints.add(null);
         }
 
         if (request.getParameter("waypoint10") != null) {
             waypoints.add(request.getParameter("waypoint10"));
+        } else {
+            waypoints.add(null);
         }
 
         if (routeTitle.length() != 0 &&
@@ -83,39 +104,55 @@ public class AddRide extends HttpServlet {
             start.length() != 0 &&
             end.length() != 0) {
 
-            int checksum = 0;
             GenericDao dao = null;
             dao = new GenericDao(User.class);
             List<User> targetUsers = dao.getByPropertyLike("username", request.getRemoteUser());
 
             dao = new GenericDao(Route.class);
-            Route newRoute = new Route(start, end, routeTitle, routeDescription, routeAvoidHighways, startDate, startTime, targetUsers.get(0));
-            checksum = dao.insert(newRoute);
+            targetRoute = (Route) dao.getById(currentRouteID);
 
-            if (checksum > 0) {
-                Route targetRoute = (Route)dao.getById(checksum);
+            targetRoute.setStart(start);
+            targetRoute.setEnd(end);
+            targetRoute.setTitle(routeTitle);
+            targetRoute.setDescription(routeDescription);
+            targetRoute.setAvoidHighways(routeAvoidHighways);
+            targetRoute.setStartDate(startDate);
+            targetRoute.setStartTime(startTime);
+
+            dao.saveOrUpdate(targetRoute);
+
+            if (currentRouteID == targetRoute.getRouteID()) {
                 logger.debug("NEW ROUTE: " + targetRoute.getTitle() + " FOR USER: " + targetUsers.get(0).getUserID());
 
                 dao = new GenericDao(Waypoint.class);
 
-                for (String waypointName : waypoints) {
-                    Waypoint newWaypoint = new Waypoint(waypointName, targetRoute);
-                    checksum = dao.insert(newWaypoint);
+                int i = 0;
+                int oldWaypointID = -1;
+                for (Waypoint waypoint : targetRoute.getWaypoints()) {
+                    if (waypoints.get(i) == null) {
+                        dao.delete(waypoint);
+                    } else {
+                        oldWaypointID = waypoint.getWaypointID();
+                        waypoint.setWaypointName(waypoints.get(i));
+                        dao.saveOrUpdate(waypoint);
+                    }
 
-                    if (checksum > 0) {
-                        logger.debug("NEW WAYPOINT ADDED: " + waypointName);
+                    if (oldWaypointID == waypoint.getWaypointID()) {
+                        logger.debug("NEW WAYPOINT ADDED: " + waypoint.getWaypointName());
                     } else {
                         logger.error("FAILED TO ADD WAYPOINT");
                     }
+
+                    i++;
                 }
 
-                response.sendRedirect("/account/addridesuccess.jsp");
+                response.sendRedirect("/account/editridesuccess.jsp");
             } else {
-                logger.error("Could not add new route");
-                response.sendRedirect("/account/addride.jsp?p=generalerror");
+                logger.error("Could not update route");
+                response.sendRedirect("/account/editride?id=" + targetRoute.getRouteID() + "&p=generalerror");
             }
         } else {
-            response.sendRedirect("/account/addride.jsp?p=missingdata");
+            response.sendRedirect("/account/editride?id=" + targetRoute.getRouteID() + "&p=missingdata");
         }
     }
 

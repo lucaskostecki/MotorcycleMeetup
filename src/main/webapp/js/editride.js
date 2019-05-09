@@ -14,7 +14,7 @@ const initEditRide = () => {
 
 const addAllWaypoints = () => {
 
-    let waypoints = getWaypointsAsArray();
+    let waypoints = getExistingWaypointsAsArray();
     for (let i = 0; i < waypoints.length; i++) {
         addWaypoint(waypoints[i].location);
     }
@@ -89,13 +89,27 @@ const addWaypoint = value => {
 
 }
 
-const getWaypointsAsArray = () => {
+const getExistingWaypointsAsArray = () => {
     let values = [];
     let containerChildren = document.querySelectorAll('#waypoint-inputs input');
 
     for (let i = 0; i < containerChildren.length; i++) {
         values.push({
             location: containerChildren[i].value,
+            stopover: true
+        });
+    }
+
+    return values;
+}
+
+const getWaypointsAsArray = () => {
+    let values = [];
+    let containerChildren = document.querySelectorAll('#waypoint-container .waypoint-node');
+
+    for (let i = 0; i < containerChildren.length; i++) {
+        values.push({
+            location: containerChildren[i].childNodes[2].value,
             stopover: true
         });
     }

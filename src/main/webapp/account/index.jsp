@@ -27,16 +27,29 @@
 
                                     <div class="rides-list-descriptive">
                                         <p><a href="/account/editride?id=${route.routeID}"><i class="fas fa-edit ride-list-icon"></i>EDIT</a></p>
+
+                                        <c:if test="${fn:length(route.description) > 0}">
+                                            <p class="uppercase">
+                                                <i class="fas fa-calendar-day ride-list-icon"></i>${route.dateAdded}
+                                            </p>
+                                        </c:if>
+
                                         <c:if test="${fn:length(route.description) > 0}">
                                             <p class="uppercase">
                                                 <i class="fas fa-align-left ride-list-icon"></i>${route.description}
                                             </p>
                                         </c:if>
+
                                         <c:if test="${fn:length(route.start) > 0}">
                                             <p class="uppercase">
                                                 <i class="fas fa-arrow-alt-circle-right ride-list-icon"></i>${route.start}
                                             </p>
                                         </c:if>
+
+                                        <p class="uppercase">
+                                            <i class="fas fa-map-marker-alt ride-list-icon"></i>${fn:length(waypoints)}
+                                        </p>
+
                                         <c:if test="${fn:length(route.end) > 0}">
                                             <p class="uppercase">
                                                 <i class="fas fa-flag-checkered ride-list-icon"></i>${route.end}

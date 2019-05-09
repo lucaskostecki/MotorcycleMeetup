@@ -26,7 +26,7 @@ public class EditRideManager extends HttpServlet {
         request.getSession().setAttribute("route", targetRoute);
         request.getSession().setAttribute("waypoints", targetRoute.getWaypoints());
 
-        RequestDispatcher dispatcher = request.getRequestDispatcher("/account/editroute.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("/account/editride.jsp");
         dispatcher.forward(request, response);
 
     }
