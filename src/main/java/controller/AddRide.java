@@ -34,7 +34,13 @@ public class AddRide extends HttpServlet {
         String end = request.getParameter("end");
         String startDate = request.getParameter("start-date");
         String startTime = request.getParameter("start-time");
-        boolean routeAvoidHighways = request.getParameter("avoid-highways").equals("on") ? true : false;
+        boolean routeAvoidHighways = false;
+
+        try {
+            routeAvoidHighways = request.getParameter("avoid-highways").equals("on") ? true : false;
+        } catch (NullPointerException e) {
+            routeAvoidHighways = false;
+        }
 
         ArrayList<String> waypoints = new ArrayList<>();
 

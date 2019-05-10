@@ -47,7 +47,7 @@
                                         </c:if>
 
                                         <p class="uppercase">
-                                            <i class="fas fa-map-marker-alt ride-list-icon"></i>${fn:length(waypoints)}
+                                            <i class="fas fa-map-marker-alt ride-list-icon"></i>${fn:length(route.waypoints)}
                                         </p>
 
                                         <c:if test="${fn:length(route.end) > 0}">

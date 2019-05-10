@@ -18,7 +18,7 @@
         <input type="hidden" id="avoid-highways-input" value="${route.avoidHighways}">
         <span id="waypoint-inputs">
             <c:forEach var="waypoint" items="${waypoints}">
-                <input type="hidden" value="${waypoint.waypointName}">
+                <input type="hidden" data-waypoint-id="${waypoint.waypointID}" value="${waypoint.waypointName}">
             </c:forEach>
         </span>
 
@@ -29,9 +29,9 @@
             <div class="col-4">
                 <label for="start-time">Start Date and Time</label>
                 <br>
-                <input type="date" id="start-date" name="start-date" required />
+                <input type="date" id="start-date" name="start-date" value="${route.startDate}" required />
                 <br>
-                <input type="time" id="start-time" name="start-time" required />
+                <input type="time" id="start-time" name="start-time" value="${route.startTime}" required />
 
                 <br><br>
                 <input type="hidden" name="current-routeID" value="${route.routeID}">
