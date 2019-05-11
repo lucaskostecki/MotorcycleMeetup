@@ -7,12 +7,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a363bf17-ce96-4b1b-b113-1512fb20075c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/AddRide.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/AddRide.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/AddRide.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/AddRideManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/EditRideManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/EditRideManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/EditRideSubmit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/ViewRouteManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/ViewRouteManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Route.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Route.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/account/addride.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/account/addride.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/account/editride.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/account/editride.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/account/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/account/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/viewride.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/viewride.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -34,7 +38,7 @@
     <option name="myElementSize" value="178" />
   </component>
   <component name="DarkyenusTimeTracker">
-    <option name="totalTimeSeconds" value="152258" />
+    <option name="totalTimeSeconds" value="166271" />
     <option name="gitIntegration" value="true" />
   </component>
   <component name="DatabaseView">
@@ -102,32 +106,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/account/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="49" column="123" selection-start-line="49" selection-start-column="123" selection-end-line="49" selection-end-column="123" />
+            <state relative-caret-position="155">
+              <caret line="31" column="65" selection-start-line="31" selection-start-column="65" selection-end-line="31" selection-end-column="65" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/account/editridesuccess.jsp">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/viewride.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/entity/Route.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="91" column="7" selection-start-line="91" selection-start-column="7" selection-end-line="91" selection-end-column="7" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="150">
+              <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -135,26 +127,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/account/editride.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="33" column="93" selection-start-line="33" selection-start-column="93" selection-end-line="33" selection-end-column="93" />
+            <state relative-caret-position="255">
+              <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="95" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/account/addride.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="65" column="74" selection-start-line="65" selection-start-column="74" selection-end-line="65" selection-end-column="74" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/controller/EditRideManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="156" lean-forward="true" selection-start-line="156" selection-end-line="156" />
+            <state relative-caret-position="165">
+              <caret line="70" column="69" lean-forward="true" selection-start-line="70" selection-start-column="69" selection-end-line="70" selection-end-column="69" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/controller/AddRide.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/controller/AddRideManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="36" column="8" selection-start-line="36" selection-start-column="8" selection-end-line="42" selection-end-column="9" />
+            <state relative-caret-position="30">
+              <caret line="37" column="8" selection-start-line="37" selection-start-column="8" selection-end-line="43" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -163,28 +164,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/editride.js">
+        <entry file="file://$PROJECT_DIR$/src/main/java/controller/ViewRouteManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="50" selection-start-line="16" selection-start-column="50" selection-end-line="16" selection-end-column="50" />
+            <state relative-caret-position="420">
+              <caret line="46" column="13" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/addride.js">
+        <entry file="file://$PROJECT_DIR$/src/main/java/entity/Route.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1140">
-              <caret line="76" selection-start-line="76" selection-end-line="88" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/account/addride.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="60" column="81" selection-start-line="60" selection-start-column="81" selection-end-line="60" selection-end-column="81" />
+            <state relative-caret-position="450">
+              <caret line="90" column="22" selection-start-line="90" selection-start-column="22" selection-end-line="90" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -213,6 +208,7 @@
       <find>console</find>
       <find>dark</find>
       <find>/account/</find>
+      <find>%&gt;</find>
     </findStrings>
     <replaceStrings>
       <replace>Route</replace>
@@ -229,7 +225,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/signup.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/java/controller/signout.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/SignOut.java" />
@@ -255,7 +250,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/include/nav.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/styles.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/viewroute.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/controller/ViewRouteManager.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/account/addridesuccess.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/account/myrides.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/signin.jsp" />
@@ -265,21 +259,23 @@
         <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/controller/AccountHome.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/searchresults.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/viewride.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/controller/EditRouteManager.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/viewride.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/account/addride.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/account/editroute.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/controller/EditRide.java" />
         <option value="$PROJECT_DIR$/src/main/java/persistence/GenericDao.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/editride.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/account/editridesuccess.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/controller/EditRideSubmit.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/AddRide.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/account/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/ViewRouteManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/entity/Route.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/account/editride.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/controller/AddRide.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/account/addride.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/AddRideManager.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/viewride.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/controller/EditRideManager.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/account/index.jsp" />
       </list>
     </option>
   </component>
@@ -327,6 +323,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -433,7 +430,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -798,7 +794,8 @@
       <workItem from="1557363402986" duration="7387000" />
       <workItem from="1557373150981" duration="588000" />
       <workItem from="1557420812275" duration="107000" />
-      <workItem from="1557444717082" duration="7752000" />
+      <workItem from="1557444717082" duration="8075000" />
+      <workItem from="1557522394215" duration="19570000" />
     </task>
     <task id="LOCAL-00001" summary="Updated project files to compile. Added a TomEE deploy config.">
       <created>1549826212420</created>
@@ -850,7 +847,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="223363000" />
+    <option name="totallyTimeSpent" value="243256000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -865,7 +862,7 @@
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21472053" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21472053" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -874,14 +871,15 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Web" order="7" side_tool="true" />
       <window_info id="Persistence" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Duplicates" weight="0.32937366" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32937366" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32829374" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.39956802" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39956802" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32937366" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.27645788" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.27429804" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32937366" />
@@ -893,7 +891,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24958494" />
-      <window_info anchor="right" id="Maven" order="3" visible="true" weight="0.16491422" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.16491422" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="JSF" order="6" weight="0.32982844" />
@@ -958,7 +956,6 @@
     </SUITE>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/AddRoute.java" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/account/index_old.jsp" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/index_old.jsp" />
     <entry file="file://$PROJECT_DIR$/src/test/java/utility/CleanTestDB.java">
@@ -1151,13 +1148,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/ViewRouteManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="31" column="78" selection-start-line="31" selection-start-column="78" selection-end-line="31" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/account/myrides.jsp" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/account/addridesuccess.jsp">
       <provider selected="true" editor-type-id="text-editor">
@@ -1235,17 +1225,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/viewride.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/EditRideSubmit.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.2.12.Final/hibernate-core-5.2.12.Final.jar!/org/hibernate/collection/internal/AbstractPersistentCollection.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="70" selection-start-line="24" selection-start-column="70" selection-end-line="24" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/editride.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="50" selection-start-line="16" selection-start-column="50" selection-end-line="16" selection-end-column="50" />
+        <state relative-caret-position="225">
+          <caret line="970" selection-start-line="970" selection-end-line="970" />
+          <folding>
+            <element signature="e#34613#34614#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1258,56 +1245,74 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/account/editridesuccess.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="180">
+          <caret line="12" column="60" selection-start-line="12" selection-start-column="60" selection-end-line="12" selection-end-column="60" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/EditRideSubmit.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/editride.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="22" column="23" lean-forward="true" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="49" />
+        <state relative-caret-position="240">
+          <caret line="16" column="50" selection-start-line="16" selection-start-column="50" selection-end-line="16" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/javaee-web-api/7.0/javaee-web-api-7.0.jar!/javax/servlet/http/HttpServlet.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="34" column="19" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/account/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="31" column="65" selection-start-line="31" selection-start-column="65" selection-end-line="31" selection-end-column="65" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/entity/Route.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="91" column="7" selection-start-line="91" selection-start-column="7" selection-end-line="91" selection-end-column="7" />
+        <state relative-caret-position="450">
+          <caret line="90" column="22" selection-start-line="90" selection-start-column="22" selection-end-line="90" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/account/editride.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="33" column="93" selection-start-line="33" selection-start-column="93" selection-end-line="33" selection-end-column="93" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/account/addride.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="60" column="81" selection-start-line="60" selection-start-column="81" selection-end-line="60" selection-end-column="81" />
+        <state relative-caret-position="390">
+          <caret line="65" column="74" selection-start-line="65" selection-start-column="74" selection-end-line="65" selection-end-column="74" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.2.12.Final/hibernate-core-5.2.12.Final.jar!/org/hibernate/collection/internal/AbstractPersistentCollection.class">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/account/editride.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="970" selection-start-line="970" selection-end-line="970" />
-          <folding>
-            <element signature="e#34613#34614#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="255">
+          <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="95" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/AddRide.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/ViewRouteManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="36" column="8" selection-start-line="36" selection-start-column="8" selection-end-line="42" selection-end-column="9" />
+        <state relative-caret-position="420">
+          <caret line="46" column="13" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/viewride.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/AddRideManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="37" column="8" selection-start-line="37" selection-start-column="8" selection-end-line="43" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1316,15 +1321,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controller/EditRideManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="156" lean-forward="true" selection-start-line="156" selection-end-line="156" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/account/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="49" column="123" selection-start-line="49" selection-start-column="123" selection-end-line="49" selection-end-column="123" />
+        <state relative-caret-position="165">
+          <caret line="70" column="69" lean-forward="true" selection-start-line="70" selection-start-column="69" selection-end-line="70" selection-end-column="69" />
         </state>
       </provider>
     </entry>

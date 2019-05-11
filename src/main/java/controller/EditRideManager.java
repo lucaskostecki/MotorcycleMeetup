@@ -14,8 +14,13 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.time.format.DateTimeParseException;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
+import java.util.Set;
 
 @WebServlet(
     urlPatterns = {"/account/editride", "/account/editride/submit"}
@@ -29,22 +34,55 @@ public class EditRideManager extends HttpServlet {
 
         GenericDao dao = new GenericDao(Route.class);
         Route targetRoute = (Route) dao.getById(Integer.parseInt(request.getParameter("id")));
-        request.getSession().setAttribute("route", targetRoute);
-        request.getSession().setAttribute("waypoints", targetRoute.getWaypoints());
 
-        RequestDispatcher dispatcher = request.getRequestDispatcher("/account/editride.jsp");
+        dao = new GenericDao(User.class);
+        User targetUser = (User) dao.getByPropertyLike("username", request.getRemoteUser()).get(0);
+
+        for (Route route : targetUser.getRoutes()) {
+            if (targetRoute.getRouteID() == route.getRouteID()) {
+                request.getSession().setAttribute("route", targetRoute);
+                request.getSession().setAttribute("waypoints", targetRoute.getWaypoints());
+
+                SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+                String startDateString = sdf.format(targetRoute.getStartDate());
+                request.getSession().setAttribute("startDateString", startDateString);
+
+                RequestDispatcher dispatcher = request.getRequestDispatcher("/account/editride.jsp");
+                dispatcher.forward(request, response);
+            }
+        }
+
+        RequestDispatcher dispatcher = request.getRequestDispatcher("/account/editride.jsp?id=" + targetRoute.getRouteID() + "&p=norights");
         dispatcher.forward(request, response);
 
     }
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
         int currentRouteID = Integer.parseInt(request.getParameter("current-routeID"));
         String routeTitle = request.getParameter("routename");
         String routeDescription = request.getParameter("routedesc");
         String start = request.getParameter("start");
         String end = request.getParameter("end");
-        String startDate = request.getParameter("start-date");
+        boolean publicRide = false;
+
+        try {
+            publicRide = request.getParameter("public").equals("on");
+        } catch (NullPointerException e) {
+            publicRide = false;
+        }
+
+        String strStartDate = request.getParameter("start-date");
+        Date startDate = null;
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+
+        try {
+            startDate = sdf.parse(strStartDate);
+        } catch (ParseException e) {
+            logger.error("COULD NOT CONVERT DATE: " + e);
+        }
+
         String startTime = request.getParameter("start-time");
         boolean routeAvoidHighways = false;
 
@@ -60,44 +98,30 @@ public class EditRideManager extends HttpServlet {
 
         if (request.getParameter("waypoint1") != null) {
             waypoints.add(request.getParameter("waypoint1"));
-        } else {
-            waypoints.add(null);
         }
 
         if (request.getParameter("waypoint2") != null) {
             waypoints.add(request.getParameter("waypoint2"));
-        } else {
-            waypoints.add(null);
         }
 
         if (request.getParameter("waypoint3") != null) {
             waypoints.add(request.getParameter("waypoint3"));
-        } else {
-            waypoints.add(null);
         }
 
         if (request.getParameter("waypoint4") != null) {
             waypoints.add(request.getParameter("waypoint4"));
-        } else {
-            waypoints.add(null);
         }
 
         if (request.getParameter("waypoint5") != null) {
             waypoints.add(request.getParameter("waypoint5"));
-        } else {
-            waypoints.add(null);
         }
 
         if (request.getParameter("waypoint6") != null) {
             waypoints.add(request.getParameter("waypoint6"));
-        } else {
-            waypoints.add(null);
         }
 
         if (request.getParameter("waypoint7") != null) {
             waypoints.add(request.getParameter("waypoint7"));
-        } else {
-            waypoints.add(null);
         }
 
         if (request.getParameter("waypoint8") != null) {
@@ -106,14 +130,10 @@ public class EditRideManager extends HttpServlet {
 
         if (request.getParameter("waypoint9") != null) {
             waypoints.add(request.getParameter("waypoint9"));
-        } else {
-            waypoints.add(null);
         }
 
         if (request.getParameter("waypoint10") != null) {
             waypoints.add(request.getParameter("waypoint10"));
-        } else {
-            waypoints.add(null);
         }
 
         if (routeTitle.length() != 0 &&
@@ -135,6 +155,7 @@ public class EditRideManager extends HttpServlet {
             targetRoute.setAvoidHighways(routeAvoidHighways);
             targetRoute.setStartDate(startDate);
             targetRoute.setStartTime(startTime);
+            targetRoute.setPublicRide(publicRide);
 
             dao.saveOrUpdate(targetRoute);
 
@@ -143,42 +164,39 @@ public class EditRideManager extends HttpServlet {
 
                 dao = new GenericDao(Waypoint.class);
 
-                int i = 0;
-                int oldWaypointID = -1;
+                List<Waypoint> routeWaypoints = new ArrayList(targetRoute.getWaypoints());
 
-                for (Waypoint waypoint : targetRoute.getWaypoints()) {
-                    logger.debug("WAYPOINT FROM ARRAY: " + waypoints.get(i));
+                int checksum;
 
-                    // Check if form input waypoints is null
-                    if (waypoints.get(i) != null && !waypoints.get(0).equals(waypoint.getWaypointName())) {
-                        // If it is not null then update the old waypoint to signify it was already there
-                        // Set the waypoint name to the input form waypoint name
-                        logger.debug("UPDATING WAYPOINT " + waypoint.getWaypointName() + " TO: " + waypoints.get(i));
+                if (routeWaypoints.size() > waypoints.size()) {
+                    for (int i = (waypoints.size() - 1); i < routeWaypoints.size(); i++) {
+                        routeWaypoints.remove(i);
+                        dao.delete(routeWaypoints.get(i));
+                        logger.debug("REMOVING EXTRA WAYPOINTS: " + routeWaypoints.get(i));
+                    }
+                } else {
+                    for (int i = 0; i < waypoints.size(); i++) {
+                        logger.debug("WAYPOINT FROM ARRAY: " + waypoints.get(i));
+                        try {
+                            routeWaypoints.get(i);
+                            logger.debug("ADDING WAYPOINT");
 
-                        oldWaypointID = waypoint.getWaypointID();
-                        waypoint.setWaypointName(waypoints.get(i));
-                        dao.saveOrUpdate(waypoint);
-                    } else if (waypoints.get(i) == null) {
-                        dao.delete(waypoint);
-                        logger.debug("REMOVING WAYPOINT FROM DB");
-                    } else {
-                        Waypoint newWaypoint = new Waypoint(waypoints.get(i), targetRoute);
-                        int checksum = dao.insert(newWaypoint);
 
-                        if (checksum > 0) {
-                            logger.debug("NEW WAYPOINT ADDED: " + newWaypoint.getWaypointName());
-                        } else {
-                            logger.error("FAILED TO ADD WAYPOINT");
+                            // Check if the waypoint names are the same, if not update them
+                            if (!routeWaypoints.get(i).getWaypointName().toLowerCase().equals(waypoints.get(i).toLowerCase())) {
+                                routeWaypoints.get(i).setWaypointName(waypoints.get(i));
+                                dao.saveOrUpdate(routeWaypoints.get(i));
+                            }
+                            // If the array of existing points is out of index then we know we have to add a new waypoint
+                        } catch (IndexOutOfBoundsException e) {
+                            logger.debug("ADDING WAYPOINT");
+                            Waypoint newWaypoint = new Waypoint(waypoints.get(i), targetRoute);
+                            checksum = dao.insert(newWaypoint);
+
+                            if (checksum > 0)
+                                logger.debug("ADDED NEW WAYPOINT: " + newWaypoint.getWaypointName());
                         }
                     }
-
-                    if (oldWaypointID == waypoint.getWaypointID()) {
-                        logger.debug("EDITED WAYPOINT: " + waypoint.getWaypointName());
-                    } else {
-                        logger.error("FAILED TO EDIT WAYPOINT");
-                    }
-
-                    i++;
                 }
 
                 response.sendRedirect("/account/editridesuccess.jsp");
@@ -189,6 +207,7 @@ public class EditRideManager extends HttpServlet {
         } else {
             response.sendRedirect("/account/editride?id=" + targetRoute.getRouteID() + "&p=missingdata");
         }
+
     }
 
 }

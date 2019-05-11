@@ -13,7 +13,10 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -23,7 +26,7 @@ import java.util.List;
         urlPatterns = {"/account/addride/submit"}
 )
 
-public class AddRide extends HttpServlet {
+public class AddRideManager extends HttpServlet {
     private final Logger logger = LogManager.getLogger(this.getClass());
 
     @Override
@@ -32,7 +35,24 @@ public class AddRide extends HttpServlet {
         String routeDescription = request.getParameter("routedesc");
         String start = request.getParameter("start");
         String end = request.getParameter("end");
-        String startDate = request.getParameter("start-date");
+        boolean publicRide = false;
+
+        try {
+            publicRide = request.getParameter("public").equals("on");
+        } catch (NullPointerException e) {
+            publicRide = false;
+        }
+
+        String strStartDate = request.getParameter("start-date");
+        Date startDate = null;
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+
+        try {
+            startDate = sdf.parse(strStartDate);
+        } catch (ParseException e) {
+            logger.error("COULD NOT CONVERT DATE: " + e);
+        }
+
         String startTime = request.getParameter("start-time");
         boolean routeAvoidHighways = false;
 
@@ -95,7 +115,7 @@ public class AddRide extends HttpServlet {
             List<User> targetUsers = dao.getByPropertyLike("username", request.getRemoteUser());
 
             dao = new GenericDao(Route.class);
-            Route newRoute = new Route(start, end, routeTitle, routeDescription, routeAvoidHighways, startDate, startTime, targetUsers.get(0));
+            Route newRoute = new Route(start, end, routeTitle, routeDescription, routeAvoidHighways, startDate, startTime, publicRide, targetUsers.get(0));
             checksum = dao.insert(newRoute);
 
             if (checksum > 0) {

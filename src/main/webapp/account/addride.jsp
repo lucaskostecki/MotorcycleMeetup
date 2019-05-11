@@ -14,59 +14,64 @@
         <h1 class="orange uppercase">Add Ride</h1>
 
         <% if (request.getParameter("p") != null && request.getParameter("p").equals("missingdata")) { %>
-            <p class="form-error">You must have a route name, description, start, and end point</p>
+            <p class="form-error">You must have a route name, description, start, and end point.</p>
         <% } else if (request.getParameter("p") != null && request.getParameter("p").equals("generalerror")) { %>
-            <p class="form-error">An error has occurred while processing your request</p>
+            <p class="form-error">An error has occurred while processing your request.</p>
+        <% } else { %>
+
+            <form action="/account/addride/submit" method="post">
+                <div class="col-8">
+                    <div id="map"></div>
+                </div>
+                <div class="col-4">
+                    <label for="start-time">Start Date and Time</label>
+                    <br>
+                    <input type="date" id="start-date" name="start-date" required />
+                    <br>
+                    <input type="time" id="start-time" name="start-time" required />
+
+                    <br><br>
+                    <label for="routename">Ride Name</label>
+                    <br>
+                    <input type="text" id="routename" name="routename" required />
+
+                    <br><br>
+                    <label for="routedesc">Ride Description</label>
+                    <br>
+                    <input type="text" id="routedesc" name="routedesc" required />
+
+                    <br><br>
+                    <label for="start">Start</label>
+                    <br>
+                    <input type="text" id="start" name="start" required />
+
+                    <br><br>
+                    <label>Waypoints</label>
+                    <br>
+                    <div id="waypoint-container"></div>
+                    <br>
+                    <button id="add-waypoint" class="btn-sm btn-orange" type="button">+ Add Waypoint</button>
+
+                    <br><br>
+                    <label for="end">End</label>
+                    <br>
+                    <input type="text" id="end" name="end" required />
+
+                    <br><br>
+                    <input type="checkbox" id="avoid-highways" name="avoid-highways">
+                    <label for="avoid-highways">Avoid Highways</label>
+
+                    <br><br>
+                    <input type="checkbox" id="public" name="public">
+                    <label for="public">Make Ride Publicly Visible</label>
+
+                    <br>
+                    <br>
+                    <button type="button" id="update-map" class="btn-lg btn-orange">Update Map</button>
+                    <button type="submit" class="btn-lg btn-orange">Save</button>
+                </div>
+            </form>
         <% } %>
-
-        <form action="/account/addride/submit" method="post">
-            <div class="col-8">
-                <div id="map"></div>
-            </div>
-            <div class="col-4">
-                <label for="start-time">Start Date and Time</label>
-                <br>
-                <input type="date" id="start-date" name="start-date" required />
-                <br>
-                <input type="time" id="start-time" name="start-time" required />
-
-                <br><br>
-                <label for="routename">Ride Name</label>
-                <br>
-                <input type="text" id="routename" name="routename" required />
-
-                <br><br>
-                <label for="routedesc">Ride Description</label>
-                <br>
-                <input type="text" id="routedesc" name="routedesc" required />
-
-                <br><br>
-                <label for="start">Start</label>
-                <br>
-                <input type="text" id="start" name="start" required />
-
-                <br><br>
-                <label>Waypoints</label>
-                <br>
-                <div id="waypoint-container"></div>
-                <br>
-                <button id="add-waypoint" class="btn-sm btn-orange" type="button">+ Add Waypoint</button>
-
-                <br><br>
-                <label for="end">End</label>
-                <br>
-                <input type="text" id="end" name="end" required />
-
-                <br><br>
-                <input type="checkbox" id="avoid-highways" name="avoid-highways">
-                <label for="avoid-highways">Avoid Highways</label>
-
-                <br>
-                <br>
-                <button type="button" id="update-map" class="btn-lg btn-orange">Update Map</button>
-                <button type="submit" class="btn-lg btn-orange">Save</button>
-            </div>
-        </form>
     </div>
 
     <script>

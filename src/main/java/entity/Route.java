@@ -8,6 +8,8 @@ import org.hibernate.annotations.ManyToAny;
 
 import javax.persistence.*;
 import java.sql.Time;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
@@ -73,7 +75,13 @@ public class Route {
     @Setter
     @Expose()
     @Column(name = "StartDate")
-    private String startDate;
+    private java.util.Date startDate;
+
+    @Getter
+    @Setter
+    @Expose()
+    @Column(name = "Public")
+    private boolean publicRide;
 
     @Getter
     @Setter
@@ -103,7 +111,8 @@ public class Route {
      * @param description the description
      * @param user        the user
      */
-    public Route(String start, String end, String title, String description, boolean avoidHighways, String startDate, String startTime, User user) {
+    public Route(String start, String end, String title, String description, boolean avoidHighways,
+                 java.util.Date startDate, String startTime, boolean publicRide, User user) {
         this.start = start;
         this.end = end;
         this.startDate = startDate;
@@ -111,6 +120,7 @@ public class Route {
         this.title = title;
         this.description = description;
         this.avoidHighways = avoidHighways;
+        this.publicRide = publicRide;
         this.user = user;
     }
 
@@ -122,7 +132,11 @@ public class Route {
                 ", end='" + end + '\'' +
                 ", title='" + title + '\'' +
                 ", description='" + description + '\'' +
-                ", user=" + user +
+                ", dateAdded=" + dateAdded +
+                ", avoidHighways=" + avoidHighways +
+                ", startTime='" + startTime + '\'' +
+                ", startDate=" + startDate +
+                ", publicRide=" + publicRide +
                 '}';
     }
 }

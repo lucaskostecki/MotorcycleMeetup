@@ -28,7 +28,7 @@
                                     <div class="rides-list-descriptive">
                                         <p><a href="/account/editride?id=${route.routeID}"><i class="fas fa-edit ride-list-icon"></i>EDIT</a></p>
 
-                                        <c:if test="${fn:length(route.description) > 0}">
+                                        <c:if test="${fn:length(route.dateAdded) > 0}">
                                             <p class="uppercase">
                                                 <i class="fas fa-calendar-day ride-list-icon"></i>${route.dateAdded}
                                             </p>

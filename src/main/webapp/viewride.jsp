@@ -17,40 +17,56 @@
         <div class="row">
             <h1 class="orange uppercase">VIEW RIDE</h1>
 
-            <div class="col-8">
-                <div id="map"></div>
-            </div>
-            <div class="col-4">
-                <input type="hidden" id="avoid-highways" value="${route.avoidHighways}">
-                <input type="hidden" id="start" value="${route.start}">
-                <input type="hidden" id="end" value="${route.end}">
+            <c:if test="${!route.publicRide}">
+                <p class="form-error">This ride is not publicly visible. Ask the route owner to invite you or make it publicly visible.</p>
+            </c:if>
 
-                <span id="waypoint-inputs">
-                    <c:forEach var="waypoint" items="${waypoints}">
-                        <input type="hidden" value="${waypoint.waypointName}">
-                    </c:forEach>
-                </span>
+            <c:if test="${route.publicRide}">
+                <div class="col-8">
+                    <div id="map"></div>
+                </div>
+                <div class="col-4">
 
-                <div id="view-ride-container">
-                    <h2 class="uppercase">${route.title}</h2>
+                    <input type="hidden" id="avoid-highways" value="${route.avoidHighways}">
+                    <input type="hidden" id="start" value="${route.start}">
+                    <input type="hidden" id="end" value="${route.end}">
 
-                    <p class="uppercase">
-                        <i class="fas fa-align-left ride-list-icon"></i>${route.description}
-                    </p>
+                    <span id="waypoint-inputs">
+                        <c:forEach var="waypoint" items="${waypoints}">
+                            <input type="hidden" value="${waypoint.waypointName}">
+                        </c:forEach>
+                    </span>
 
-                    <p class="uppercase">
-                        <i class="fas fa-arrow-alt-circle-right ride-list-icon"></i>${route.start}
-                    </p>
+                    <div id="view-ride-container">
+                        <h2 class="uppercase">${route.title}</h2>
 
-                    <c:forEach var="waypoint" items="${waypoints}">
                         <p class="uppercase">
-                            <i class="fas fa-map-marker-alt ride-list-icon"></i>${waypoint.waypointName}
+                            <i class="fas fa-calendar-day ride-list-icon"></i>${readableDate}
                         </p>
-                    </c:forEach>
 
-                    <p class="uppercase">
-                        <i class="fas fa-flag-checkered ride-list-icon"></i>${route.end}
-                    </p>
+                        <p class="uppercase">
+                            <i class="fas fa-clock ride-list-icon"></i>${readableTime}
+                        </p>
+
+                        <p class="uppercase">
+                            <i class="fas fa-align-left ride-list-icon"></i>${route.description}
+                        </p>
+
+                        <p class="uppercase">
+                            <i class="fas fa-arrow-alt-circle-right ride-list-icon"></i>${route.start}
+                        </p>
+
+                        <c:forEach var="waypoint" items="${waypoints}">
+                            <p class="uppercase">
+                                <i class="fas fa-map-marker-alt ride-list-icon"></i>${waypoint.waypointName}
+                            </p>
+                        </c:forEach>
+
+                        <p class="uppercase">
+                            <i class="fas fa-flag-checkered ride-list-icon"></i>${route.end}
+                        </p>
+                    </div>
+                </c:if>
                 </div>
             </div>
         </div>
