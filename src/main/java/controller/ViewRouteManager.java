@@ -21,7 +21,7 @@ import java.util.Date;
 import java.util.List;
 
 @WebServlet(
-    urlPatterns = {"/viewroute"}
+    urlPatterns = {"/viewride"}
 )
 public class ViewRouteManager extends HttpServlet {
 
@@ -30,8 +30,19 @@ public class ViewRouteManager extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         GenericDao dao;
+        dao = new GenericDao(User.class);
+
+        int routeID = Integer.parseInt(request.getParameter("id"));
+        String username = "";
+
+        if (request.getRemoteUser() != null) {
+            User targetUser = (User) dao.getByPropertyLike("username", request.getRemoteUser()).get(0);
+            username = targetUser.getUsername();
+        }
+
         dao = new GenericDao(Route.class);
-        Route targetRoute = (Route) dao.getById(Integer.parseInt(request.getParameter("id")));
+
+        Route targetRoute = (Route) dao.getById(routeID);
         request.getSession().setAttribute("route", targetRoute);
 
         request.getSession().setAttribute("waypoints", targetRoute.getWaypoints());
@@ -53,6 +64,14 @@ public class ViewRouteManager extends HttpServlet {
             request.getSession().setAttribute("readableTime", readableTime);
         } catch (ParseException e) {
             logger.error("FAILED TO CONVERT TIME: " + e);
+        }
+
+        RouteManager rm = new RouteManager();
+
+        if (targetRoute.isPublicRide() || rm.getUserPrivileges(routeID, username)) {
+            request.getSession().setAttribute("showRoute", true);
+        } else {
+            request.getSession().setAttribute("showRoute", false);
         }
 
         RequestDispatcher dispatcher = request.getRequestDispatcher("/viewride.jsp");

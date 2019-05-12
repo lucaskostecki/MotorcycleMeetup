@@ -23,10 +23,14 @@
                         <c:forEach var="route" items="${routesList}">
                             <c:if test="${fn:length(route.title) > 0}">
                                 <div class="ride-item">
-                                    <h2 class="rides-list-title uppercase"><a href="/viewroute?id=${route.routeID}" class="orange">${route.title}</a></h2>
+                                    <h2 class="rides-list-title uppercase"><a href="/viewride?id=${route.routeID}" class="orange">${route.title}</a></h2>
 
                                     <div class="rides-list-descriptive">
-                                        <p><a href="/account/editride?id=${route.routeID}"><i class="fas fa-edit ride-list-icon"></i>EDIT</a></p>
+                                        <p>
+                                            <a href="/account/editride?id=${route.routeID}"><i class="fas fa-edit ride-list-icon"></i>EDIT</a>
+                                            <a href="/account/deleteride?id=${route.routeID}"><i style="margin-left: 5px;" class="fas fa-trash ride-list-icon"></i>DELETE</a>
+                                            <a href="/account/deleteride?id=${route.routeID}"><i style="margin-left: 5px;" class="fas fa-share-alt ride-list-icon"></i>SHARE</a>
+                                        </p>
 
                                         <c:if test="${fn:length(route.dateAdded) > 0}">
                                             <p class="uppercase">

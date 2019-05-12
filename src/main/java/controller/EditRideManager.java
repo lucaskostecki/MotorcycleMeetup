@@ -16,11 +16,9 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.time.format.DateTimeParseException;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-import java.util.Set;
 
 @WebServlet(
     urlPatterns = {"/account/editride", "/account/editride/submit"}
@@ -32,28 +30,35 @@ public class EditRideManager extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
+        RouteManager rm = new RouteManager();
+
+        int routeID = Integer.parseInt(request.getParameter("id"));
+        String username = request.getRemoteUser();
+
         GenericDao dao = new GenericDao(Route.class);
-        Route targetRoute = (Route) dao.getById(Integer.parseInt(request.getParameter("id")));
+        Route targetRoute = (Route) dao.getById(routeID);
 
         dao = new GenericDao(User.class);
-        User targetUser = (User) dao.getByPropertyLike("username", request.getRemoteUser()).get(0);
+        User targetUser = (User) dao.getByPropertyLike("username", username).get(0);
 
-        for (Route route : targetUser.getRoutes()) {
-            if (targetRoute.getRouteID() == route.getRouteID()) {
-                request.getSession().setAttribute("route", targetRoute);
-                request.getSession().setAttribute("waypoints", targetRoute.getWaypoints());
+        if (rm.getUserPrivileges(routeID, username)) {
+            for (Route route : targetUser.getRoutes()) {
+                if (targetRoute.getRouteID() == route.getRouteID()) {
+                    request.getSession().setAttribute("route", targetRoute);
+                    request.getSession().setAttribute("waypoints", targetRoute.getWaypoints());
 
-                SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
-                String startDateString = sdf.format(targetRoute.getStartDate());
-                request.getSession().setAttribute("startDateString", startDateString);
+                    SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+                    String startDateString = sdf.format(targetRoute.getStartDate());
+                    request.getSession().setAttribute("startDateString", startDateString);
 
-                RequestDispatcher dispatcher = request.getRequestDispatcher("/account/editride.jsp");
-                dispatcher.forward(request, response);
+                    RequestDispatcher dispatcher = request.getRequestDispatcher("/account/editride.jsp");
+                    dispatcher.forward(request, response);
+                }
             }
+        } else {
+            RequestDispatcher dispatcher = request.getRequestDispatcher("/account/editride.jsp?id=" + targetRoute.getRouteID() + "&p=norights");
+            dispatcher.forward(request, response);
         }
-
-        RequestDispatcher dispatcher = request.getRequestDispatcher("/account/editride.jsp?id=" + targetRoute.getRouteID() + "&p=norights");
-        dispatcher.forward(request, response);
 
     }
 

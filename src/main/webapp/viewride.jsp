@@ -17,11 +17,11 @@
         <div class="row">
             <h1 class="orange uppercase">VIEW RIDE</h1>
 
-            <c:if test="${!route.publicRide}">
+            <c:if test="${!showRoute}">
                 <p class="form-error">This ride is not publicly visible. Ask the route owner to invite you or make it publicly visible.</p>
             </c:if>
 
-            <c:if test="${route.publicRide}">
+            <c:if test="${showRoute}">
                 <div class="col-8">
                     <div id="map"></div>
                 </div>
