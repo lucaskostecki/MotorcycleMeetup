@@ -29,7 +29,7 @@
                                         <p>
                                             <a href="/account/editride?id=${route.routeID}"><i class="fas fa-edit ride-list-icon"></i>EDIT</a>
                                             <a href="/account/deleteride?id=${route.routeID}"><i style="margin-left: 5px;" class="fas fa-trash ride-list-icon"></i>DELETE</a>
-                                            <a href="/account/deleteride?id=${route.routeID}"><i style="margin-left: 5px;" class="fas fa-share-alt ride-list-icon"></i>SHARE</a>
+                                            <a href="/account/shareride?id=${route.routeID}"><i style="margin-left: 5px;" class="fas fa-share-alt ride-list-icon"></i>SHARE</a>
                                         </p>
 
                                         <c:if test="${fn:length(route.dateAdded) > 0}">

@@ -82,6 +82,10 @@ h1, h2, h3, h4, h5, h6 {
     transition: .35s;
 }
 
+a {
+    color: #ff6600;
+}
+
 .link-no-style {
     text-decoration: none;
 }

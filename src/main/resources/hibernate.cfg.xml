@@ -21,6 +21,7 @@
         <mapping class="entity.Route"/>
         <mapping class="entity.Role"/>
         <mapping class="entity.Waypoint"/>
+        <mapping class="entity.Invite"/>
 
     </session-factory>
 
