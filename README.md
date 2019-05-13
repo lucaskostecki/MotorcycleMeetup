@@ -12,18 +12,15 @@ public meetup which could be useful for businesses that want to host weekly show
 track of your rides by logging them after you return.
 
 ## Technologies
-* Frameworks
-    * Vue.js (maybe)
 * Database
     * MySQL
     * Storing users and user data
-    * Storing events and routes
+    * Storing routes
 * Dependency Management
     * Maven
 * Web Services API
     * Google Maps API
     * ZIP code near me API
-    * Maybe a weather API for showing weather for planned dates
 * CSS
     * Custom
 * Hosting
