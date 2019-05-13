@@ -7,12 +7,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a363bf17-ce96-4b1b-b113-1512fb20075c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/persistence/InviteObjectDaoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/persistence/WaypointObjectDaoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/utility/CleanDB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/utility/SessionFactoryProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/cleandb.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c8652ba9-2556-4692-8995-6976e63bdc40.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c8652ba9-2556-4692-8995-6976e63bdc40/storage_v2/_src_/schema/MotorcycleMeetup.M44EnA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c8652ba9-2556-4692-8995-6976e63bdc40/storage_v2/_src_/schema/MotorcycleMeetup.M44EnA.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d428e2a3-ce91-4c52-ab27-82e64fbf774f.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/AddRideManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/AddRideManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/include/nav.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/include/nav.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/persistence/GenericDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/persistence/RouteObjectDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/persistence/UserObjectDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/persistence/UserObjectDaoTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/utility/CleanTestDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utility/CleanTestDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/database.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/database.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/hibernate.cfg.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -31,11 +41,14 @@
       <FILTER>persistence.*</FILTER>
     </SUITE>
   </component>
+  <component name="CoverageOptionsProvider">
+    <option name="myAddOrReplace" value="-1" />
+  </component>
   <component name="CoverageViewManager">
-    <option name="myElementSize" value="74" />
+    <option name="myElementSize" value="141" />
   </component>
   <component name="DarkyenusTimeTracker">
-    <option name="totalTimeSeconds" value="193024" />
+    <option name="totalTimeSeconds" value="200340" />
     <option name="gitIntegration" value="true" />
   </component>
   <component name="DatabaseView">
@@ -49,12 +62,7 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="MotorcycleMeetupTest@localhost [2]" type="feb32156:DbDataSourceImpl" />
-      </path>
-    </expand>
+    <expand />
     <select />
   </component>
   <component name="DefaultGradleProjectSettings">
@@ -67,28 +75,28 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/include/nav.jsp">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/cleandb.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="54" selection-start-line="23" selection-start-column="54" selection-end-line="23" selection-end-column="54" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/persistence/GenericDaoTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+            <state relative-caret-position="180">
+              <caret line="12" column="30" lean-forward="true" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/persistence/UserObjectDaoTest.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/persistence/InviteObjectDaoTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="19" column="48" lean-forward="true" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
+            <state relative-caret-position="270">
+              <caret line="38" column="48" lean-forward="true" selection-start-line="38" selection-start-column="48" selection-end-line="38" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/entity/Invite.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="30" column="11" lean-forward="true" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -120,11 +128,16 @@
       <find>%&gt;</find>
       <find>jersey</find>
       <find>containers</find>
+      <find>Route</find>
+      <find>routes</find>
     </findStrings>
     <replaceStrings>
       <replace>Route</replace>
       <replace>gdao</replace>
       <replace>orange</replace>
+      <replace>Waypoint</replace>
+      <replace>waypoint</replace>
+      <replace>waypoints</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$</dir>
@@ -136,14 +149,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/controller/CrunchifyToJSON.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/account.js" />
-        <option value="$PROJECT_DIR$/src/main/java/controller/SignUp.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/viewroute.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/account/myrides.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/signin.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/signinerror.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/signout.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/signup.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/controller/AccountHome.java" />
@@ -167,7 +172,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/css/styles.css" />
         <option value="$PROJECT_DIR$/src/main/resources/database.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/api.properties" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/addride.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/account/addride.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/account/addridesuccess.jsp" />
@@ -176,17 +180,26 @@
         <option value="$PROJECT_DIR$/src/main/webapp/account/shareridesuccess.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/account/editride.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/controller/EditRideManager.java" />
-        <option value="$PROJECT_DIR$/src/main/java/controller/AddRideManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/entity/Route.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/viewride.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/searchresults.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/controller/SearchController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/include/nav.jsp" />
-        <option value="$PROJECT_DIR$/src/test/java/persistence/UserObjectDaoTest.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/database.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
-        <option value="$PROJECT_DIR$/src/test/resources/hibernate.cfg.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/include/nav.jsp" />
+        <option value="$PROJECT_DIR$/src/test/java/utility/SessionFactoryProvider.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/769d868f-03be-46c1-a10c-92f389614194/console.sql" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/utility/CleanDB.java" />
         <option value="$PROJECT_DIR$/src/test/java/utility/CleanTestDB.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/database.properties" />
+        <option value="$PROJECT_DIR$/src/test/java/persistence/GenericDaoTest.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/hibernate.cfg.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/persistence/RouteObjectDaoTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/AddRideManager.java" />
+        <option value="$PROJECT_DIR$/src/test/java/persistence/UserObjectDaoTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/persistence/WaypointObjectDaoTest.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/cleandb.sql" />
+        <option value="$PROJECT_DIR$/src/test/java/persistence/InviteObjectDaoTest.java" />
       </list>
     </option>
   </component>
@@ -246,27 +259,6 @@
               <item name="motorcyclemeetup" type="b2602c69:ProjectViewProjectNode" />
               <item name="motorcyclemeetup" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="motorcyclemeetup" type="b2602c69:ProjectViewProjectNode" />
-              <item name="motorcyclemeetup" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="motorcyclemeetup" type="b2602c69:ProjectViewProjectNode" />
-              <item name="motorcyclemeetup" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="motorcyclemeetup" type="b2602c69:ProjectViewProjectNode" />
-              <item name="motorcyclemeetup" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="persistence" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="motorcyclemeetup" type="b2602c69:ProjectViewProjectNode" />
@@ -340,14 +332,6 @@
     <key name="CreateTestDialog.RecentsKey">
       <recent name="persistence" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/webapp/" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="entity" />
-      <recent name="controller" />
-      <recent name="persistence" />
-    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
@@ -357,6 +341,15 @@
       <recent name="$PROJECT_DIR$/src/main/webapp" />
       <recent name="$PROJECT_DIR$/src/main/webapp/media/account/profilepictures" />
       <recent name="$PROJECT_DIR$/src/test/resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="persistence" />
+      <recent name="utility" />
+      <recent name="entity" />
+      <recent name="controller" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -380,7 +373,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="InviteObjectDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="motorcyclemeetup" />
       <extension name="coverage">
         <pattern>
@@ -389,24 +382,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="persistence" />
-      <option name="MAIN_CLASS_NAME" value="persistence.UserDaoTest" />
+      <option name="MAIN_CLASS_NAME" value="persistence.InviteObjectDaoTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserDaoTest.saveOrUpdate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="motorcyclemeetup" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="persistence.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="persistence" />
-      <option name="MAIN_CLASS_NAME" value="persistence.UserDaoTest" />
-      <option name="METHOD_NAME" value="saveOrUpdate" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -426,7 +403,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserObjectDaoTest.getAllUsers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserObjectDaoTest.setUp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="motorcyclemeetup" />
       <extension name="coverage">
         <pattern>
@@ -436,8 +413,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="persistence" />
       <option name="MAIN_CLASS_NAME" value="persistence.UserObjectDaoTest" />
-      <option name="METHOD_NAME" value="getAllUsers" />
+      <option name="METHOD_NAME" value="setUp" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WaypointObjectDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="motorcyclemeetup" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="persistence.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="persistence" />
+      <option name="MAIN_CLASS_NAME" value="persistence.WaypointObjectDaoTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -589,21 +581,21 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.UserDaoTest" />
-      <item itemvalue="JUnit.UserDaoTest.saveOrUpdate" />
       <item itemvalue="JUnit.UserObjectDaoTest" />
-      <item itemvalue="JUnit.UserObjectDaoTest.getAllUsers" />
+      <item itemvalue="JUnit.All in motorcyclemeetup" />
       <item itemvalue="TomEE Server.MM" />
       <item itemvalue="TomEE Server.MM2" />
-      <item itemvalue="JUnit.All in motorcyclemeetup" />
+      <item itemvalue="JUnit.UserObjectDaoTest.setUp" />
+      <item itemvalue="JUnit.WaypointObjectDaoTest" />
+      <item itemvalue="JUnit.InviteObjectDaoTest" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.All in motorcyclemeetup" />
+        <item itemvalue="JUnit.InviteObjectDaoTest" />
+        <item itemvalue="JUnit.WaypointObjectDaoTest" />
         <item itemvalue="JUnit.UserObjectDaoTest" />
-        <item itemvalue="JUnit.UserObjectDaoTest.getAllUsers" />
-        <item itemvalue="JUnit.UserDaoTest" />
-        <item itemvalue="JUnit.UserDaoTest.saveOrUpdate" />
+        <item itemvalue="JUnit.UserObjectDaoTest.setUp" />
       </list>
     </recent_temporary>
   </component>
@@ -672,7 +664,10 @@
       <workItem from="1557626637953" duration="3986000" />
       <workItem from="1557692630768" duration="18943000" />
       <workItem from="1557717783622" duration="118000" />
-      <workItem from="1557717950332" duration="2769000" />
+      <workItem from="1557717950332" duration="2938000" />
+      <workItem from="1557721401192" duration="170000" />
+      <workItem from="1557722179596" duration="1086000" />
+      <workItem from="1557761038467" duration="8289000" />
     </task>
     <task id="LOCAL-00001" summary="Updated project files to compile. Added a TomEE deploy config.">
       <created>1549826212420</created>
@@ -692,39 +687,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_motorcyclemeetup - 2019.05.12 at 22h 47m 36s.xml">
-      <configuration name="All in motorcyclemeetup" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserObjectDaoTest_getAllUsers - 2019.05.12 at 22h 49m 02s.xml">
-      <configuration name="UserObjectDaoTest.getAllUsers" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_motorcyclemeetup - 2019.05.12 at 22h 52m 45s.xml">
-      <configuration name="All in motorcyclemeetup" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_motorcyclemeetup - 2019.05.12 at 22h 53m 43s.xml">
-      <configuration name="All in motorcyclemeetup" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserObjectDaoTest - 2019.05.12 at 22h 53m 50s.xml">
+    <history-entry file="UserObjectDaoTest - 2019.05.13 at 12h 12m 02s.xml">
       <configuration name="UserObjectDaoTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_motorcyclemeetup - 2019.05.12 at 22h 53m 55s.xml">
+    <history-entry file="All_in_motorcyclemeetup - 2019.05.13 at 12h 12m 58s.xml">
       <configuration name="All in motorcyclemeetup" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_motorcyclemeetup - 2019.05.12 at 22h 58m 04s.xml">
+    <history-entry file="All_in_motorcyclemeetup - 2019.05.13 at 12h 26m 42s.xml">
       <configuration name="All in motorcyclemeetup" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_motorcyclemeetup - 2019.05.12 at 23h 03m 09s.xml">
+    <history-entry file="WaypointObjectDaoTest - 2019.05.13 at 12h 32m 36s.xml">
+      <configuration name="WaypointObjectDaoTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_motorcyclemeetup - 2019.05.13 at 12h 33m 16s.xml">
       <configuration name="All in motorcyclemeetup" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_motorcyclemeetup - 2019.05.12 at 23h 07m 55s.xml">
+    <history-entry file="All_in_motorcyclemeetup - 2019.05.13 at 12h 41m 05s.xml">
       <configuration name="All in motorcyclemeetup" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_motorcyclemeetup - 2019.05.12 at 23h 12m 20s.xml">
+    <history-entry file="InviteObjectDaoTest - 2019.05.13 at 12h 42m 25s.xml">
+      <configuration name="InviteObjectDaoTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="InviteObjectDaoTest - 2019.05.13 at 12h 43m 06s.xml">
+      <configuration name="InviteObjectDaoTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_motorcyclemeetup - 2019.05.13 at 12h 43m 26s.xml">
+      <configuration name="All in motorcyclemeetup" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_motorcyclemeetup - 2019.05.13 at 12h 45m 07s.xml">
       <configuration name="All in motorcyclemeetup" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="284838000" />
+    <option name="totallyTimeSpent" value="294552000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -739,7 +734,7 @@
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23021583" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23851688" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -750,17 +745,17 @@
       <window_info id="Persistence" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32937366" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32829374" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32829374" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39956802" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32937366" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.27213824" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.27105832" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32937366" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.32937366" />
-      <window_info anchor="bottom" id="Database Changes" order="12" weight="0.32937366" />
+      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" weight="0.32937366" />
       <window_info anchor="bottom" id="Version Control" order="13" weight="0.32937366" />
       <window_info anchor="bottom" id="Application Servers" order="14" weight="0.32937366" />
       <window_info anchor="bottom" id="Database Console" order="15" weight="0.32937366" />
@@ -773,12 +768,12 @@
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="JSF" order="6" weight="0.32982844" />
-      <window_info anchor="right" id="Database" order="7" sideWeight="0.49678457" weight="0.22800222" />
+      <window_info anchor="right" id="Database" order="7" sideWeight="0.49356914" weight="0.22800222" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Theme Preview" order="9" />
       <window_info anchor="right" id="CDI" order="10" weight="0.32982844" />
       <window_info anchor="right" id="Bean Validation" order="11" weight="0.32982844" />
-      <window_info anchor="right" id="Coverage" order="12" sideWeight="0.50321543" side_tool="true" weight="0.22800222" />
+      <window_info anchor="right" id="Coverage" order="12" sideWeight="0.50643086" side_tool="true" visible="true" weight="0.22800222" />
     </layout>
     <layout-to-restore>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23021583" />
@@ -835,49 +830,25 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/motorcyclemeetup$UserObjectDaoTest.ic" NAME="UserObjectDaoTest Coverage Results" MODIFIED="1557719476943" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/motorcyclemeetup$WaypointObjectDaoTest.ic" NAME="WaypointObjectDaoTest Coverage Results" MODIFIED="1557768748984" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>persistence.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/motorcyclemeetup$All_in_motorcyclemeetup.ic" NAME="All in motorcyclemeetup Coverage Results" MODIFIED="1557720730693" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/motorcyclemeetup$UserObjectDaoTest.ic" NAME="UserObjectDaoTest Coverage Results" MODIFIED="1557767516606" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>persistence.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/motorcyclemeetup$All_in_motorcyclemeetup.ic" NAME="All in motorcyclemeetup Coverage Results" MODIFIED="1557769487891" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/motorcyclemeetup$InviteObjectDaoTest.ic" NAME="InviteObjectDaoTest Coverage Results" MODIFIED="1557769380814" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>persistence.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/motorcyclemeetup$MM2.ic" NAME="MM2 Coverage Results" MODIFIED="1557718120083" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/motorcyclemeetup$RouteObjectDaoTest.ic" NAME="RouteObjectDaoTest Coverage Results" MODIFIED="1557766739642" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>persistence.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/motorcyclemeetup$UserObjectDaoTest_getAllUsers.ic" NAME="UserObjectDaoTest.getAllUsers Coverage Results" MODIFIED="1557766214756" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>persistence.*</FILTER>
+    </SUITE>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/account/myrides.jsp" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/signin.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="18" column="35" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/signinerror.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/signout.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/signup.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="18" column="35" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="58" selection-start-line="22" selection-start-column="58" selection-end-line="22" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controller/AccountHome.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -930,13 +901,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/entity/Invite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="48" column="27" selection-start-line="48" selection-start-column="27" selection-end-line="48" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controller/DeleteRideManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -944,20 +908,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/database.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/entity/Response.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="166" column="29" selection-start-line="166" selection-start-column="29" selection-end-line="166" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -1093,16 +1047,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/AddRideManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-786">
-          <caret line="52" column="38" selection-start-line="52" selection-start-column="31" selection-end-line="52" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/viewride.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -1134,39 +1078,13 @@
     <entry file="file://$PROJECT_DIR$/src/test/resources/log4j2.properties">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/database.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="23" lean-forward="true" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="8" lean-forward="true" selection-start-line="18" selection-start-column="8" selection-end-line="22" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/a6d3f4ce-c058-498c-a2c2-30f3fff4bc7a/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/persistence/GenericDao.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/include/nav.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="140" column="71" lean-forward="true" selection-start-line="140" selection-start-column="15" selection-end-line="140" selection-end-column="71" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#720#721#0" expanded="true" />
-            <element signature="e#752#753#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/hibernate.cfg.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="40" lean-forward="true" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
+        <state relative-caret-position="165">
+          <caret line="11" column="103" selection-start-line="11" selection-start-column="103" selection-end-line="11" selection-end-column="103" />
         </state>
       </provider>
     </entry>
@@ -1177,34 +1095,138 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/include/nav.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="54" selection-start-line="23" selection-start-column="54" selection-end-line="23" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/utility/CleanTestDB.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/utility/SessionFactoryProvider.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
-          <caret line="15" column="72" selection-start-line="15" selection-start-column="72" selection-end-line="15" selection-end-column="72" />
+          <caret line="15" column="37" lean-forward="true" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/persistence/GenericDaoTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/persistence/GenericDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+        <state relative-caret-position="1980">
+          <caret line="132" column="20" lean-forward="true" selection-start-line="132" selection-start-column="20" selection-end-line="132" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#720#721#0" expanded="true" />
+            <element signature="e#752#753#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/769d868f-03be-46c1-a10c-92f389614194/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="12" lean-forward="true" selection-start-column="12" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="89" column="17" selection-start-line="89" selection-start-column="17" selection-end-line="89" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/utility/CleanTestDB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="24" column="64" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="42" lean-forward="true" selection-end-line="26" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/hibernate.cfg.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="70" lean-forward="true" selection-start-line="10" selection-start-column="70" selection-end-line="10" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/database.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/database.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="23" lean-forward="true" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/utility/CleanDB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-719">
+          <caret line="29" column="34" lean-forward="true" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/AddRideManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="22" lean-forward="true" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/persistence/RouteObjectDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="97" column="42" lean-forward="true" selection-start-line="97" selection-start-column="42" selection-end-line="97" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/persistence/UserObjectDaoTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="19" column="48" lean-forward="true" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
+        <state relative-caret-position="76">
+          <caret line="15" column="25" lean-forward="true" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/persistence/WaypointObjectDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="60" column="9" lean-forward="true" selection-start-line="60" selection-start-column="9" selection-end-line="60" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/entity/Invite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="30" column="11" lean-forward="true" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/cleandb.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="30" lean-forward="true" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/persistence/InviteObjectDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="38" column="48" lean-forward="true" selection-start-line="38" selection-start-column="48" selection-end-line="38" selection-end-column="48" />
         </state>
       </provider>
     </entry>

@@ -20,7 +20,7 @@ import java.util.Date;
 import java.util.List;
 
 /**
- * Add routes
+ * The type Add ride manager.
  */
 @WebServlet(
         urlPatterns = {"/account/addride/submit"}

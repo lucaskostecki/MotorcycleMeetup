@@ -9,7 +9,7 @@
     <div id="rightNav">
         <ul>
             <li>
-                <input id="navSearchBar" type="text" name="search" placeholder="Search routes or users" />
+                <input id="navSearchBar" type="text" name="search" placeholder="Search routes or by ZIP" />
             </li>
 
             <% if(request.getRemoteUser() != null) { %>
