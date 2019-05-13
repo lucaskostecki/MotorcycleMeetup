@@ -1,6 +1,9 @@
 # Lucas Kostecki Indie Project
 This repository is for the Motorcycle Meetup web application for Enterprise Java
 
+## Walkthrough Video
+https://github.com/lucaskostecki/MotorcycleMeetup/blob/master/DesignDocuments/mm_comp.mp4
+
 ## Problem Statement
 During the riding months it's nice to sometimes share an afternoon riding with other company. The problem that I often
 encounter is I don't have anyone else to ride with. From time to time, I'd like to ride my motorcycle with another person
