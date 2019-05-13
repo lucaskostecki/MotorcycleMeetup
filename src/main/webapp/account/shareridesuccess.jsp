@@ -4,7 +4,7 @@
 <head>
     <c:import url="/include/head.jsp"></c:import>
 
-    <title>Account</title>
+    <title>Share Ride Success</title>
 </head>
 <body>
     <c:import url="/include/nav.jsp"></c:import>

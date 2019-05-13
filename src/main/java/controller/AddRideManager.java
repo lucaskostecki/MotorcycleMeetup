@@ -43,6 +43,15 @@ public class AddRideManager extends HttpServlet {
             publicRide = false;
         }
 
+        String zipCode = "";
+        try {
+            logger.debug("TRYING TO FETCH ZIP CODE");
+            zipCode = request.getParameter("zip-code");
+        } catch (NullPointerException e) {
+            zipCode = "";
+        }
+        logger.debug("ZIP: " + zipCode);
+
         String strStartDate = request.getParameter("start-date");
         Date startDate = null;
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
@@ -115,7 +124,7 @@ public class AddRideManager extends HttpServlet {
             List<User> targetUsers = dao.getByPropertyLike("username", request.getRemoteUser());
 
             dao = new GenericDao(Route.class);
-            Route newRoute = new Route(start, end, routeTitle, routeDescription, routeAvoidHighways, startDate, startTime, publicRide, targetUsers.get(0));
+            Route newRoute = new Route(start, end, routeTitle, routeDescription, routeAvoidHighways, startDate, startTime, publicRide, zipCode, targetUsers.get(0));
             checksum = dao.insert(newRoute);
 
             if (checksum > 0) {

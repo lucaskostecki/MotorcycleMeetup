@@ -12,58 +12,100 @@
 <head>
     <c:import url="/include/head.jsp"></c:import>
 
-    <title>Search Results</title>
+    <title>Search Results For ${search}</title>
 </head>
 <body>
     <c:import url="/include/nav.jsp"></c:import>
 
     <div class="container">
         <h1 class="orange uppercase">Search results</h1>
+        <%--
         <c:choose>
             <c:when test="${empty users}">
                 <p class="orange uppercase">No users found</p>
             </c:when>
             <c:otherwise>
-                <table>
+                <table class="uppercase search-result-table">
                     <tr>
+                        <th>Username</th>
                         <th>First name</th>
                         <th>Last name</th>
-                        <th>Username</th>
                         <th>Email</th>
                         <th>Phone</th>
                     </tr>
                     <c:forEach items="${users}" var="user">
                         <tr>
-                            <td><c:out value="${user.firstName}"/></td>
-                            <td><c:out value="${user.lastName}"/></td>
-                            <td><c:out value="${user.username}"/></td>
-                            <td><c:out value="${user.email}"/></td>
-                            <td><c:out value="${user.phone}"/></td>
+                            <td>${user.username}</td>
+                            <td>${user.firstName}</td>
+                            <td>${user.lastName}</td>
+                            <td>${user.email}</td>
+                            <td>${user.phone}</td>
                         </tr>
                     </c:forEach>
                 </table>
             </c:otherwise>
         </c:choose>
+        --%>
+
+
+
 
         <c:choose>
             <c:when test="${empty routes}">
                 <p class="orange uppercase">No rides found</p>
             </c:when>
             <c:otherwise>
-                <table>
+                <table class="uppercase search-result-table" style="margin-top: 30px;">
+                    <p class="orange uppercase">Ride results</p>
                     <tr>
                         <th>Route Title</th>
                         <th>Route Description</th>
+                        <th>Start</th>
+                        <th>Waypoints</th>
+                        <th>End</th>
                     </tr>
                     <c:forEach items="${routes}" var="route">
                         <tr>
-                            <td><c:out value="${route.title}"/></td>
-                            <td><c:out value="${route.description}"/></td>
+                            <td class="uppercase">
+                                <a href="/viewride?id=${route.routeID}" target="_blank">${route.title}</a>
+                            </td>
+                            <td>${route.description}</td>
+                            <td>${route.start}</td>
+                            <td>${fn:length(route.waypoints)} Planned stops</td>
+                            <td>${route.end}</td>
                         </tr>
                     </c:forEach>
                 </table>
             </c:otherwise>
         </c:choose>
+
+
+
+        <c:if test="${!empty routesByZipCode}">
+            <table class="uppercase search-result-table" style="margin-top: 30px;">
+                <p class="orange uppercase">Ride results by zip code</p>
+                <tr>
+                    <th>Route Title</th>
+                    <th>Route Description</th>
+                    <th>Start</th>
+                    <th>Waypoints</th>
+                    <th>End</th>
+                    <th>ZIP Code</th>
+                </tr>
+                <c:forEach items="${routesByZipCode}" var="route">
+                    <tr>
+                        <td class="uppercase">
+                            <a href="/viewride?id=${route.routeID}" target="_blank">${route.title}</a>
+                        </td>
+                        <td>${route.description}</td>
+                        <td>${route.start}</td>
+                        <td>${fn:length(route.waypoints)} Planned stops</td>
+                        <td>${route.end}</td>
+                        <td>${route.zipCode}</td>
+                    </tr>
+                </c:forEach>
+            </table>
+        </c:if>
     </div>
 </body>
 </html>

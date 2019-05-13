@@ -20,6 +20,9 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+/**
+ * The type Edit ride manager.
+ */
 @WebServlet(
     urlPatterns = {"/account/editride", "/account/editride/submit"}
 )
@@ -72,12 +75,22 @@ public class EditRideManager extends HttpServlet {
         String end = request.getParameter("end");
         boolean publicRide = false;
 
+        // Get the public value
         try {
             publicRide = request.getParameter("public").equals("on");
         } catch (NullPointerException e) {
             publicRide = false;
         }
 
+        // Try to get the zip code
+        String zipCode = "";
+        try {
+            zipCode = request.getParameter("zip-code");
+        } catch (NullPointerException e) {
+            zipCode = "";
+        }
+
+        // Format the date
         String strStartDate = request.getParameter("start-date");
         Date startDate = null;
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
@@ -161,6 +174,7 @@ public class EditRideManager extends HttpServlet {
             targetRoute.setStartDate(startDate);
             targetRoute.setStartTime(startTime);
             targetRoute.setPublicRide(publicRide);
+            targetRoute.setZipCode(zipCode);
 
             dao.saveOrUpdate(targetRoute);
 

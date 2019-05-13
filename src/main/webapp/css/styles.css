@@ -414,3 +414,20 @@ form input {
     margin-right: 10px;
 }
 /* END ACCOUNT */
+
+.search-result-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.search-result-table tr:not(:first-child):nth-child(odd) {
+    background: #ccc;
+}
+
+.search-result-table tr {
+    padding: 6px 0;
+}
+
+.search-result-table tr th {
+    margin: 0 20px;
+}

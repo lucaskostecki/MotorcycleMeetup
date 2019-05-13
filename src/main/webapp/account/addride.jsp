@@ -23,6 +23,7 @@
                 <div class="col-8">
                     <div id="map"></div>
                 </div>
+
                 <div class="col-4">
                     <label for="start-time">Start Date and Time</label>
                     <br>
@@ -44,6 +45,11 @@
                     <label for="start">Start</label>
                     <br>
                     <input type="text" id="start" name="start" required />
+
+                    <br><br>
+                    <label for="zip-code">Start Point Zip Code</label>
+                    <br>
+                    <input type="text" id="zip-code" name="zip-code" />
 
                     <br><br>
                     <label>Waypoints</label>

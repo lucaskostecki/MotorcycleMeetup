@@ -85,6 +85,12 @@ public class Route {
 
     @Getter
     @Setter
+    @Expose()
+    @Column(name = "ZipCode")
+    private String zipCode;
+
+    @Getter
+    @Setter
     @Expose(serialize = false, deserialize = false)
     @ManyToOne
     @JoinColumn(name = "UserID")
@@ -112,7 +118,7 @@ public class Route {
      * @param user        the user
      */
     public Route(String start, String end, String title, String description, boolean avoidHighways,
-                 java.util.Date startDate, String startTime, boolean publicRide, User user) {
+                 java.util.Date startDate, String startTime, boolean publicRide, String zipCode, User user) {
         this.start = start;
         this.end = end;
         this.startDate = startDate;
@@ -121,6 +127,7 @@ public class Route {
         this.description = description;
         this.avoidHighways = avoidHighways;
         this.publicRide = publicRide;
+        this.zipCode = zipCode;
         this.user = user;
     }
 
