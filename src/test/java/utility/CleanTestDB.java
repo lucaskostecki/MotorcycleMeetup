@@ -14,13 +14,12 @@ import persistence.SessionFactoryProvider;
  */
 public class CleanTestDB {
     private final Logger logger = LogManager.getLogger(this.getClass());
-    SessionFactory sessionFactory = SessionFactoryProvider.getSessionFactory();
 
     /**
      * Clean the database
      */
     public void cleanDB() {
-        Session session = sessionFactory.openSession();
+        Session session = SessionFactoryProvider.getSessionFactory().openSession();
         Transaction transaction = session.beginTransaction();
 
         // Create an SQL query to truncate the table. This way the ID's start at one while
@@ -33,7 +32,7 @@ public class CleanTestDB {
 
         // Insert some default data to work with for each JUnit test
         session.createNativeQuery("INSERT INTO MotorcycleMeetupTest.Users VALUES(null, 9, 'testingye', null,'lucas.kostecki@gmail.com','6085167407','Lucas','Kostecki')").executeUpdate();
-        session.createNativeQuery("INSERT INTO MotorcycleMeetupTest.Routes VALUES(null, 1, 'Route Title', 'Some description')").executeUpdate();
+        session.createNativeQuery("INSERT INTO MotorcycleMeetupTest.Routes VALUES(null, 1, '2019-05-25', '15:00:00', 'middleton, wi', 'madison, wi', 'Route Title', 'Some description', 0, '53562', now(), 0)").executeUpdate();
         session.createNativeQuery("INSERT INTO MotorcycleMeetupTest.Waypoints VALUES(null, 1, 'Waypoint name')").executeUpdate();
         session.createNativeQuery("INSERT INTO MotorcycleMeetupTest.UserRole VALUES('testingye', null, 'user')").executeUpdate();
 

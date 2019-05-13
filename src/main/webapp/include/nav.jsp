@@ -38,7 +38,7 @@
                     <ul>
                         <% if(request.getRemoteUser() != null) { %>
                             <li><a href="/account/">My Rides</a></li>
-                            <li><a href="/account/requests">Ride Requests</a></li>
+                            <%-- <li><a href="/account/requests.jsp">Ride Requests</a></li> --%>
                             <li><a href="/signout">Sign Out</a></li>
                         <% } else { %>
                             <li><a href="/signup.jsp">Sign Up</a></li>
